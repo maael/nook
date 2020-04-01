@@ -1,0 +1,15 @@
+{
+  "name": "nook",
+  "version": 2,
+  "build": {
+    "env": {
+      "REDDIT_OAUTH_ID": "@nook-reddit-oauth-id",
+      "REDDIT_OAUTH_SECRET": "@nook-reddit-oauth-secret",
+      "JWT_SECRET": "@nook-jwt-secret",
+      "FAUNA_SECRET": "@nook-fauna-secret",
+      "OAUTH_STATE": "@nook-oauth-state",
+      "DISCORD_OAUTH_ID": "@nook-discord-oauth-id",
+      "DISCORD_OAUTH_SECRET": "@nook-discord-oauth-secret"
+    }
+  }
+}

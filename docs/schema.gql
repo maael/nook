@@ -1,0 +1,25 @@
+type User @collection(name: "users") {
+  redditId: String @unique(index: "unique_reddit_id")
+  redditName: String @unique(index: "unique_reddit_name")
+  redditIcon: String
+  redditDarkmode: Boolean
+  discordId: String @unique(index: "unique_discord_id")
+  discordName: String
+  discordDiscriminator: String
+  discordFullName: String
+  discordIcon: String
+  nintendoName: String
+  animalCrossingTag: String
+  isActive: Boolean!
+  createdAt: Time!
+  updatedAt: Time!
+  deletedAt: Time
+}
+
+type Query {
+  getUsers: [User!]!
+  getUserByRedditName(redditName: String): User
+  getUserByDiscordName(discordName: String): User
+  getUserByDiscordId(discordId: String): User
+  getUserByDiscordFullName(discordFullName: String): User
+}
