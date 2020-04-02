@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { jsx } from "@emotion/core";
 import { colors } from "@maael/temtem-theme";
+import {colors as nookTheme} from '../../util/theme';
 
 export default function NavItem({
   url,
@@ -27,14 +28,14 @@ export default function NavItem({
             (exact
             ? pathname === url
             : pathname.startsWith(url))
-              ? colors.uiBlue
-              : colors.uiBlueFaded
+              ? nookTheme.offWhite
+              : nookTheme.blueLight
           }`,
           margin: "0 5px",
           padding: "0px 2px",
           cursor: "pointer",
           "&:hover": {
-            borderColor: colors.uiBlue
+            borderColor: nookTheme.offWhite
           },
           textAlign: "center",
           ...style

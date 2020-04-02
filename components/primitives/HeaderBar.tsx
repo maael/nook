@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { colors } from "@maael/temtem-theme";
+import {colors as nookTheme} from '../../util/theme';
 
 export default function HeaderBar({
   children,
@@ -12,7 +12,7 @@ export default function HeaderBar({
   return (
     <div
       css={{
-        backgroundColor: colors.uiOutline,
+        backgroundColor: nookTheme.blueDark,
         padding: "10px 5px",
         fontSize: 20,
         display: "flex",

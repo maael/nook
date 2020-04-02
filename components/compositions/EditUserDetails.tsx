@@ -15,6 +15,7 @@ export default function EditUserDetails({ user }: Props) {
     user.discordFullName || ""
   );
   const [redditName, setRedditName] = useState(user.redditName || "");
+  const [animalCrossingTag, setAnimalCrossingTag] = useState(user.animalCrossingTag || '');
   const [updateUser, _data, savingUpdate] = useCallableFetch(
     "/db/user",
     { method: "PUT" },
@@ -40,7 +41,7 @@ export default function EditUserDetails({ user }: Props) {
         }}
         prefixStyle={{ width: 150, backgroundColor: "#7289DA" }}
         style={{
-          cursor: userType === UserType.REDDIT ? "not-allowed" : "inherit"
+          cursor: userType === UserType.DISCORD ? "not-allowed" : "inherit"
         }}
         prefix="Discord Name"
         placeholder="Discord Name..."
@@ -63,15 +64,24 @@ export default function EditUserDetails({ user }: Props) {
         onChange={({ target }) => setRedditName((target as any).value)}
         disabled={userType === UserType.REDDIT}
       />
+      <Input
+        containerStyle={{ margin: "5px 0px" }}
+        prefixStyle={{ width: 150, backgroundColor: '#7FCE2A' }}
+        prefix="Maker ID"
+        placeholder="Maker ID..."
+        value={animalCrossingTag}
+        onChange={({ target }) => setAnimalCrossingTag((target as any).value)}
+      />
       <Button
         onClick={async () => {
           await updateUser({
             body: JSON.stringify({
-              temtemnintendoNameName: nintendoName || null,
+              nintendoName: nintendoName || null,
               discordFullName: discordFullName || null,
               discordName: discordFullName.split("#")[0],
               discordDiscriminator: discordFullName.split("#")[1],
               redditName: redditName || null,
+              animalCrossingTag: animalCrossingTag || null
             })
           });
         }}

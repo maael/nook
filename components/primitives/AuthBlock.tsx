@@ -8,6 +8,7 @@ import { colors } from "@maael/temtem-theme";
 import useJWT from "../hooks/useJWT";
 import { JWT_VERSION } from "../../util/constants";
 import * as userUtil from "../../util/user";
+import {colors as nookTheme} from '../../util/theme';
 
 export default function AuthBlock() {
   const jwt = useJWT();
@@ -33,7 +34,7 @@ export default function AuthBlock() {
         >
           <img
             css={{
-              border: `2px solid ${colors.uiBlueFaded}`,
+              border: `2px solid ${nookTheme.blueLight}`,
               height: 30,
               width: 30,
               borderRadius: "50%",
@@ -47,9 +48,9 @@ export default function AuthBlock() {
         <TemtemButton
           type={"Neutral" as any}
           style={{ height: 30, width: 30, padding: 7 }}
-          bgColor={colors.uiBlueFaded}
+          bgColor={nookTheme.blueLight}
         >
-          <FiLogOut size={16} />
+          <FiLogOut color={nookTheme.blueDark} size={16} />
         </TemtemButton>
       </a>
     </div>

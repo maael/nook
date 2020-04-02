@@ -12,6 +12,7 @@ import AuthBlock from "../components/primitives/AuthBlock";
 import HideOnMobile from "../components/primitives/HideOnMobile";
 import HideOnDesktop from "../components/primitives/HideOnDesktop";
 import OverlayMenu from "../components/primitives/OverlayMenu";
+import {colors as nookTheme} from '../util/theme';
 
 export default function App({ Component, pageProps }) {
   const [overlay, setOverlay] = useState(false);
@@ -54,7 +55,7 @@ export default function App({ Component, pageProps }) {
             minHeight: "100vh"
           },
           body: {
-            backgroundColor: colors.uiBgGradientStart,
+            backgroundColor: nookTheme.blueLight,
             color: "#FFFFFF",
             ...fonts.default,
             padding: 0,
@@ -69,7 +70,7 @@ export default function App({ Component, pageProps }) {
       />
       <div
         css={{
-          backgroundColor: colors.uiOutline,
+          backgroundColor: nookTheme.blueDark,
           padding: 5,
           fontSize: 20,
           display: "flex",
@@ -77,9 +78,9 @@ export default function App({ Component, pageProps }) {
           justifyContent: "center"
         }}
       >
-        <div css={{ flex: 1, height: 1, backgroundColor: colors.uiBlue }}></div>
+        <div css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}></div>
         <div css={{ padding: "0px 5px" }}>Nook Services</div>
-        <div css={{ flex: 1, height: 1, backgroundColor: colors.uiBlue }}></div>
+        <div css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}></div>
       </div>
       <HeaderBar
         style={{
@@ -113,7 +114,8 @@ export default function App({ Component, pageProps }) {
       </div>
       <div
         css={{
-          backgroundColor: colors.uiMid,
+          backgroundColor: nookTheme.blueDark,
+          color: nookTheme.blueLight,
           padding: 5,
           textAlign: "center",
           marginTop: 10,
@@ -123,7 +125,7 @@ export default function App({ Component, pageProps }) {
         Made by{" "}
         <a
           css={{
-            color: colors.uiBlueFaded,
+            color: nookTheme.offWhite,
             textDecoration: "none",
             marginRight: 5,
             marginLeft: 2
@@ -134,7 +136,7 @@ export default function App({ Component, pageProps }) {
           maael
         </a>
         <a
-          css={{ color: colors.uiBlueFaded, textDecoration: "none" }}
+          css={{ color: nookTheme.offWhite, textDecoration: "none" }}
           href="https://discordapp.com/"
         >
           <FaDiscord style={{ marginRight: 2, position: "relative", top: 3 }} />

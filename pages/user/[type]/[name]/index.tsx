@@ -82,6 +82,20 @@ export default function UserPage({ user = {} as any }: { user: User }) {
           </TemtemButton>
         </a>
       ) : null}
+      {user.animalCrossingTag ? (
+        <a href={"https://store.steampowered.com/app/745920/Temtem/"}>
+          <TemtemButton
+            size="small"
+            style={{
+              margin: "0px 5px 10px",
+              position: "relative"
+            }}
+            bgColor={'#7FCE2A'}
+          >
+            <>"{user.animalCrossingTag}" Maker ID</>
+          </TemtemButton>
+        </a>
+      ) : null}
       {jwt && jwt._id === user._id ? <EditUserDetails user={user} /> : null}
     </div>
   );
