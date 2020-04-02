@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import React, { useState } from "react";
 import Head from "next/head";
-import { Global, jsx } from "@emotion/core";
+import { Global, jsx, css } from "@emotion/core";
+import emotionReset from 'emotion-reset';
 import { TiHomeOutline } from "react-icons/ti";
 import {IoIosMenu} from 'react-icons/io';
 import { FaReddit, FaDiscord } from "react-icons/fa";
@@ -45,28 +46,20 @@ export default function App({ Component, pageProps }) {
         <title>Nook Services</title>
       </Head>
       <Global
-        styles={{
-          "*": {
-            MozOsxFontSmoothing: "grayscale",
-            WebkitFontSmoothing: "antialiased",
-            fontSmoothing: "antialiased"
-          },
-          html: {
-            minHeight: "100vh"
-          },
-          body: {
-            backgroundColor: nookTheme.blueLight,
-            color: "#FFFFFF",
-            ...fonts.default,
-            padding: 0,
-            margin: 0,
-            minHeight: "100vh"
-          },
-          ".auto-tracker-hide-video": {
-            position: "absolute",
-            top: -3000
+        styles={css(`
+          ${emotionReset.styles}
+
+          html {
+            min-height: 100vh;
           }
-        }}
+
+          body {
+            background-color: ${nookTheme.blueLight};
+            color: #FFFFFF;
+            font-family: ${fonts.default.fontFamily};
+            min-height: 100vh;
+          }
+        `)}
       />
       <div
         css={{

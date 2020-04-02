@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import CollectionHeaderBar from '../../components/compositions/CollectionHeaderBar'
 
-export default function Home() {
+export default function Collections() {
   return (
+    <>
+    <CollectionHeaderBar />
     <div
       css={{
         margin: "0px auto",
@@ -11,7 +14,8 @@ export default function Home() {
         maxWidth: 1000
       }}
     >
-      Nook Services
+      Hey
     </div>
+    </>
   );
 }

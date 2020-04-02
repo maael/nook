@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 
-export default function Home() {
+export default function Collections() {
   return (
+    <>
     <div
       css={{
         margin: "0px auto",
@@ -11,7 +12,8 @@ export default function Home() {
         maxWidth: 1000
       }}
     >
-      Nook Services
+      Hey
     </div>
+    </>
   );
 }
