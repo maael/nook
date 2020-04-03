@@ -80,6 +80,16 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           display: "block",
           width: "100%"
         }}
+        url="/events"
+      >
+        Events
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
+          width: "100%"
+        }}
         url="/users"
       >
         Users

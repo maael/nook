@@ -16,7 +16,6 @@ export default function CollectionHeaderBar() {
         </NavItem>
         <NavItem url="/collections/fossils">Fossils</NavItem>
         <NavItem url="/collections/diy">DIY Recipes</NavItem>
-        <NavItem url="/collections/kkslider">K.K Slider</NavItem>
       </React.Fragment>
     </HeaderBar>
   );
