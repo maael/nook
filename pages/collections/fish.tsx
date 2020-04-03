@@ -1,59 +1,59 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import CollectionHeaderBar from '../../components/compositions/CollectionHeaderBar'
-import {colors} from '../../util/theme';
+import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import MonthBar, {MONTHS} from "../../components/primitives/MonthBar";
+import FishItem from "../../components/primitives/FishItem";
+import useLocalstorage, {
+  LocalStorageKeys
+} from "../../components/hooks/useLocalstorage";
+import { colors } from "../../util/theme";
+import { CURRENT_MONTH, isAvailable, isAlwaysAvailable } from "../../util/collections";
 
-const fishData = require('../../data/fish.json');
+const fishData = require("../../data/fish.json");
 
-const monthNum = (new Date()).getMonth();
-
-function isAvailable (months: Record<string, boolean>) {
-  return Object.values(months)[monthNum];
-}
+const styles = {
+  container: {
+    margin: "0px auto",
+    textAlign: "center",
+    padding: 10,
+    maxWidth: 1000
+  },
+  header: {
+    marginTop: 10,
+    marginBottom: 5,
+    color: colors.blueDark
+  }
+} as const;
 
 export default function Collections() {
+  const [month, setMonth] = useLocalstorage(
+    LocalStorageKeys.SELECTED_MONTH,
+    CURRENT_MONTH
+  );
   return (
     <>
-    <CollectionHeaderBar />
-    <div
-      css={{
-        margin: "0px auto",
-        textAlign: "center",
-        padding: 10,
-        maxWidth: 1000
-      }}
-    >
-      <div css={{marginTop: 5, marginBottom: 10, color: colors.blueDark}}>Currently Available</div>
-      {fishData.filter(({northernMonths}) => isAvailable(northernMonths)).map((f) => (
-        <FishItem key={f.name} fish={f} />
-      ))}
-      <div css={{marginTop: 10, marginBottom: 5, color: colors.blueDark}}>All</div>
-      {fishData.map((f) => (
-        <FishItem key={f.name} fish={f} />
-      ))}
-    </div>
+      <CollectionHeaderBar />
+      <div css={styles.container}>
+        <MonthBar active={month} onChange={setMonth} />
+        <div css={styles.header}>Exclusively available in {MONTHS[month]}</div>
+        {fishData
+          .filter(({ northernMonths }) => !isAlwaysAvailable(northernMonths) && isAvailable(northernMonths, month))
+          .map(f => (
+            <FishItem key={f.name} fish={f} />
+          ))}
+        <div css={styles.header}>Always available</div>
+        {fishData
+          .filter(({ northernMonths }) => isAlwaysAvailable(northernMonths))
+          .map(f => (
+            <FishItem key={f.name} fish={f} />
+          ))}
+        <div css={styles.header}>Others</div>
+        {fishData
+          .filter(({ northernMonths }) => !isAlwaysAvailable(northernMonths) && !isAvailable(northernMonths, month))
+          .map(f => (
+            <FishItem key={f.name} fish={f} />
+          ))}
+      </div>
     </>
   );
-}
-
-function FishItem ({fish: f}: any) {
-  return (
-    <a key={f.name} href={f.wikiUrl} css={{textDecoration: 'none', display: 'inline-block', padding: 5, margin: 5, color: colors.blueLight, backgroundColor: colors.blueDark, borderRadius: '1em'}}>
-    <img src={f.wikiImageUrl} />
-    <div>{f.name}</div>
-    <div>{f.location}</div>
-    <div>{f.time}</div>
-    <div>{sizeMap[f.shadowSize] || '???'} Shadow</div>
-    <div>{f.price} Bells</div>
-  </a>
-  )
-}
-
-const sizeMap = {
-  1: 'Tiny',
-  2: 'Small',
-  3: 'Medium',
-  4: 'Large',
-  5: 'Huge',
-  6: 'Massive'
 }

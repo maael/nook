@@ -1,1 +1,5 @@
-export const LocalstorageKey = 'nook:test';
+enum LocalStorageKeys {
+  SELECTED_MONTH = 'nook:selected-month'
+}
+
+export default LocalStorageKeys;
