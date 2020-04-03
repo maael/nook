@@ -16,7 +16,7 @@ const styles = {
     margin: "0px auto",
     textAlign: "center",
     padding: 10,
-    maxWidth: 1000
+    maxWidth: 1200
   },
   header: {
     marginTop: 10,

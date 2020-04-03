@@ -53,9 +53,9 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           display: "block",
           width: "100%"
         }}
-        url="/exchange"
+        url="/collections"
       >
-        Temtem Exchange
+        Collections
       </NavItem>
       <NavItem
         style={{
@@ -63,9 +63,9 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           display: "block",
           width: "100%"
         }}
-        url={jwt ? `${getUserProfileLink(jwt)}/tempedia` : "/tempedia"}
+        url='/custom-designs'
       >
-        Personal Tempedia
+        Custom Designs
       </NavItem>
       <NavItem
         style={{
@@ -73,19 +73,9 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           display: "block",
           width: "100%"
         }}
-        url="/quest-tracker"
+        url="/items"
       >
-        Quest Tracker
-      </NavItem>
-      <NavItem
-        style={{
-          padding: "20px 10px 10px 10px",
-          display: "block",
-          width: "100%"
-        }}
-        url="/encounter-tracker"
-      >
-        Encounter Tracker
+        Items
       </NavItem>
       <NavItem
         style={{

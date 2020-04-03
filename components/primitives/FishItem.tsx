@@ -1,27 +1,20 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import {fishSizeMap} from '../../util/collections';
 import { colors } from "../../util/theme";
 
 const styles = {
   fishItem: {
     textDecoration: "none",
     display: "inline-block",
-    padding: 5,
+    padding: 10,
     margin: 5,
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
-    borderRadius: "1em"
+    borderRadius: "1em",
+    width: 150
   }
 } as const;
-
-const sizeMap = {
-  1: "Tiny",
-  2: "Small",
-  3: "Medium",
-  4: "Large",
-  5: "Huge",
-  6: "Massive"
-};
 
 export default function FishItem({ fish: f }: any) {
   return (
@@ -30,7 +23,7 @@ export default function FishItem({ fish: f }: any) {
       <div>{f.name}</div>
       <div>{f.location}</div>
       <div>{f.time}</div>
-      <div>{sizeMap[f.shadowSize] || "???"} Shadow</div>
+      <div>{fishSizeMap[f.shadowSize] || "???"} Shadow</div>
       <div>{f.price} Bells</div>
     </a>
   );
