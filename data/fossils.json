@@ -1,1 +1,527 @@
-[]
+[
+  {
+    "name": "Acanthostega",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Acanthostega",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1b/Acanthostega_%28new_horizons%29.png/revision/latest/scale-to-width-down/72?cb=20200330215542",
+    "sellPrice": 2000,
+    "type": "standalone"
+  },
+  {
+    "name": "Amber",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Amber",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2e/Amber_%28new_leaf%29.jpg/revision/latest?cb=20160902135048",
+    "sellPrice": 1200,
+    "type": "standalone"
+  },
+  {
+    "name": "Ammonite",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ammonite",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/38/Ammonite%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401143321",
+    "sellPrice": 1100,
+    "type": "standalone"
+  },
+  {
+    "name": "Anomalocaris",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Anomalocaris",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f5/NH-Anomalocaris-catalog.png/revision/latest/scale-to-width-down/72?cb=20200328153337",
+    "sellPrice": 2000,
+    "type": "standalone"
+  },
+  {
+    "name": "Archaeopteryx",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Archaeopteryx",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d1/Archaeopteryx%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401143653",
+    "sellPrice": 1300,
+    "type": "standalone"
+  },
+  {
+    "name": "Australopithecus",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Australopithecus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/86/NH-Australopith-catalog-three-quarter.png/revision/latest/scale-to-width-down/72?cb=20200328154317",
+    "sellPrice": 1100,
+    "type": "standalone"
+  },
+  {
+    "name": "Coprolite",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Coprolite",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/33/Coprolite_%28new_leaf%29.jpg/revision/latest?cb=20160902135052",
+    "sellPrice": 1100,
+    "type": "standalone"
+  },
+  {
+    "name": "Dinosaur Track",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dinosaur_Track",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/ce/Dinosaur_track_%28new_leaf%29.jpg/revision/latest?cb=20160902135053",
+    "sellPrice": 1000,
+    "type": "standalone"
+  },
+  {
+    "name": "Dunkleosteus",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dunkleosteus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7a/NH-Dunkleosteus-catalog.png/revision/latest/scale-to-width-down/72?cb=20200328151023",
+    "sellPrice": 3500,
+    "type": "standalone"
+  },
+  {
+    "name": "Eusthenopteron",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Eusthenopteron",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/37/NH-Eusthenopteron-catalog.png/revision/latest/scale-to-width-down/72?cb=20200328152814",
+    "sellPrice": 2000,
+    "type": "standalone"
+  },
+  {
+    "name": "Juramaia",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Juramaia",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/98/NH-Juramaia-catalog.png/revision/latest/scale-to-width-down/72?cb=20200328152251",
+    "sellPrice": 1000,
+    "type": "standalone"
+  },
+  {
+    "name": "Myllokunmingia",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Myllokunmingia",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ea/Myllokunmingia_%28new_horizons%29.png/revision/latest/scale-to-width-down/72?cb=20200402203054",
+    "sellPrice": 1500,
+    "type": "standalone"
+  },
+  {
+    "name": "Shark-Tooth Pattern",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Shark-tooth_pattern",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3d/NH-Shark-tooth_pattern-catalog.png/revision/latest/scale-to-width-down/72?cb=20200328154449",
+    "sellPrice": 1000,
+    "type": "standalone"
+  },
+  {
+    "name": "Trilobite",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Trilobite",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9a/Trilobite_%28new_leaf%29.jpg/revision/latest?cb=20160904134156",
+    "sellPrice": 1300,
+    "type": "standalone"
+  },
+  {
+    "name": "Ankylo Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ankylosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5d/Ankylo_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401143820",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Ankylo Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ankylosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/af/Ankylo_torso_%28new_leaf%29.jpg/revision/latest?cb=20160902135049",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Ankylo Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ankylosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2c/Ankylo_tail_%28new_leaf%29.jpg/revision/latest/scale-to-width-down/72?cb=20160902135049",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Archelon Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Archelon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2b/Archelon_skull_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200330221117",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Archelon Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Archelon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/92/Archelon_tail_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200330222418",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Brachio Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Brachiosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bc/Brachio_skull_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331150057",
+    "sellPrice": 6000,
+    "type": "multipart"
+  },
+  {
+    "name": "Brachio Chest",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Brachiosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fe/Brachio_chest_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331153903",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "Brachio Pelvis",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Brachiosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9c/Brachio_Pelvis%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401143917",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Brachio Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Brachiosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/df/Brachio_tail_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331154341",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "Deinony Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Deinonychus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4b/Deinony_torso_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331155211",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Deinony Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Deinonychus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fb/Deinony_tail_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331154706",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Dimetrodon Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dimetrodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a4/Dimetrodon_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401143957",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "Dimetrodon Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dimetrodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/98/Dimetrodon_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144025",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Dimetrodon Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dimetrodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f5/Dimetrodon_tail_%28new_leaf%29.jpg/revision/latest?cb=20160902135052",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f1/Diplo_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144257",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Neck",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9a/Diplo_neck_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331155624",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Chest",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6e/Diplo_chest_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331161603",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Pelvis",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/91/Diplo_Pelvis%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144221",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/69/Diplo_tail_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331155420",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Diplo Tail Tip",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Diplodocus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c5/Diplo_tail_tip_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331162343",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Iguanodon Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Iguanodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5c/Iguanodon_skull_%28new_leaf%29.jpg/revision/latest?cb=20160904130548",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Iguanodon Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Iguanodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1c/Iguanodon_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144351",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Iguanodon Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Iguanodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/00/Iguanodon_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904130548",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Mammoth Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Mammoth",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c4/Mammoth_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144646",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Mammoth Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Mammoth",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2f/Mammoth_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144715",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Megacero Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Megacerops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c0/Megacero_skull_%28new_leaf%29.jpg/revision/latest?cb=20160904130549",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Megacero Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Megacerops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/aa/Megacero_torso_%28new_leaf%29.jpg/revision/latest?cb=20160904130550",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Megacero Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Megacerops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/90/Megacero_Tail%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401144800",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Megalo Left Side",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Megaloceros",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/52/Megalo_left_side.png/revision/latest/scale-to-width-down/72?cb=20200402212230",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Megalo Right Side",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Megaloceros",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/67/NH-Megalo-right-side.jpg/revision/latest/scale-to-width-down/72?cb=20200402223050",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "Ophthalmo Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ophthalmosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/af/Ophthalmo_skull.jpg/revision/latest/scale-to-width-down/72?cb=20200331162142",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Ophthalmo Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ophthalmosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/75/Ophthalmo_torso.jpg/revision/latest/scale-to-width-down/72?cb=20200331161952",
+    "sellPrice": 2000,
+    "type": "multipart"
+  },
+  {
+    "name": "Pachy Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pachycephalosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/cb/Pachy_skull_%28new_leaf%29.jpg/revision/latest/scale-to-width-down/72?cb=20160904130550",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Pachy Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pachycephalosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/40/Pachy_torso_%28new_leaf%29.jpg/revision/latest?cb=20160904130551",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Pachy Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pachycephalosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2f/Pachysaurus_Tail%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401145950",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Parasaur Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Parasaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0d/Parasaur_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401145738",
+    "sellPrice": 3500,
+    "type": "multipart"
+  },
+  {
+    "name": "Parasaur Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Parasaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bc/Parasaur_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150057",
+    "sellPrice": 3000,
+    "type": "multipart"
+  },
+  {
+    "name": "Parasaur Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Parasaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/68/Parasaur_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904130552",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Plesio Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Plesiosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/85/Plesio_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150300",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Plesio Neck",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Plesiosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/90/Plesio_neck_%28new_leaf%29.jpg/revision/latest?cb=20160904130553",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Plesio Body",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Plesiosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b5/Plesio_Body%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401165037",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Right Ptera Wing",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pteranodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6e/Ptera_right_wing_%28new_leaf%29.jpg/revision/latest/scale-to-width-down/72?cb=20160904134104",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Ptera Body",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pteranodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/29/Ptera_Body%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150455",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Left Ptera Wing",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pteranodon",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d7/Ptera_left_wing_%28new_leaf%29.jpg/revision/latest/scale-to-width-down/72?cb=20160904134104",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Right Quetzal Wing",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Quetzalcoatlus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c9/Right_quetzal_wing_%28new_horizons%29.png/revision/latest/scale-to-width-down/72?cb=20200402204122",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Quetzal Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Quetzalcoatlus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/92/Quetzal_torso_%28new_horizons%29.png/revision/latest/scale-to-width-down/72?cb=20200402204124",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Left Quetzal Wing",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Quetzalcoatlus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c0/Left_quetzal_wing_%28new_horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200331162613",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Sabertooth Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Sabertooth_tiger",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e7/Sabertooth_skull_%28new_leaf%29.jpg/revision/latest?cb=20160904134106",
+    "sellPrice": 2500,
+    "type": "multipart"
+  },
+  {
+    "name": "Sabertooth Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Sabertooth_tiger",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/89/Sabertooth_Tail%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150551",
+    "sellPrice": 2000,
+    "type": "multipart"
+  },
+  {
+    "name": "Spino Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Spinosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/53/Spino_skull_%28new_leaf%29.jpg/revision/latest?cb=20160904134107",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Spino Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Spinosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/58/Spino_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150631",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Spino Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Spinosaurus",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3d/Spino_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904134107",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Stego Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Stegosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4d/Stego_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150715",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Stego Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Stegosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a5/Stego_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150746",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "Stego Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Stegosaur",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3a/Stego_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904134108",
+    "sellPrice": 4000,
+    "type": "multipart"
+  },
+  {
+    "name": "Tricera Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Triceratops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3d/Tricera_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150831",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "Tricera Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Triceratops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fb/Tricera_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150855",
+    "sellPrice": 5000,
+    "type": "multipart"
+  },
+  {
+    "name": "Tricera Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Triceratops",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d2/Tricera_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904134156",
+    "sellPrice": 4500,
+    "type": "multipart"
+  },
+  {
+    "name": "T. Rex Skull",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Tyrannosaurus_rex",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/64/T._Rex_Skull%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401150929",
+    "sellPrice": 6000,
+    "type": "multipart"
+  },
+  {
+    "name": "T. Rex Torso",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Tyrannosaurus_rex",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/32/T._Rex_Torso%28New_Horizons%29.jpg/revision/latest/scale-to-width-down/72?cb=20200401151007",
+    "sellPrice": 5500,
+    "type": "multipart"
+  },
+  {
+    "name": "T. Rex Tail",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Tyrannosaurus_rex",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/eb/T_rex_tail_%28new_leaf%29.jpg/revision/latest?cb=20160904134155",
+    "sellPrice": 5000,
+    "type": "multipart"
+  }
+]

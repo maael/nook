@@ -1,6 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import FossilItem from "../../components/primitives/FossilItem";
+
+const fossilData = require("../../data/fossils.json");
 
 export default function Collections() {
   return (
@@ -14,7 +17,14 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
-        Hey
+        {fossilData.map(f => (
+          <FossilItem
+            key={f.name}
+            fossil={f}
+            onClick={() => undefined}
+            inCollection={false}
+          />
+        ))}
       </div>
     </>
   );

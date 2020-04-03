@@ -39,7 +39,7 @@ export function getTableRows(
               .attr("href");
             const cell: TableCell = {
               text,
-              number: parseInt(text, 10),
+              number: parseInt(text.replace(/,/g, ""), 10),
               src:
                 $(td)
                   .find("img")
