@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { colors } from "@maael/temtem-theme";
+import { colors } from "../../util/theme";
 import NavItem from "./NavItem";
-import useJWT from "../hooks/useJWT";
 
 export default function OverlayMenu({ onClose }: { onClose: () => void }) {
   const [first, setFirst] = useState<boolean>();
-  const jwt = useJWT();
   const router = useRouter();
   useEffect(() => {
     if (first) {
@@ -24,7 +22,7 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
         bottom: 0,
         left: 0,
         right: 0,
-        background: colors.uiDark,
+        background: colors.blueDark,
         zIndex: 99,
         paddingTop: 50
       }}
@@ -33,7 +31,7 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
         onClick={() => onClose()}
         style={{ position: "absolute", top: 10, left: 5 }}
       >
-        <IoIosCloseCircleOutline color={colors.uiBlueFaded} size={50} />
+        <IoIosCloseCircleOutline color={colors.blueLight} size={50} />
       </div>
       <NavItem
         style={{
