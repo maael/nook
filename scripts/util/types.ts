@@ -1,6 +1,6 @@
 export enum Hemisphere {
-  Northern = 'Northern Hemisphere',
-  Southern = ' Southern Hemisphere'
+  Northern = "Northern Hemisphere",
+  Southern = " Southern Hemisphere"
 }
 
 export interface TableCell {
@@ -8,4 +8,6 @@ export interface TableCell {
   number: number;
   src?: string;
   href?: string;
+  alt?: string;
+  multiLineText: string[];
 }

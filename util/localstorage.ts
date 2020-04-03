@@ -7,7 +7,8 @@ enum LocalStorageKeys {
   FISH_COLLECTION = "nook:fish-collection",
   SELECTED_BUGS_LOCATION = "nook:selected-bugs-location",
   BUGS_SEARCH = "nook:bugs-search",
-  BUGS_COLLECTION = "nook:bugs-collection"
+  BUGS_COLLECTION = "nook:bugs-collection",
+  DIY_SEARCH = "nook:diy-search"
 }
 
 export default LocalStorageKeys;
