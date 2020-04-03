@@ -8,7 +8,8 @@ const styles = {
     margin: 5,
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
-    borderRadius: "1em"
+    borderRadius: "1em",
+    width: 175
   }
 } as const;
 
