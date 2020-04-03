@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import Fuse from "fuse.js";
-import BugItem from "../../components/primitives/BugItem";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import LocationSelect from "../../components/primitives/LocationSelect";
@@ -16,6 +16,10 @@ import {
   isAlwaysAvailable
 } from "../../util/collections";
 import { colors, styles as generalStyles } from "../../util/theme";
+
+const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
+  ssr: false
+});
 
 const bugsData = require("../../data/bugs.json");
 

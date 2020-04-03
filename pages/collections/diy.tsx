@@ -1,12 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
-import RecipeItem from "../../components/primitives/RecipeItem";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
 import { styles as generalStyles } from "../../util/theme";
+
+const RecipeItem = dynamic(
+  () => import("../../components/primitives/RecipeItem"),
+  { ssr: false }
+);
 
 const recipeData = require("../../data/recipes.json");
 
@@ -29,6 +34,10 @@ export default function Collections() {
     LocalStorageKeys.BUGS_SEARCH,
     ""
   );
+  const [collection, setCollection] = useLocalstorage<string[]>(
+    LocalStorageKeys.DIY_COLLECTION,
+    []
+  );
   const filtered = search
     ? fuse.search(search).map<any>(d => d.item)
     : recipeData;
@@ -50,7 +59,18 @@ export default function Collections() {
           onChange={e => setSearch(e.target.value)}
         />
         {filtered.map(recipe => (
-          <RecipeItem key={recipe.name} recipe={recipe} />
+          <RecipeItem
+            key={recipe.name}
+            recipe={recipe}
+            onClick={() => {
+              setCollection(c =>
+                c.includes(recipe.name)
+                  ? c.filter(i => i !== recipe.name)
+                  : [...c, recipe.name]
+              );
+            }}
+            inCollection={collection.includes(recipe.name)}
+          />
         ))}
       </div>
     </>

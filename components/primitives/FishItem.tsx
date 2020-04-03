@@ -29,7 +29,6 @@ interface Props {
 export default function FishItem({ fish: f, onClick, inCollection }: Props) {
   return (
     <div
-      key={f.name}
       onClick={onClick}
       css={styles.fishItem}
       style={{
