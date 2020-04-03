@@ -3,8 +3,9 @@ import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
-import MonthSelect, { MONTHS } from "../../components/primitives/MonthSelect";
+import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
+import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -140,63 +141,25 @@ export default function Collections() {
         <div>
           {filtered.length} of {fishData.length}
         </div>
-        {month ? (
-          <>
-            <div css={styles.header}>Available in {MONTHS[month]}</div>
-            {filtered
-              .filter(
-                d =>
-                  !isAlwaysAvailable(getMonths(d, hemisphere)) &&
-                  isAvailable(getMonths(d, hemisphere), month)
-              )
-              .map(f => (
-                <FishItem
-                  key={f.name}
-                  fish={f}
-                  onClick={() => {
-                    setCollection(c =>
-                      c.includes(f.name)
-                        ? c.filter(i => i !== f.name)
-                        : [...c, f.name]
-                    );
-                  }}
-                  inCollection={collection.includes(f.name)}
-                />
-              ))}
-            <div css={styles.header}>Always available</div>
-            {filtered
-              .filter(d => isAlwaysAvailable(getMonths(d, hemisphere)))
-              .map(f => (
-                <FishItem
-                  key={f.name}
-                  fish={f}
-                  onClick={() => {
-                    setCollection(c =>
-                      c.includes(f.name)
-                        ? c.filter(i => i !== f.name)
-                        : [...c, f.name]
-                    );
-                  }}
-                  inCollection={collection.includes(f.name)}
-                />
-              ))}
-          </>
-        ) : (
-          filtered.map(f => (
+        <FilterableItems
+          month={month}
+          filtered={filtered}
+          hemisphere={hemisphere}
+          generateItem={data => (
             <FishItem
-              key={f.name}
-              fish={f}
+              key={data.name}
+              fish={data}
               onClick={() => {
                 setCollection(c =>
-                  c.includes(f.name)
-                    ? c.filter(i => i !== f.name)
-                    : [...c, f.name]
+                  c.includes(data.name)
+                    ? c.filter(i => i !== data.name)
+                    : [...c, data.name]
                 );
               }}
-              inCollection={collection.includes(f.name)}
+              inCollection={collection.includes(data.name)}
             />
-          ))
-        )}
+          )}
+        />
       </div>
     </>
   );
