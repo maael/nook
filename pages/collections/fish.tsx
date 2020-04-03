@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import MonthSelect, { MONTHS } from "../../components/primitives/MonthSelect";
+import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -62,12 +63,18 @@ interface Filter {
   sizes: string[];
 }
 
-function applyFilter(data: any[], filter: Filter) {
+function getMonths(d: any, hemisphere: string) {
+  return hemisphere === "Northern Hemisphere"
+    ? d.northernMonths
+    : d.southernMonths;
+}
+
+function applyFilter(data: any[], hemisphere: string, filter: Filter) {
   return data
     .filter(d => {
       return filter.month
-        ? isAlwaysAvailable(d.northernMonths) ||
-            isAvailable(d.northernMonths, filter.month)
+        ? isAlwaysAvailable(getMonths(d, hemisphere)) ||
+            isAvailable(getMonths(d, hemisphere), filter.month)
         : true;
     })
     .filter(d => {
@@ -99,18 +106,24 @@ export default function Collections() {
     LocalStorageKeys.FISH_SEARCH,
     ""
   );
+  const [hemisphere, setHemisphere] = useLocalstorage<string>(
+    LocalStorageKeys.SELECTED_HEMISPHERE,
+    "Northern Hemisphere"
+  );
   const [collection, setCollection] = useLocalstorage<string[]>(
     LocalStorageKeys.FISH_COLLECTION,
     []
   );
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : fishData,
+    hemisphere,
     { month, locations, sizes }
   );
   return (
     <>
       <CollectionHeaderBar />
       <div css={styles.container}>
+        <HemisphereSelect value={hemisphere} onChange={setHemisphere} />
         <MonthSelect value={month} onChange={setMonth} />
         <LocationSelect
           data={fishData}
@@ -132,9 +145,9 @@ export default function Collections() {
             <div css={styles.header}>Available in {MONTHS[month]}</div>
             {filtered
               .filter(
-                ({ northernMonths }) =>
-                  !isAlwaysAvailable(northernMonths) &&
-                  isAvailable(northernMonths, month)
+                d =>
+                  !isAlwaysAvailable(getMonths(d, hemisphere)) &&
+                  isAvailable(getMonths(d, hemisphere), month)
               )
               .map(f => (
                 <FishItem
@@ -152,7 +165,7 @@ export default function Collections() {
               ))}
             <div css={styles.header}>Always available</div>
             {filtered
-              .filter(({ northernMonths }) => isAlwaysAvailable(northernMonths))
+              .filter(d => isAlwaysAvailable(getMonths(d, hemisphere)))
               .map(f => (
                 <FishItem
                   key={f.name}
