@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import {fishSizeMap} from '../../util/collections';
+import { fishSizeMap } from "../../util/collections";
 import { colors } from "../../util/theme";
 
 const styles = {
@@ -12,19 +12,37 @@ const styles = {
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
     borderRadius: "1em",
-    width: 150
+    width: 150,
+    cursor: "pointer"
+  },
+  collected: {
+    backgroundColor: "red"
   }
 } as const;
 
-export default function FishItem({ fish: f }: any) {
+interface Props {
+  fish: any;
+  onClick: () => void;
+  inCollection: boolean;
+}
+
+export default function FishItem({ fish: f, onClick, inCollection }: Props) {
   return (
-    <a key={f.name} href={f.wikiUrl} css={styles.fishItem}>
+    <div
+      key={f.name}
+      onClick={onClick}
+      css={styles.fishItem}
+      style={{
+        color: inCollection ? colors.blueDark : colors.blueLight,
+        backgroundColor: inCollection ? colors.blueLight : colors.blueDark
+      }}
+    >
       <img src={f.wikiImageUrl} />
       <div>{f.name}</div>
       <div>{f.location}</div>
       <div>{f.time}</div>
       <div>{fishSizeMap[f.shadowSize] || "???"} Shadow</div>
       <div>{f.price} Bells</div>
-    </a>
+    </div>
   );
 }

@@ -97,6 +97,10 @@ export default function Collections() {
     LocalStorageKeys.FISH_SEARCH,
     ""
   );
+  const [collection, setCollection] = useLocalstorage<string[]>(
+    LocalStorageKeys.FISH_COLLECTION,
+    []
+  );
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : fishData,
     { month, locations, sizes }
@@ -131,17 +135,52 @@ export default function Collections() {
                   isAvailable(northernMonths, month)
               )
               .map(f => (
-                <FishItem key={f.name} fish={f} />
+                <FishItem
+                  key={f.name}
+                  fish={f}
+                  onClick={() => {
+                    setCollection(c =>
+                      c.includes(f.name)
+                        ? c.filter(i => i !== f.name)
+                        : [...c, f.name]
+                    );
+                  }}
+                  inCollection={collection.includes(f.name)}
+                />
               ))}
             <div css={styles.header}>Always available</div>
             {filtered
               .filter(({ northernMonths }) => isAlwaysAvailable(northernMonths))
               .map(f => (
-                <FishItem key={f.name} fish={f} />
+                <FishItem
+                  key={f.name}
+                  fish={f}
+                  onClick={() => {
+                    setCollection(c =>
+                      c.includes(f.name)
+                        ? c.filter(i => i !== f.name)
+                        : [...c, f.name]
+                    );
+                  }}
+                  inCollection={collection.includes(f.name)}
+                />
               ))}
           </>
         ) : (
-          filtered.map(f => <FishItem key={f.name} fish={f} />)
+          filtered.map(f => (
+            <FishItem
+              key={f.name}
+              fish={f}
+              onClick={() => {
+                setCollection(c =>
+                  c.includes(f.name)
+                    ? c.filter(i => i !== f.name)
+                    : [...c, f.name]
+                );
+              }}
+              inCollection={collection.includes(f.name)}
+            />
+          ))
         )}
       </div>
     </>
