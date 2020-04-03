@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import MonthSelect, { MONTHS } from "../../components/primitives/MonthSelect";
-import FishItem from "../../components/primitives/FishItem";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -15,6 +14,9 @@ import {
   isAlwaysAvailable
 } from "../../util/collections";
 
+const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
+  ssr: false
+});
 const LocationSelect = dynamic(
   () => import("../../components/primitives/LocationSelect"),
   { ssr: false }
