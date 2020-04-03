@@ -5,10 +5,7 @@ import TemtemButton from "@maael/temtem-button-component";
 import { colors } from "@maael/temtem-theme";
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
-import {
-  getUserName,
-  getUserIcon
-} from "../../../../util/user";
+import { getUserName, getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
 
 export default function UserPage({ user = {} as any }: { user: User }) {
@@ -90,7 +87,7 @@ export default function UserPage({ user = {} as any }: { user: User }) {
               margin: "0px 5px 10px",
               position: "relative"
             }}
-            bgColor={'#7FCE2A'}
+            bgColor={"#7FCE2A"}
           >
             <>"{user.animalCrossingTag}" Maker ID</>
           </TemtemButton>

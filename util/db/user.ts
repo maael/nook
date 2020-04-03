@@ -1,9 +1,6 @@
 import client from "./client";
 import { embellishCreate, embellishUpdate } from "./util";
-import {
-  User,
-  RawCreateInput
-} from "../../types/db";
+import { User, RawCreateInput } from "../../types/db";
 
 const userFields = `
   _id
@@ -34,7 +31,7 @@ export async function createUser(
   `;
 
   const user = embellishCreate({
-    ...variables,
+    ...variables
   });
 
   return (await client.request(query, { user })).createUser;
@@ -98,10 +95,7 @@ export async function getUserByRedditName(redditName: string): Promise<User> {
   return (await client.request(query, { redditName })).getUserByRedditName;
 }
 
-export async function updateUser(
-  userId: string,
-  rawData: Partial<User>
-) {
+export async function updateUser(userId: string, rawData: Partial<User>) {
   const query = `
     mutation UpdateUser ($userId: ID!, $user: UserInput!) {
       updateUser(id:$userId,data:$user) {

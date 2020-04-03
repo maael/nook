@@ -1,5 +1,5 @@
 import cookies from "../../util/cookies";
-import {COOKIE_NAME} from '../../util/constants';
+import { COOKIE_NAME } from "../../util/constants";
 
 export default cookies(function(_req, res) {
   res.cookie(COOKIE_NAME, "logged-out", {

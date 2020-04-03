@@ -15,7 +15,7 @@ export const fishSizeMap = {
   4: "Large",
   5: "Huge",
   6: "Massive",
-  '4 (Fin)': 'Large (Fin)',
-  '6 (Fin)': 'Massive (Fin)',
-  'Narrow': 'Narrow'
+  "4 (Fin)": "Large (Fin)",
+  "6 (Fin)": "Massive (Fin)",
+  Narrow: "Narrow"
 };

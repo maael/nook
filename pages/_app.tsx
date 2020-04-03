@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { Global, jsx, css } from "@emotion/core";
-import emotionReset from 'emotion-reset';
+import emotionReset from "emotion-reset";
 import { TiHomeOutline } from "react-icons/ti";
-import {IoIosMenu} from 'react-icons/io';
+import { IoIosMenu } from "react-icons/io";
 import { FaReddit, FaDiscord } from "react-icons/fa";
 import { colors, fonts } from "@maael/temtem-theme";
 import NavItem from "../components/primitives/NavItem";
@@ -13,7 +13,7 @@ import AuthBlock from "../components/primitives/AuthBlock";
 import HideOnMobile from "../components/primitives/HideOnMobile";
 import HideOnDesktop from "../components/primitives/HideOnDesktop";
 import OverlayMenu from "../components/primitives/OverlayMenu";
-import {colors as nookTheme} from '../util/theme';
+import { colors as nookTheme } from "../util/theme";
 
 export default function App({ Component, pageProps }) {
   const [overlay, setOverlay] = useState(false);
@@ -71,9 +71,13 @@ export default function App({ Component, pageProps }) {
           justifyContent: "center"
         }}
       >
-        <div css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}></div>
+        <div
+          css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}
+        ></div>
         <div css={{ padding: "0px 5px" }}>Nook Services</div>
-        <div css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}></div>
+        <div
+          css={{ flex: 1, height: 1, backgroundColor: nookTheme.blueLight }}
+        ></div>
       </div>
       <HeaderBar
         style={{
@@ -136,10 +140,10 @@ export default function App({ Component, pageProps }) {
           maael#2482
         </a>
         <div css={{ fontSize: 10 }}>
-          Nook Services is not endorsed by Nintendo and does not reflect the views
-          or opinions of Nintendo or anyone officially involved in producing or
-          managing Animal Crossing. Animal Crossing is a trademark or registered
-          trademark of Nintendo.
+          Nook Services is not endorsed by Nintendo and does not reflect the
+          views or opinions of Nintendo or anyone officially involved in
+          producing or managing Animal Crossing. Animal Crossing is a trademark
+          or registered trademark of Nintendo.
         </div>
       </div>
     </div>
