@@ -4,7 +4,6 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { colors } from "@maael/temtem-theme";
 import NavItem from "./NavItem";
 import useJWT from "../hooks/useJWT";
-import { getUserProfileLink } from "../../util/user";
 
 export default function OverlayMenu({ onClose }: { onClose: () => void }) {
   const [first, setFirst] = useState<boolean>();
@@ -63,7 +62,7 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           display: "block",
           width: "100%"
         }}
-        url='/custom-designs'
+        url="/custom-designs"
       >
         Custom Designs
       </NavItem>
