@@ -13,18 +13,15 @@ import { colors, styles as generalStyles } from "../../util/theme";
 import {
   CURRENT_MONTH,
   isAvailable,
-  isAlwaysAvailable
+  isAlwaysAvailable,
+  fishSizeMap
 } from "../../util/collections";
 
 const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
   ssr: false
 });
-const LocationSelect = dynamic(
-  () => import("../../components/primitives/LocationSelect"),
-  { ssr: false }
-);
-const FishSizeSelect = dynamic(
-  () => import("../../components/primitives/FishSizeSelect"),
+const DataFieldSelect = dynamic(
+  () => import("../../components/primitives/DataFieldSelect"),
   { ssr: false }
 );
 
@@ -126,12 +123,23 @@ export default function Collections() {
       <div css={styles.container}>
         <HemisphereSelect value={hemisphere} onChange={setHemisphere} />
         <MonthSelect value={month} onChange={setMonth} />
-        <LocationSelect
-          data={fishData}
-          values={locations}
+        <DataFieldSelect
+          placeholder="Location..."
+          isMulti
+          value={locations}
           onChange={setLocations}
+          data={fishData}
+          field="location"
         />
-        <FishSizeSelect data={fishData} values={sizes} onChange={setSizes} />
+        <DataFieldSelect
+          placeholder="Shadow size..."
+          isMulti
+          value={sizes}
+          onChange={setSizes}
+          data={fishData}
+          field="shadowSize"
+          labelMap={fishSizeMap}
+        />
         <input
           css={generalStyles.input}
           placeholder="Search..."

@@ -3,11 +3,12 @@ import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
-import RecipeObtainedFromSelect from "../../components/primitives/RecipeObtainedFromSelect";
+import DataFieldSelect from "../../components/primitives/DataFieldSelect";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
 import { styles as generalStyles } from "../../util/theme";
+import { recipeTypeMap } from "../../util/collections";
 
 const RecipeItem = dynamic(
   () => import("../../components/primitives/RecipeItem"),
@@ -43,14 +44,20 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_DIY_LOCATION,
     []
   );
+  const [types, setTypes] = useLocalstorage<string[]>(
+    LocalStorageKeys.SELECTED_DIY_TYPE,
+    []
+  );
   const filtered = (search
     ? fuse.search(search).map<any>(d => d.item)
     : recipeData
-  ).filter(d =>
-    obtainedFrom.length
-      ? obtainedFrom.some(o => d.obtainedFrom.includes(o))
-      : true
-  );
+  )
+    .filter(d =>
+      obtainedFrom.length
+        ? obtainedFrom.some(o => d.obtainedFrom.includes(o))
+        : true
+    )
+    .filter(d => (types.length ? types.includes(d.type) : true));
   return (
     <>
       <CollectionHeaderBar />
@@ -62,10 +69,24 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
-        <RecipeObtainedFromSelect
+        <DataFieldSelect
+          placeholder="Obtained from..."
+          isMulti
           data={recipeData}
-          values={obtainedFrom}
+          field="obtainedFrom"
+          allowUnselect
+          value={obtainedFrom}
           onChange={setObtainedFrom}
+        />
+        <DataFieldSelect
+          placeholder="Type..."
+          isMulti
+          data={recipeData}
+          field="type"
+          allowUnselect
+          value={types}
+          onChange={setTypes}
+          labelMap={recipeTypeMap}
         />
         <input
           css={generalStyles.input}

@@ -19,3 +19,13 @@ export const fishSizeMap = {
   "6 (Fin)": "Massive (Fin)",
   Narrow: "Narrow"
 };
+
+export const recipeTypeMap = {
+  tool: "Tool",
+  houseware: "Houseware",
+  misc: "Misc",
+  wallMounted: "Wall Mounted",
+  wallpaperFlooringRug: "Wallpaper/Flooring/Rug",
+  equipment: "Equipment",
+  other: "Other"
+};

@@ -5,7 +5,6 @@ import CollectionHeaderBar from "../../components/compositions/CollectionHeaderB
 import Fuse from "fuse.js";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
-import LocationSelect from "../../components/primitives/LocationSelect";
 import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
@@ -20,6 +19,13 @@ import { colors, styles as generalStyles } from "../../util/theme";
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
   ssr: false
 });
+
+const DataFieldSelect = dynamic(
+  () => import("../../components/primitives/DataFieldSelect"),
+  {
+    ssr: false
+  }
+);
 
 const bugsData = require("../../data/bugs.json");
 
@@ -109,10 +115,13 @@ export default function Collections() {
       <div css={styles.container}>
         <HemisphereSelect value={hemisphere} onChange={setHemisphere} />
         <MonthSelect value={month} onChange={setMonth} />
-        <LocationSelect
-          data={bugsData}
-          values={locations}
+        <DataFieldSelect
+          placeholder="Location..."
+          isMulti
+          value={locations}
           onChange={setLocations}
+          data={bugsData}
+          field="location"
         />
         <input
           css={generalStyles.input}
