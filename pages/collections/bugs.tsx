@@ -2,7 +2,6 @@
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
-import Fuse from "fuse.js";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import FilterableItems from "../../components/compositions/FilterableItems";
@@ -15,6 +14,7 @@ import {
   isAlwaysAvailable
 } from "../../util/collections";
 import { colors, styles as generalStyles } from "../../util/theme";
+import createFuse from "../../util/fuse";
 
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
   ssr: false
@@ -43,20 +43,7 @@ const styles = {
   }
 } as const;
 
-const fuse = new Fuse<any[], {}>(bugsData, {
-  isCaseSensitive: false,
-  findAllMatches: false,
-  includeMatches: false,
-  includeScore: false,
-  useExtendedSearch: false,
-  minMatchCharLength: 1,
-  shouldSort: true,
-  threshold: 0.2,
-  location: 0,
-  distance: 100,
-  keys: ["name"]
-});
-
+const fuse = createFuse(bugsData);
 interface Filter {
   month?: number;
   locations: string[];

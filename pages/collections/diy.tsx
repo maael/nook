@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
-import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import DataFieldSelect from "../../components/primitives/DataFieldSelect";
 import useLocalstorage, {
@@ -9,6 +8,7 @@ import useLocalstorage, {
 } from "../../components/hooks/useLocalstorage";
 import { styles as generalStyles } from "../../util/theme";
 import { recipeTypeMap } from "../../util/collections";
+import createFuse from "../../util/fuse";
 
 const RecipeItem = dynamic(
   () => import("../../components/primitives/RecipeItem"),
@@ -17,19 +17,7 @@ const RecipeItem = dynamic(
 
 const recipeData = require("../../data/recipes.json");
 
-const fuse = new Fuse<any[], {}>(recipeData, {
-  isCaseSensitive: false,
-  findAllMatches: false,
-  includeMatches: false,
-  includeScore: false,
-  useExtendedSearch: false,
-  minMatchCharLength: 1,
-  shouldSort: true,
-  threshold: 0.2,
-  location: 0,
-  distance: 100,
-  keys: ["name"]
-});
+const fuse = createFuse(recipeData);
 
 export default function Collections() {
   const [search, setSearch] = useLocalstorage<string>(

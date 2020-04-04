@@ -1,12 +1,12 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
-import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
 import { styles as generalStyles } from "../../util/theme";
+import createFuse from "../../util/fuse";
 
 const fossilData = require("../../data/fossils.json");
 
@@ -17,19 +17,7 @@ const FossilItem = dynamic(
   }
 );
 
-const fuse = new Fuse<any[], {}>(fossilData, {
-  isCaseSensitive: false,
-  findAllMatches: false,
-  includeMatches: false,
-  includeScore: false,
-  useExtendedSearch: false,
-  minMatchCharLength: 1,
-  shouldSort: true,
-  threshold: 0.2,
-  location: 0,
-  distance: 100,
-  keys: ["name"]
-});
+const fuse = createFuse(fossilData);
 
 export default function Collections() {
   const [search, setSearch] = useLocalstorage<string>(
@@ -46,14 +34,7 @@ export default function Collections() {
   return (
     <>
       <CollectionHeaderBar />
-      <div
-        css={{
-          margin: "0px auto",
-          textAlign: "center",
-          padding: 10,
-          maxWidth: 1000
-        }}
-      >
+      <div css={generalStyles.pageWrapper}>
         <input
           css={generalStyles.input}
           placeholder="Search..."

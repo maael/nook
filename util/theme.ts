@@ -89,5 +89,11 @@ export const styles: Record<string, InterpolationWithTheme<any>> = {
       fontSize: 16,
       fontFamily: "Nunito,Arial,sans-serif"
     }
+  },
+  pageWrapper: {
+    margin: "0px auto",
+    textAlign: "center",
+    padding: 10,
+    maxWidth: 1200
   }
 };
