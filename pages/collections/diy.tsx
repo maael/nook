@@ -33,7 +33,7 @@ const fuse = new Fuse<any[], {}>(recipeData, {
 
 export default function Collections() {
   const [search, setSearch] = useLocalstorage<string>(
-    LocalStorageKeys.BUGS_SEARCH,
+    LocalStorageKeys.DIY_SEARCH,
     ""
   );
   const [collection, setCollection] = useLocalstorage<string[]>(
