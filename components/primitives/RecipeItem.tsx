@@ -29,6 +29,10 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       <div>{recipe.name}</div>
       <div>{recipe.sellPrice}</div>
       <div>{recipe.type}</div>
+      <div>
+        Obtained from:{" "}
+        {recipe.obtainedFrom.length ? recipe.obtainedFrom.join(", ") : "???"}
+      </div>
     </div>
   );
 }

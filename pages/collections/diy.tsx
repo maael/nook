@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import Fuse from "fuse.js";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import RecipeObtainedFromSelect from "../../components/primitives/RecipeObtainedFromSelect";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -38,9 +39,18 @@ export default function Collections() {
     LocalStorageKeys.DIY_COLLECTION,
     []
   );
-  const filtered = search
+  const [obtainedFrom, setObtainedFrom] = useLocalstorage<string[]>(
+    LocalStorageKeys.SELECTED_DIY_LOCATION,
+    []
+  );
+  const filtered = (search
     ? fuse.search(search).map<any>(d => d.item)
-    : recipeData;
+    : recipeData
+  ).filter(d =>
+    obtainedFrom.length
+      ? obtainedFrom.some(o => d.obtainedFrom.includes(o))
+      : true
+  );
   return (
     <>
       <CollectionHeaderBar />
@@ -52,15 +62,20 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
+        <RecipeObtainedFromSelect
+          data={recipeData}
+          values={obtainedFrom}
+          onChange={setObtainedFrom}
+        />
         <input
           css={generalStyles.input}
           placeholder="Search..."
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
-        {filtered.map(recipe => (
+        {filtered.map((recipe, i) => (
           <RecipeItem
-            key={recipe.name}
+            key={`${recipe.name}-${i}`}
             recipe={recipe}
             onClick={() => {
               setCollection(c =>
