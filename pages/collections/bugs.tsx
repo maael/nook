@@ -13,7 +13,7 @@ import {
   isAvailable,
   isAlwaysAvailable
 } from "../../util/collections";
-import { colors, styles as generalStyles } from "../../util/theme";
+import { styles as generalStyles } from "../../util/theme";
 import createFuse from "../../util/fuse";
 
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
@@ -28,20 +28,6 @@ const DataFieldSelect = dynamic(
 );
 
 const bugsData = require("../../data/bugs.json");
-
-const styles = {
-  container: {
-    margin: "0px auto",
-    textAlign: "center",
-    padding: 10,
-    maxWidth: 1200
-  },
-  header: {
-    marginTop: 10,
-    marginBottom: 5,
-    color: colors.blueDark
-  }
-} as const;
 
 const fuse = createFuse(bugsData);
 interface Filter {
@@ -99,7 +85,7 @@ export default function Collections() {
   return (
     <>
       <CollectionHeaderBar />
-      <div css={styles.container}>
+      <div css={generalStyles.pageWrapper}>
         <HemisphereSelect value={hemisphere} onChange={setHemisphere} />
         <MonthSelect value={month} onChange={setMonth} />
         <DataFieldSelect

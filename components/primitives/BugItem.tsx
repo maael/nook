@@ -10,7 +10,7 @@ const styles = {
     backgroundColor: colors.blueDark,
     cursor: "pointer",
     borderRadius: "1em",
-    width: 175
+    width: 150
   }
 } as const;
 

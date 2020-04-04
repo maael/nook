@@ -29,20 +29,6 @@ const fishData = require("../../data/fish.json");
 
 const fuse = createFuse(fishData);
 
-const styles = {
-  container: {
-    margin: "0px auto",
-    textAlign: "center",
-    padding: 10,
-    maxWidth: 1200
-  },
-  header: {
-    marginTop: 10,
-    marginBottom: 5,
-    color: colors.blueDark
-  }
-} as const;
-
 interface Filter {
   month?: number;
   locations: string[];
@@ -108,7 +94,7 @@ export default function Collections() {
   return (
     <>
       <CollectionHeaderBar />
-      <div css={styles.container}>
+      <div css={generalStyles.pageWrapper}>
         <HemisphereSelect value={hemisphere} onChange={setHemisphere} />
         <MonthSelect value={month} onChange={setMonth} />
         <DataFieldSelect

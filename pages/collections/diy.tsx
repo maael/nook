@@ -49,14 +49,7 @@ export default function Collections() {
   return (
     <>
       <CollectionHeaderBar />
-      <div
-        css={{
-          margin: "0px auto",
-          textAlign: "center",
-          padding: 10,
-          maxWidth: 1000
-        }}
-      >
+      <div css={generalStyles.pageWrapper}>
         <DataFieldSelect
           placeholder="Obtained from..."
           isMulti

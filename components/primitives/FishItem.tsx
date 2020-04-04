@@ -7,7 +7,7 @@ const styles = {
   fishItem: {
     textDecoration: "none",
     display: "inline-block",
-    padding: 10,
+    padding: 5,
     margin: 5,
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
