@@ -13,9 +13,6 @@ const styles = {
     borderRadius: "1em",
     width: 150,
     cursor: "pointer"
-  },
-  collected: {
-    backgroundColor: "red"
   }
 } as const;
 
