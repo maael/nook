@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { GiSwapBag } from "react-icons/gi";
 import { fishSizeMap } from "../../util/collections";
 import { colors } from "../../util/theme";
 
@@ -38,7 +39,9 @@ export default function FishItem({ fish: f, onClick, inCollection }: Props) {
       <div>{f.location}</div>
       <div>{f.time}</div>
       <div>{fishSizeMap[f.shadowSize] || "???"} Shadow</div>
-      <div>{f.price} Bells</div>
+      <div>
+        {f.price} <GiSwapBag />
+      </div>
     </div>
   );
 }

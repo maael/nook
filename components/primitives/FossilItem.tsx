@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { GiSwapBag } from "react-icons/gi";
 import { colors } from "../../util/theme";
 
 const styles = {
@@ -38,7 +39,9 @@ export default function FossilItem({
     >
       <img src={f.wikiImageUrl} />
       <div>{f.name}</div>
-      <div>{f.sellPrice}</div>
+      <div>
+        {f.sellPrice} <GiSwapBag />
+      </div>
     </div>
   );
 }

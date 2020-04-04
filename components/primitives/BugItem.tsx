@@ -1,3 +1,4 @@
+import { GiSwapBag } from "react-icons/gi";
 import { colors } from "../../util/theme";
 
 const styles = {
@@ -35,7 +36,9 @@ export default function BugItem({ bug: b, onClick, inCollection }: Props) {
       <div>{b.name}</div>
       <div>{b.location}</div>
       <div>{b.time}</div>
-      <div>{b.price} Bells</div>
+      <div>
+        {b.price} <GiSwapBag />
+      </div>
     </div>
   );
 }
