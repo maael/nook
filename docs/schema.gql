@@ -16,10 +16,56 @@ type User @collection(name: "users") {
   deletedAt: Time
 }
 
+type FishCollection @collection(name: "fishCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
+type BugCollection @collection(name: "bugCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
+type FossilCollection @collection(name: "fossilCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
+type RecipeCollection @collection(name: "recipeCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
+type CustomDesign @collection(name: "customDesigns") {
+  userId: ID!
+  user: User! @relation
+  type: String!
+  s3Url: String!
+  code: String!
+  title: String!
+  createdAt: Time!
+  redacted: Boolean!
+  redactedReason: String!
+}
+
 type Query {
   getUsers: [User!]!
   getUserByRedditName(redditName: String): User
   getUserByDiscordName(discordName: String): User
   getUserByDiscordId(discordId: String): User
   getUserByDiscordFullName(discordFullName: String): User
+  getFishCollectionByUser(userId: ID): [FishCollection!]!
+  getBugCollectionByUser(userId: ID): [BugCollection!]!
+  getFossilCollectionByUser(userId: ID): [FossilCollection!]!
+  getRecipeCollectionByUser(userId: ID): [RecipeCollection!]!
+  getCustomDesignByType(type: String, redacted: Boolean): [CustomDesign!]!
+  getCustomDesignByUser(userId: ID, redacted: Boolean): [CustomDesign!]!
 }
