@@ -95,7 +95,6 @@ export default function App({ Component, pageProps }) {
               </NavItem>
               <NavItem url="/collections">Collections</NavItem>
               <NavItem url="/custom-designs">Custom Designs</NavItem>
-              <NavItem url="/items">Items</NavItem>
               <NavItem url="/events">Events</NavItem>
               <NavItem url="/users">Users</NavItem>
             </>

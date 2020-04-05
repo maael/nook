@@ -1,3 +1,9 @@
+import EventsHeaderBar from "../components/compositions/EventsHeaderBar";
+
 export default function Events() {
-  return <div>Events</div>;
+  return (
+    <>
+      <EventsHeaderBar />
+    </>
+  );
 }
