@@ -13,9 +13,11 @@ import AuthBlock from "../components/primitives/AuthBlock";
 import HideOnMobile from "../components/primitives/HideOnMobile";
 import HideOnDesktop from "../components/primitives/HideOnDesktop";
 import OverlayMenu from "../components/primitives/OverlayMenu";
+import useFirstSync from "../components/hooks/useFirstSync";
 import { colors as nookTheme } from "../util/theme";
 
 export default function App({ Component, pageProps }) {
+  useFirstSync();
   const [overlay, setOverlay] = useState(false);
   return (
     <div css={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>

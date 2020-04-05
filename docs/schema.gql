@@ -11,6 +11,7 @@ type User @collection(name: "users") {
   nintendoName: String
   animalCrossingTag: String
   isActive: Boolean!
+  hasHadFirstSync: Boolean
   createdAt: Time!
   updatedAt: Time!
   deletedAt: Time
@@ -63,9 +64,13 @@ type Query {
   getUserByDiscordId(discordId: String): User
   getUserByDiscordFullName(discordFullName: String): User
   getFishCollectionByUser(userId: ID): [FishCollection!]!
+  getFishCollectionByUserAndName(userId: ID, name: String): FishCollection!
   getBugCollectionByUser(userId: ID): [BugCollection!]!
+  getBugCollectionByUserAndName(userId: ID, name: String): BugCollection!
   getFossilCollectionByUser(userId: ID): [FossilCollection!]!
+  getFossilCollectionByUserAndName(userId: ID, name: String): FossilCollection!
   getRecipeCollectionByUser(userId: ID): [RecipeCollection!]!
+  getRecipeCollectionByUserAndName(userId: ID, name: String): RecipeCollection!
   getCustomDesignByType(type: String, redacted: Boolean): [CustomDesign!]!
   getCustomDesignByUser(userId: ID, redacted: Boolean): [CustomDesign!]!
 }

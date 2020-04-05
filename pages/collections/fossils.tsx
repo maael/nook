@@ -5,6 +5,7 @@ import CollectionHeaderBar from "../../components/compositions/CollectionHeaderB
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
+import useSyncedCollection from "../../components/hooks/useSyncedCollection";
 import { styles as generalStyles } from "../../util/theme";
 import createFuse from "../../util/fuse";
 
@@ -31,6 +32,10 @@ export default function Collections() {
   const filtered = search
     ? fuse.search(search).map<any>(d => d.item)
     : fossilData;
+  const handleCollection = useSyncedCollection(
+    LocalStorageKeys.FOSSIL_COLLECTION,
+    setCollection
+  );
   return (
     <>
       <CollectionHeaderBar />
@@ -51,6 +56,7 @@ export default function Collections() {
                   ? c.filter(i => i !== f.name)
                   : [...c, f.name]
               );
+              handleCollection(collection, f.name);
             }}
             inCollection={collection.includes(f.name)}
           />

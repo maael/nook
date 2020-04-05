@@ -8,6 +8,7 @@ import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
+import useSyncedCollection from "../../components/hooks/useSyncedCollection";
 import {
   CURRENT_MONTH,
   isAvailable,
@@ -82,6 +83,10 @@ export default function Collections() {
     hemisphere,
     { month, locations }
   );
+  const handleCollection = useSyncedCollection(
+    LocalStorageKeys.BUGS_COLLECTION,
+    setCollection
+  );
   return (
     <>
       <CollectionHeaderBar />
@@ -116,6 +121,7 @@ export default function Collections() {
                     ? c.filter(i => i !== data.name)
                     : [...c, data.name]
                 );
+                handleCollection(collection, data.name);
               }}
               inCollection={collection.includes(data.name)}
             />

@@ -10,6 +10,8 @@ export interface JWT {
   discordFullName?: string;
   discordIcon?: string;
   nintendoName?: string;
+  animalCrossingTag?: string;
+  hasHadFirstSync?: boolean;
   version: number;
 }
 

@@ -35,6 +35,7 @@ async function setUserCookie(
     | "discordId"
     | "discordDiscriminator"
     | "discordFullName"
+    | "hasHadFirstSync"
   >
 ) {
   const toEncode: JWT = {
@@ -101,6 +102,7 @@ async function getOrCreateUser(
     | "discordId"
     | "discordDiscriminator"
     | "discordFullName"
+    | "hasHadFirstSync"
   >
 > {
   const result = await getUserByDiscordId(identity.id);
@@ -115,7 +117,8 @@ async function getOrCreateUser(
         : `https://cdn.discordapp.com/embed/avatars/${Number(
             identity.discriminator
           ) % 5}.png`,
-      discordFullName: `${identity.username}#${identity.discriminator}`
+      discordFullName: `${identity.username}#${identity.discriminator}`,
+      hasHadFirstSync: !!result.hasHadFirstSync
     };
     await updateUser(result._id, { ...result, ...info });
     return info;
@@ -126,7 +129,8 @@ async function getOrCreateUser(
     discordName,
     discordId,
     discordDiscriminator,
-    discordFullName
+    discordFullName,
+    hasHadFirstSync
   } = await createUser({
     discordIcon: identity.avatar
       ? `https://cdn.discordapp.com/avatars/${identity.id}/${identity.avatar}.png`
@@ -144,6 +148,7 @@ async function getOrCreateUser(
     discordName,
     discordId,
     discordDiscriminator,
-    discordFullName
+    discordFullName,
+    hasHadFirstSync: !!hasHadFirstSync
   };
 }

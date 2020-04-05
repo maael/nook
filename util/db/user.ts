@@ -2,7 +2,7 @@ import client from "./client";
 import { embellishCreate, embellishUpdate } from "./util";
 import { User, RawCreateInput } from "../../types/db";
 
-const userFields = `
+export const userFields = `
   _id
   redditId
   redditName
@@ -15,6 +15,7 @@ const userFields = `
   discordIcon
   nintendoName
   animalCrossingTag
+  hasHadFirstSync
   isActive
   createdAt
 `;
@@ -31,7 +32,8 @@ export async function createUser(
   `;
 
   const user = embellishCreate({
-    ...variables
+    ...variables,
+    hasHadFirstSync: false
   });
 
   return (await client.request(query, { user })).createUser;

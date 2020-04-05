@@ -15,7 +15,8 @@ async function getOrCreateUser(identity: any) {
       redditName: result.redditName,
       redditId: result.redditId,
       redditDarkmode: result.redditDarkmode,
-      redditIcon: result.redditIcon
+      redditIcon: result.redditIcon,
+      hasHadFirstSync: result.hasHadFirstSync
     };
   }
   const parsedIconUrl = url.parse(identity.icon_img);
@@ -24,7 +25,8 @@ async function getOrCreateUser(identity: any) {
     redditName,
     redditId,
     redditDarkmode,
-    redditIcon
+    redditIcon,
+    hasHadFirstSync
   } = await createUser({
     redditDarkmode: identity.pref_nightmode,
     redditIcon: `${parsedIconUrl.protocol}//${parsedIconUrl.host}${parsedIconUrl.pathname}`,
@@ -36,7 +38,8 @@ async function getOrCreateUser(identity: any) {
     redditName,
     redditId,
     redditDarkmode,
-    redditIcon
+    redditIcon,
+    hasHadFirstSync
   };
 }
 
@@ -53,7 +56,8 @@ export default cookies(async function(req, res) {
             redditName,
             redditId,
             redditDarkmode,
-            redditIcon
+            redditIcon,
+            hasHadFirstSync
           } = await getOrCreateUser(identity);
           const toEncode: JWT = {
             _id,
@@ -61,6 +65,7 @@ export default cookies(async function(req, res) {
             redditName: redditName!,
             redditIcon: redditIcon!,
             redditDarkmode: redditDarkmode!,
+            hasHadFirstSync: !!hasHadFirstSync,
             version: JWT_VERSION
           };
           const jwtToken = await jwt.sign(toEncode);

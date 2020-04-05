@@ -6,6 +6,7 @@ import DataFieldSelect from "../../components/primitives/DataFieldSelect";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
+import useSyncedCollection from "../../components/hooks/useSyncedCollection";
 import { styles as generalStyles } from "../../util/theme";
 import { recipeTypeMap } from "../../util/collections";
 import createFuse from "../../util/fuse";
@@ -46,6 +47,10 @@ export default function Collections() {
         : true
     )
     .filter(d => (types.length ? types.includes(d.type) : true));
+  const handleCollection = useSyncedCollection(
+    LocalStorageKeys.DIY_COLLECTION,
+    setCollection
+  );
   return (
     <>
       <CollectionHeaderBar />
@@ -85,6 +90,7 @@ export default function Collections() {
                   ? c.filter(i => i !== recipe.name)
                   : [...c, recipe.name]
               );
+              handleCollection(collection, recipe.name);
             }}
             inCollection={collection.includes(recipe.name)}
           />

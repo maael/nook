@@ -9,7 +9,10 @@ export interface ListRequestParams {
   _cursor?: string;
 }
 
-export type RawCreateInput<T> = Omit<T, "_id" | "isActive" | "createdAt" | "updatedAt">;
+export type RawCreateInput<T> = Omit<
+  T,
+  "_id" | "isActive" | "createdAt" | "updatedAt"
+>;
 
 export interface Entity {
   _id: string;
@@ -28,6 +31,7 @@ export interface User extends Entity {
   discordIcon?: string;
   nintendoName?: string;
   animalCrossingTag?: string;
+  hasHadFirstSync: boolean;
   isActive: boolean;
   createdAt: string;
   updatedAt: string;
