@@ -152,6 +152,8 @@ export default function Collections() {
             <FishItem
               key={data.name}
               fish={data}
+              hemisphere={hemisphere}
+              month={month}
               onClick={() => {
                 setCollection(c =>
                   c.includes(data.name)

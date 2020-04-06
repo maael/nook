@@ -3,7 +3,11 @@ import { jsx } from "@emotion/core";
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar, FaFish } from "react-icons/fa";
-import { fishSizeMap } from "../../util/collections";
+import {
+  fishSizeMap,
+  isDisappearingThisMonth,
+  isNewThisMonth
+} from "../../util/collections";
 import { colors } from "../../util/theme";
 
 const styles = {
@@ -16,7 +20,8 @@ const styles = {
     backgroundColor: colors.blueDark,
     borderRadius: "1em",
     width: 150,
-    cursor: "pointer"
+    cursor: "pointer",
+    position: "relative"
   },
   row: {
     display: "flex",
@@ -35,16 +40,45 @@ const styles = {
   icon: {
     marginLeft: 5,
     marginRight: 5
+  },
+  label: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    padding: 2,
+    borderRadius: "0.3em",
+    fontWeight: "bold",
+    color: colors.blueDark,
+    backgroundColor: colors.blueLight,
+    fontSize: 10
+  },
+  labelInCollection: {
+    color: colors.blueLight,
+    backgroundColor: colors.blueDark
   }
 } as const;
 
 interface Props {
   fish: any;
+  month?: number;
+  hemisphere: string;
   onClick: () => void;
   inCollection: boolean;
 }
 
-export default function FishItem({ fish: f, onClick, inCollection }: Props) {
+export default function FishItem({
+  fish: f,
+  onClick,
+  inCollection,
+  hemisphere,
+  month
+}: Props) {
+  const months =
+    hemisphere === "Northern Hemisphere" ? f.northernMonths : f.southernMonths;
+  const newThisMonth =
+    month !== undefined ? isNewThisMonth(months, month) : false;
+  const disappearingThisMonth =
+    month !== undefined ? isDisappearingThisMonth(months, month) : false;
   return (
     <div
       onClick={onClick}
@@ -72,6 +106,16 @@ export default function FishItem({ fish: f, onClick, inCollection }: Props) {
       <div css={styles.row}>
         <FaStar style={styles.icon} /> {f.rarity}
       </div>
+      {newThisMonth ? (
+        <div css={[styles.label, inCollection && styles.labelInCollection]}>
+          New
+        </div>
+      ) : null}
+      {disappearingThisMonth ? (
+        <div css={[styles.label, inCollection && styles.labelInCollection]}>
+          Going
+        </div>
+      ) : null}
     </div>
   );
 }

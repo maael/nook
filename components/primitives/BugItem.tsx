@@ -1,6 +1,10 @@
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar } from "react-icons/fa";
+import {
+  isDisappearingThisMonth,
+  isNewThisMonth
+} from "../../util/collections";
 import { colors } from "../../util/theme";
 
 const styles = {
@@ -13,7 +17,8 @@ const styles = {
     backgroundColor: colors.blueDark,
     cursor: "pointer",
     borderRadius: "1em",
-    width: 150
+    width: 150,
+    position: "relative"
   },
   row: {
     display: "flex",
@@ -32,16 +37,45 @@ const styles = {
   icon: {
     marginLeft: 5,
     marginRight: 5
+  },
+  label: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    padding: 2,
+    borderRadius: "0.3em",
+    fontWeight: "bold",
+    color: colors.blueDark,
+    backgroundColor: colors.blueLight,
+    fontSize: 10
+  },
+  labelInCollection: {
+    color: colors.blueLight,
+    backgroundColor: colors.blueDark
   }
 } as const;
 
 interface Props {
   bug: any;
+  month?: number;
+  hemisphere: string;
   onClick: () => void;
   inCollection: boolean;
 }
 
-export default function BugItem({ bug: b, onClick, inCollection }: Props) {
+export default function BugItem({
+  bug: b,
+  onClick,
+  inCollection,
+  month,
+  hemisphere
+}: Props) {
+  const months =
+    hemisphere === "Northern Hemisphere" ? b.northernMonths : b.southernMonths;
+  const newThisMonth =
+    month !== undefined ? isNewThisMonth(months, month) : false;
+  const disappearingThisMonth =
+    month !== undefined ? isDisappearingThisMonth(months, month) : false;
   return (
     <div
       key={b.name}
@@ -66,6 +100,16 @@ export default function BugItem({ bug: b, onClick, inCollection }: Props) {
       <div css={styles.row}>
         <FaStar style={styles.icon} /> {b.rarity}
       </div>
+      {newThisMonth ? (
+        <div css={[styles.label, inCollection && styles.labelInCollection]}>
+          New
+        </div>
+      ) : null}
+      {disappearingThisMonth ? (
+        <div css={[styles.label, inCollection && styles.labelInCollection]}>
+          Going
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -131,6 +131,8 @@ export default function Collections() {
             <BugItem
               key={data.name}
               bug={data}
+              hemisphere={hemisphere}
+              month={month}
               onClick={() => {
                 setCollection(c =>
                   c.includes(data.name)
