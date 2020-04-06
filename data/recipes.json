@@ -6497,7 +6497,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 720,
     "type": "wallMounted"
   },
   {
@@ -7416,7 +7416,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 960,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -8137,7 +8137,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1600,
     "type": "equipment"
   },
   {
@@ -10174,6 +10174,26 @@
     },
     "obtainedFrom": ["Nook Stop", "Nook Miles"],
     "sellPrice": 330,
+    "type": "other"
+  },
+  {
+    "name": "Pitfall seed",
+    "materials": [
+      {
+        "quantity": 4,
+        "material": "Clump of weeds"
+      },
+      {
+        "quantity": 6,
+        "material": "Tree branch"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 140,
     "type": "other"
   }
 ]
