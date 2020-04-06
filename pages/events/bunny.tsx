@@ -19,6 +19,7 @@ const bunnyRecipes = recipes
   .filter(r => {
     return (
       r.obtainedFrom.includes("Bunny Day") ||
+      r.obtainedFrom.includes("Zipper") ||
       r.materials.some(m => m.material.endsWith(" egg"))
     );
   })
