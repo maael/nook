@@ -33,7 +33,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Yellow butterfly",
@@ -69,7 +70,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Tiger butterfly",
@@ -105,7 +107,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Peacock butterfly",
@@ -141,7 +144,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Common bluebottle",
@@ -177,7 +181,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Paper kite butterfly",
@@ -213,7 +218,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Great purple emperor",
@@ -249,7 +255,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Monarch butterfly",
@@ -285,7 +292,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Emperor butterfly",
@@ -321,7 +329,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Agrias butterfly",
@@ -357,7 +366,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Rajah Brooke's birdwing",
@@ -393,7 +403,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Queen Alexandra's birdwing",
@@ -429,7 +440,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Moth",
@@ -465,7 +477,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Atlas moth",
@@ -501,7 +514,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Madagascan sunset moth",
@@ -537,7 +551,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Long locust",
@@ -573,7 +588,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Migratory locust",
@@ -609,7 +625,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Rice grasshopper",
@@ -645,7 +662,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Grasshopper",
@@ -681,7 +699,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Cricket",
@@ -717,7 +736,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Bell cricket",
@@ -753,7 +773,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Mantis",
@@ -789,7 +810,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Orchid mantis",
@@ -825,7 +847,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Honeybee",
@@ -861,7 +884,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Wasp",
@@ -897,7 +921,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Brown cicada",
@@ -933,7 +958,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Robust cicada",
@@ -969,7 +995,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Giant cicada",
@@ -1005,7 +1032,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Walker cicada",
@@ -1041,7 +1069,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Evening cicada",
@@ -1077,7 +1106,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Cicada shell",
@@ -1113,7 +1143,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Red dragonfly",
@@ -1149,7 +1180,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Darner dragonfly",
@@ -1185,7 +1217,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Banded dragonfly",
@@ -1221,7 +1254,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Damselfly",
@@ -1257,7 +1291,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Firefly",
@@ -1293,7 +1328,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Mole cricket",
@@ -1329,7 +1365,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Pondskater",
@@ -1365,7 +1402,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Diving beetle",
@@ -1401,7 +1439,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Giant water bug",
@@ -1437,7 +1476,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Stinkbug",
@@ -1473,7 +1513,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Man-faced stink bug",
@@ -1509,7 +1550,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Ladybug",
@@ -1545,7 +1587,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Tiger beetle",
@@ -1581,7 +1624,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Jewel beetle",
@@ -1617,7 +1661,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Violin beetle",
@@ -1653,7 +1698,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Citrus long-horned beetle",
@@ -1689,7 +1735,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Rosalia batesi beetle",
@@ -1725,7 +1772,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Blue weevil beetle",
@@ -1761,7 +1809,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Dung beetle",
@@ -1797,7 +1846,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Earth-boring dung beetle",
@@ -1833,7 +1883,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Scarab beetle",
@@ -1869,7 +1920,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Drone beetle",
@@ -1905,7 +1957,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Goliath beetle",
@@ -1941,7 +1994,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Saw stag",
@@ -1977,7 +2031,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Miyama stag",
@@ -2013,7 +2068,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Giant stag",
@@ -2049,7 +2105,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Rainbow stag",
@@ -2085,7 +2142,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Cyclommatus stag",
@@ -2121,7 +2179,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Golden stag",
@@ -2157,7 +2216,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Giraffe stag",
@@ -2193,7 +2253,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Horned dynastid",
@@ -2229,7 +2290,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Horned atlas",
@@ -2265,7 +2327,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Horned elephant",
@@ -2301,7 +2364,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Horned hercules",
@@ -2337,7 +2401,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Walking stick",
@@ -2373,7 +2438,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Walking leaf",
@@ -2409,7 +2475,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Bagworm",
@@ -2445,7 +2512,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Ant",
@@ -2481,7 +2549,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Hermit crab",
@@ -2517,7 +2586,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Wharf roach",
@@ -2553,7 +2623,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Fly",
@@ -2589,7 +2660,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Mosquito",
@@ -2625,7 +2697,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Flea",
@@ -2661,7 +2734,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Snail",
@@ -2697,7 +2771,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Pill bug",
@@ -2733,7 +2808,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Centipede",
@@ -2769,7 +2845,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Spider",
@@ -2805,7 +2882,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Tarantula",
@@ -2841,7 +2919,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Scorpion",
@@ -2877,6 +2956,7 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   }
 ]

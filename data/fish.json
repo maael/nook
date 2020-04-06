@@ -34,7 +34,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Pale chub",
@@ -71,7 +72,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Crucian carp",
@@ -108,7 +110,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Dace",
@@ -145,7 +148,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Carp",
@@ -182,7 +186,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Koi",
@@ -219,7 +224,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Goldfish",
@@ -256,7 +262,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Pop-eyed goldfish",
@@ -293,7 +300,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Ranchu goldfish",
@@ -330,7 +338,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Killifish",
@@ -367,7 +376,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Crawfish",
@@ -404,7 +414,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Soft-shelled turtle",
@@ -441,7 +452,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Snapping Turtle",
@@ -478,7 +490,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Tadpole",
@@ -515,7 +528,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Frog",
@@ -552,7 +566,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Freshwater goby",
@@ -589,7 +604,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Loach",
@@ -626,7 +642,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Catfish",
@@ -663,7 +680,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Giant snakehead",
@@ -700,7 +718,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Bluegill",
@@ -737,7 +756,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Yellow perch",
@@ -774,7 +794,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Black bass",
@@ -811,7 +832,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Tilapia",
@@ -848,7 +870,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Pike",
@@ -885,7 +908,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Pond smelt",
@@ -922,7 +946,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Sweetfish",
@@ -959,14 +984,15 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Cherry salmon",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Cherry_salmon",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5f/NH-Icon-cherrysalmon.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 1000,
-    "location": "River (Clifftop) Pond",
+    "location": "River (Clifftop)",
     "shadowSize": "3",
     "time": "4 PM - 9 AM",
     "northernMonths": {
@@ -996,7 +1022,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Char",
@@ -1033,7 +1060,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Golden trout",
@@ -1070,7 +1098,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Stringfish",
@@ -1107,7 +1136,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Salmon",
@@ -1144,7 +1174,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "King salmon",
@@ -1181,7 +1212,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Mitten crab",
@@ -1218,7 +1250,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Guppy",
@@ -1255,7 +1288,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Nibble fish",
@@ -1292,7 +1326,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Angelfish",
@@ -1329,7 +1364,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Betta",
@@ -1366,7 +1402,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Neon tetra",
@@ -1403,7 +1440,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Rainbowfish",
@@ -1440,7 +1478,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Piranha",
@@ -1477,7 +1516,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Arowana",
@@ -1514,7 +1554,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Dorado",
@@ -1551,7 +1592,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Gar",
@@ -1588,7 +1630,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Arapaima",
@@ -1625,7 +1668,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Saddled bichir",
@@ -1662,7 +1706,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Sturgeon",
@@ -1699,7 +1744,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Sea butterfly",
@@ -1736,7 +1782,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Sea horse",
@@ -1773,7 +1820,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Clown fish",
@@ -1810,7 +1858,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Surgeonfish",
@@ -1847,7 +1896,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Butterfly fish",
@@ -1884,7 +1934,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Napoleonfish",
@@ -1921,7 +1972,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Zebra turkeyfish",
@@ -1958,7 +2010,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Blowfish",
@@ -1995,7 +2048,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Puffer fish",
@@ -2032,7 +2086,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Anchovy",
@@ -2069,7 +2124,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Horse mackerel",
@@ -2106,7 +2162,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Barred knifejaw",
@@ -2143,7 +2200,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Sea bass",
@@ -2180,7 +2238,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Common"
   },
   {
     "name": "Red snapper",
@@ -2217,7 +2276,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Dab",
@@ -2254,7 +2314,8 @@
       "oct": false,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Olive flounder",
@@ -2291,7 +2352,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Squid",
@@ -2328,7 +2390,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Fairly Common"
   },
   {
     "name": "Moray eel",
@@ -2365,7 +2428,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Ribbon eel",
@@ -2402,7 +2466,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Tuna",
@@ -2439,7 +2504,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Blue marlin",
@@ -2476,7 +2542,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Giant trevally",
@@ -2513,7 +2580,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Mahi-mahi",
@@ -2550,7 +2618,8 @@
       "oct": false,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Unknown"
   },
   {
     "name": "Ocean sunfish",
@@ -2587,7 +2656,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Ray",
@@ -2624,7 +2694,8 @@
       "oct": false,
       "nov": false,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Saw shark",
@@ -2661,7 +2732,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Hammerhead shark",
@@ -2698,7 +2770,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Great white shark",
@@ -2735,7 +2808,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   },
   {
     "name": "Whale shark",
@@ -2772,7 +2846,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Suckerfish",
@@ -2809,7 +2884,8 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Football fish",
@@ -2846,7 +2922,8 @@
       "oct": true,
       "nov": false,
       "dec": false
-    }
+    },
+    "rarity": "Uncommon"
   },
   {
     "name": "Oarfish",
@@ -2883,7 +2960,8 @@
       "oct": true,
       "nov": true,
       "dec": false
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Barreleye",
@@ -2920,14 +2998,15 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Scarce"
   },
   {
     "name": "Coelacanth",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Coelacanth",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/31/NH-Icon-coelacanth.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 15000,
-    "location": "Sea (Raining)",
+    "location": "Sea",
     "shadowSize": "6",
     "time": "All day",
     "northernMonths": {
@@ -2957,6 +3036,7 @@
       "oct": true,
       "nov": true,
       "dec": true
-    }
+    },
+    "rarity": "Rare"
   }
 ]
