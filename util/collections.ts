@@ -23,6 +23,24 @@ export function isDisappearingThisMonth(
   return values[month] && !values[nextMonth];
 }
 
+export function isCurrentlyAvailable(
+  months: Record<string, boolean>,
+  time: string
+) {
+  if (!Object.values(months)[CURRENT_MONTH]) return false;
+  if (time === "All day") return true;
+  const timeStringInfo = time.split(" - ").map(s => {
+    const parts = s.split(" ");
+    const hour = parseInt(parts[0]);
+    return hour + (parts[1] === "PM" ? 12 : 0);
+  });
+  if (timeStringInfo.length !== 2) return false;
+  const currentHour = new Date().getHours();
+  return (
+    currentHour > timeStringInfo[0] && new Date().getHours() < timeStringInfo[1]
+  );
+}
+
 export const fishSizeMap = {
   1: "Tiny",
   2: "Small",

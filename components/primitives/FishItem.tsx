@@ -3,10 +3,12 @@ import { jsx } from "@emotion/core";
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar, FaFish } from "react-icons/fa";
+import AvailableTag from "./AvailableTag";
 import {
   fishSizeMap,
   isDisappearingThisMonth,
-  isNewThisMonth
+  isNewThisMonth,
+  isCurrentlyAvailable
 } from "../../util/collections";
 import { colors } from "../../util/theme";
 
@@ -116,6 +118,7 @@ export default function FishItem({
           Disappearing
         </div>
       ) : null}
+      {isCurrentlyAvailable(months, f.time) ? <AvailableTag /> : null}
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar } from "react-icons/fa";
+import AvailableTag from "./AvailableTag";
 import {
   isDisappearingThisMonth,
-  isNewThisMonth
+  isNewThisMonth,
+  isCurrentlyAvailable
 } from "../../util/collections";
 import { colors } from "../../util/theme";
 
@@ -110,6 +112,7 @@ export default function BugItem({
           Disappearing
         </div>
       ) : null}
+      {isCurrentlyAvailable(months, b.time) ? <AvailableTag /> : null}
     </div>
   );
 }
