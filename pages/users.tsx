@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Link from "next/link";
-import TemtemInput from "@maael/temtem-input-component";
 import TemtemText from "@maael/temtem-text-component";
 import Loading from "../components/primitives/Loading";
 import useFetch from "../components/hooks/useFetch";
 import { colors } from "@maael/temtem-theme";
 import * as userUtil from "../util/user";
+import { styles as generalStyles } from "../util/theme";
 
 export default function UsersSearch() {
   const [search, setSearch] = useState("");
@@ -20,11 +20,12 @@ export default function UsersSearch() {
   );
   return (
     <div css={{ marginTop: 10 }}>
-      <TemtemInput
-        containerStyle={{ maxWidth: 600, margin: "0 auto" }}
-        placeholder={`Search ${users.length} users...`}
-        value={search}
-        onChange={e => setSearch((e.target as any).value)}
+      <input
+        css={[generalStyles.input as any, { maxWidth: 600, margin: "0 auto" }]}
+        placeholder={
+          loadingUsers ? "Loading..." : `Search ${users.length} users...`
+        }
+        onChange={e => setSearch(e.target.value)}
       />
       <div
         css={{
