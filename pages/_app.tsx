@@ -57,6 +57,7 @@ export default function App({ Component, pageProps }) {
 
           body {
             background-color: ${nookTheme.blueLight};
+            background-image: url(/images/blue-tile-light.png);
             color: #FFFFFF;
             font-family: ${fonts.default.fontFamily};
             min-height: 100vh;
