@@ -28,6 +28,10 @@ export default async function embellishBugs() {
               rarity.indexOf(Rarity["Fairly Common"]) === -1
               ? rarity.indexOf(v)
               : -1
+            : v === "Rare"
+            ? rarity.indexOf(Rarity["Very Rare"]) === -1
+              ? rarity.indexOf(v)
+              : -1
             : rarity.indexOf(v),
         v
       }))
