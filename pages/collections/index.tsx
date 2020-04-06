@@ -3,13 +3,13 @@ import { jsx } from "@emotion/core";
 import Link from "next/link";
 import { GiFossil, GiTropicalFish, GiSpottedBug } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
+import Heading from "../../components/primitives/Heading";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 
 const styles = {
   link: {
     textDecoration: "none",
     display: "block",
-    margin: 10,
     cursor: "pointer"
   }
 };
@@ -28,26 +28,34 @@ export default function Collections() {
       >
         <Link href="/collections/fish">
           <a css={styles.link}>
-            <GiTropicalFish />
-            Fish
+            <Heading>
+              <GiTropicalFish style={{ marginRight: 5 }} />
+              Fish
+            </Heading>
           </a>
         </Link>
         <Link href="/collections/bugs">
           <a css={styles.link}>
-            <GiSpottedBug />
-            Bugs
+            <Heading>
+              <GiSpottedBug style={{ marginRight: 5 }} />
+              Bugs
+            </Heading>
           </a>
         </Link>
         <Link href="/collections/fossils">
           <a css={styles.link}>
-            <GiFossil />
-            Fossils
+            <Heading>
+              <GiFossil style={{ marginRight: 5 }} />
+              Fossils
+            </Heading>
           </a>
         </Link>
         <Link href="/collections/diy">
           <a css={styles.link}>
-            <FaTools />
-            DIY Recipes
+            <Heading>
+              <FaTools style={{ marginRight: 5 }} />
+              DIY Recipes
+            </Heading>
           </a>
         </Link>
       </div>
