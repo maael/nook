@@ -5,6 +5,7 @@ import CollectionHeaderBar from "../../components/compositions/CollectionHeaderB
 import Heading from "../../components/primitives/Heading";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
+import LoadingItem from "../../components/primitives/LoadingItem";
 import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
@@ -19,7 +20,8 @@ import { styles as generalStyles } from "../../util/theme";
 import createFuse from "../../util/fuse";
 
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
-  ssr: false
+  ssr: false,
+  loading: LoadingItem
 });
 
 const DataFieldSelect = dynamic(

@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import Heading from "../../components/primitives/Heading";
+import LoadingItem from "../../components/primitives/LoadingItem";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -15,7 +16,8 @@ const fossilData = require("../../data/fossils.json");
 const FossilItem = dynamic(
   () => import("../../components/primitives/FossilItem"),
   {
-    ssr: false
+    ssr: false,
+    loading: LoadingItem
   }
 );
 

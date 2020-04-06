@@ -39,7 +39,8 @@
     "react-dom": "^16.11.0",
     "react-icons": "^3.9.0",
     "react-modal": "^3.11.2",
-    "react-select": "^3.1.0"
+    "react-select": "^3.1.0",
+    "react-spinners": "^0.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

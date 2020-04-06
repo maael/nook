@@ -3,5 +3,5 @@
     "next/babel",
     "@emotion/babel-preset-css-prop"
   ],
-  "plugins": []
+  "plugins": ["emotion"]
 }

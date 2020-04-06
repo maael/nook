@@ -2,8 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { jsx } from "@emotion/core";
-import { colors } from "@maael/temtem-theme";
-import {colors as nookTheme} from '../../util/theme';
+import { colors as nookTheme } from "../../util/theme";
 
 export default function NavItem({
   url,

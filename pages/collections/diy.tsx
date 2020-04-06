@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import Heading from "../../components/primitives/Heading";
+import LoadingItem from "../../components/primitives/LoadingItem";
 import DataFieldSelect from "../../components/primitives/DataFieldSelect";
 import useLocalstorage, {
   LocalStorageKeys
@@ -14,7 +15,7 @@ import createFuse from "../../util/fuse";
 
 const RecipeItem = dynamic(
   () => import("../../components/primitives/RecipeItem"),
-  { ssr: false }
+  { ssr: false, loading: LoadingItem }
 );
 
 const recipeData = require("../../data/recipes.json");

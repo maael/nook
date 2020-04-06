@@ -5,6 +5,7 @@ import CollectionHeaderBar from "../../components/compositions/CollectionHeaderB
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import Heading from "../../components/primitives/Heading";
+import LoadingItem from "../../components/primitives/LoadingItem";
 import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
@@ -20,7 +21,8 @@ import {
 import createFuse from "../../util/fuse";
 
 const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
-  ssr: false
+  ssr: false,
+  loading: LoadingItem
 });
 const DataFieldSelect = dynamic(
   () => import("../../components/primitives/DataFieldSelect"),
