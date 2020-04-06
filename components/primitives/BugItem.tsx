@@ -107,7 +107,7 @@ export default function BugItem({
       ) : null}
       {disappearingThisMonth ? (
         <div css={[styles.label, inCollection && styles.labelInCollection]}>
-          Going
+          Disappearing
         </div>
       ) : null}
     </div>

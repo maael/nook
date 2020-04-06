@@ -113,7 +113,7 @@ export default function FishItem({
       ) : null}
       {disappearingThisMonth ? (
         <div css={[styles.label, inCollection && styles.labelInCollection]}>
-          Going
+          Disappearing
         </div>
       ) : null}
     </div>
