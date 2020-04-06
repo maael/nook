@@ -93,20 +93,34 @@ export default function FishItem({
       <img src={f.wikiImageUrl} />
       <div css={[styles.row, styles.center, styles.name]}>{f.name}</div>
       <div css={styles.row}>
-        <MdLocationOn style={styles.icon} /> {f.location}
+        <div>
+          <MdLocationOn style={styles.icon} />
+        </div>
+        <div>{f.location}</div>
       </div>
       <div css={styles.row}>
-        <FaClock style={styles.icon} /> {f.time}
+        <div>
+          <FaClock style={styles.icon} />
+        </div>
+        <div>{f.time}</div>
       </div>
       <div css={styles.row}>
-        <FaFish style={styles.icon} /> {fishSizeMap[f.shadowSize] || "???"}{" "}
-        Shadow
+        <div>
+          <FaFish style={styles.icon} />
+        </div>
+        <div>{fishSizeMap[f.shadowSize] || "???"} Shadow</div>
       </div>
       <div css={styles.row}>
-        <GiSwapBag style={styles.icon} /> {f.price}
+        <div>
+          <GiSwapBag style={styles.icon} />
+        </div>
+        <div>{f.price}</div>
       </div>
       <div css={styles.row}>
-        <FaStar style={styles.icon} /> {f.rarity}
+        <div>
+          <FaStar style={styles.icon} />
+        </div>
+        <div>{f.rarity}</div>
       </div>
       {newThisMonth ? (
         <div css={[styles.label, inCollection && styles.labelInCollection]}>
@@ -118,7 +132,9 @@ export default function FishItem({
           Disappearing
         </div>
       ) : null}
-      {isCurrentlyAvailable(months, f.time) ? <AvailableTag /> : null}
+      {isCurrentlyAvailable(months, f.time) ? (
+        <AvailableTag filled={inCollection} />
+      ) : null}
     </div>
   );
 }

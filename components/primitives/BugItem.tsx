@@ -91,16 +91,28 @@ export default function BugItem({
       <img src={b.wikiImageUrl} />
       <div css={[styles.row, styles.center, styles.name]}>{b.name}</div>
       <div css={styles.row}>
-        <MdLocationOn style={styles.icon} /> {b.location}
+        <div>
+          <MdLocationOn style={styles.icon} />
+        </div>
+        <div>{b.location}</div>
       </div>
       <div css={styles.row}>
-        <FaClock style={styles.icon} /> {b.time}
+        <div>
+          <FaClock style={styles.icon} />
+        </div>
+        <div>{b.time}</div>
       </div>
       <div css={styles.row}>
-        <GiSwapBag style={styles.icon} /> {b.price}
+        <div>
+          <GiSwapBag style={styles.icon} />
+        </div>
+        <div>{b.price}</div>
       </div>
       <div css={styles.row}>
-        <FaStar style={styles.icon} /> {b.rarity}
+        <div>
+          <FaStar style={styles.icon} />
+        </div>
+        <div>{b.rarity}</div>
       </div>
       {newThisMonth ? (
         <div css={[styles.label, inCollection && styles.labelInCollection]}>
@@ -112,7 +124,9 @@ export default function BugItem({
           Disappearing
         </div>
       ) : null}
-      {isCurrentlyAvailable(months, b.time) ? <AvailableTag /> : null}
+      {isCurrentlyAvailable(months, b.time) ? (
+        <AvailableTag filled={inCollection} />
+      ) : null}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { FaToolbox, FaHome, FaTshirt, FaQuestionCircle } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import {
   GiSwapBag,
   GiBrickWall,
@@ -17,6 +18,27 @@ const typeIconMap: Record<string, ReactNode> = {
   equipment: <FaTshirt title="Equipment" />,
   other: <GiWoodenFence title="Other" />
 };
+
+const styles = {
+  row: {
+    display: "flex",
+    alignItems: "center",
+    margin: "4px 0px",
+    textAlign: "left"
+  },
+  center: {
+    justifyContent: "center"
+  },
+  name: {
+    marginTop: "0 !important",
+    fontWeight: "bold",
+    textAlign: "center"
+  },
+  icon: {
+    marginLeft: 5,
+    marginRight: 5
+  }
+} as const;
 
 interface Props {
   recipe: any;
@@ -45,9 +67,9 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       onClick={onClick}
     >
       <img css={{ minHeight: 50 }} src={recipe.wikiImageUrl} />
-      <div>{recipe.name}</div>
-      <div>
-        {recipe.sellPrice} <GiSwapBag />
+      <div css={[styles.row, styles.name]}>{recipe.name}</div>
+      <div css={styles.row}>
+        <GiSwapBag style={styles.icon} /> {recipe.sellPrice}
       </div>
       <div
         css={{
@@ -62,9 +84,13 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       >
         {typeIconMap[recipe.type]}
       </div>
-      <div>
-        Obtained from:{" "}
-        {recipe.obtainedFrom.length ? recipe.obtainedFrom.join(", ") : "???"}
+      <div css={styles.row}>
+        <div>
+          <MdLocationOn style={styles.icon} />
+        </div>
+        <div>
+          {recipe.obtainedFrom.length ? recipe.obtainedFrom.join(", ") : "???"}
+        </div>
       </div>
     </div>
   );

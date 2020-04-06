@@ -14,6 +14,10 @@ const styles = {
     borderRadius: "1em",
     width: 150,
     cursor: "pointer"
+  },
+  title: {
+    fontWeight: "bold",
+    marginBottom: 2
   }
 } as const;
 
@@ -38,9 +42,9 @@ export default function FossilItem({
       }}
     >
       <img src={f.wikiImageUrl} />
-      <div>{f.name}</div>
+      <div css={styles.title}>{f.name}</div>
       <div>
-        {f.sellPrice} <GiSwapBag />
+        <GiSwapBag /> {f.sellPrice}
       </div>
     </div>
   );
