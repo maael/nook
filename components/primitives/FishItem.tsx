@@ -50,7 +50,7 @@ const styles = {
     fontWeight: "bold",
     color: colors.blueDark,
     backgroundColor: colors.blueLight,
-    fontSize: 10
+    fontSize: 11
   },
   labelInCollection: {
     color: colors.blueLight,
