@@ -34,6 +34,7 @@ interface Filter {
   month?: number;
   locations: string[];
   sizes: string[];
+  rarity: string[];
 }
 
 function getMonths(d: any, hemisphere: string) {
@@ -59,6 +60,9 @@ function applyFilter(data: any[], hemisphere: string, filter: Filter) {
       return filter.sizes.length > 0
         ? filter.sizes.includes(d.shadowSize)
         : true;
+    })
+    .filter(d => {
+      return filter.rarity.length > 0 ? filter.rarity.includes(d.rarity) : true;
     });
 }
 
@@ -83,6 +87,10 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_HEMISPHERE,
     "Northern Hemisphere"
   );
+  const [rarity, setRarity] = useLocalstorage<string[]>(
+    LocalStorageKeys.SELECTED_FISH_RARITY,
+    []
+  );
   const [collection, setCollection] = useLocalstorage<string[]>(
     LocalStorageKeys.FISH_COLLECTION,
     []
@@ -90,7 +98,7 @@ export default function Collections() {
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : fishData,
     hemisphere,
-    { month, locations, sizes }
+    { month, locations, sizes, rarity }
   );
   const handleCollection = useSyncedCollection(
     LocalStorageKeys.FISH_COLLECTION,
@@ -118,6 +126,14 @@ export default function Collections() {
           data={fishData}
           field="shadowSize"
           labelMap={fishSizeMap}
+        />
+        <DataFieldSelect
+          placeholder="Rarity..."
+          isMulti
+          value={rarity}
+          onChange={setRarity}
+          data={fishData}
+          field="rarity"
         />
         <input
           css={generalStyles.input}

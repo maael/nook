@@ -34,6 +34,7 @@ const fuse = createFuse(bugsData);
 interface Filter {
   month?: number;
   locations: string[];
+  rarity: string[];
 }
 
 function getMonths(d: any, hemisphere: string) {
@@ -54,6 +55,9 @@ function applyFilter(data: any[], hemisphere: string, filter: Filter) {
       return filter.locations.length > 0
         ? filter.locations.includes(d.location)
         : true;
+    })
+    .filter(d => {
+      return filter.rarity.length > 0 ? filter.rarity.includes(d.rarity) : true;
     });
 }
 
@@ -74,6 +78,10 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_HEMISPHERE,
     "Northern Hemisphere"
   );
+  const [rarity, setRarity] = useLocalstorage<string[]>(
+    LocalStorageKeys.SELECTED_BUGS_RARITY,
+    []
+  );
   const [collection, setCollection] = useLocalstorage<string[]>(
     LocalStorageKeys.BUGS_COLLECTION,
     []
@@ -81,7 +89,7 @@ export default function Collections() {
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : bugsData,
     hemisphere,
-    { month, locations }
+    { month, locations, rarity }
   );
   const handleCollection = useSyncedCollection(
     LocalStorageKeys.BUGS_COLLECTION,
@@ -100,6 +108,14 @@ export default function Collections() {
           onChange={setLocations}
           data={bugsData}
           field="location"
+        />
+        <DataFieldSelect
+          placeholder="Rarity..."
+          isMulti
+          value={rarity}
+          onChange={setRarity}
+          data={bugsData}
+          field="rarity"
         />
         <input
           css={generalStyles.input}
