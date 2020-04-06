@@ -4,47 +4,17 @@ import { getTableRows } from "../util/cheerioHelpers";
 import { TableCell } from "../util/types";
 
 export default async function getRecipes() {
-  const { body } = await got(
-    "https://animalcrossing.fandom.com/wiki/DIY_recipes"
-  );
-  const $ = cheerio.load(body);
-  const tools = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(1)"),
-    "tool"
-  );
-  const housewares = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(2)"),
-    "houseware"
-  );
-  const misc = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(3)"),
-    "misc"
-  );
-  const wallMounted = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(4)"),
-    "wallMounted"
-  );
-  const wallpaperFlooringRug = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(5)"),
-    "wallpaperFlooringRug"
-  );
-  const equipment = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(6)"),
-    "equipment"
-  );
-  const other = mapRecipeRowToData(
-    getTableRows($, ".article-table:nth-of-type(7)"),
-    "other"
-  );
-  return [
-    ...tools,
-    ...housewares,
-    ...misc,
-    ...wallMounted,
-    ...wallpaperFlooringRug,
-    ...equipment,
-    ...other
-  ];
+  return (await Promise.all(
+    [
+      "tool",
+      "houseware",
+      "misc",
+      "wallMounted",
+      "wallpaperFlooringRug",
+      "equipment",
+      "other"
+    ].map(getRecipePage)
+  )).reduce((acc, arr) => [...acc, ...arr], []);
 }
 
 const chunk = (arr: any[], size: number) =>
@@ -92,4 +62,23 @@ function getSize(inp?: string) {
     width: parseInt(parts[0], 10),
     height: parseInt(parts[1], 10)
   };
+}
+
+const pageMap = {
+  tool: "https://animalcrossing.fandom.com/wiki/DIY_recipes/Tools",
+  houseware: "https://animalcrossing.fandom.com/wiki/DIY_recipes/Housewares",
+  misc: "https://animalcrossing.fandom.com/wiki/DIY_recipes/Miscellaneous",
+  wallMounted:
+    "https://animalcrossing.fandom.com/wiki/DIY_recipes/Wall-mounted",
+  wallpaperFlooringRug:
+    "https://animalcrossing.fandom.com/wiki/DIY_recipes/Wallpaper,_rugs_and_flooring",
+  equipment: "https://animalcrossing.fandom.com/wiki/DIY_recipes/Equipment",
+  other: "https://animalcrossing.fandom.com/wiki/DIY_recipes/Other"
+};
+
+async function getRecipePage(type: keyof typeof pageMap) {
+  const url = pageMap[type];
+  const { body } = await got(url);
+  const $ = cheerio.load(body);
+  return mapRecipeRowToData(getTableRows($, "#mw-content-text table"), type);
 }
