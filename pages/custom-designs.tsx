@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import NewCustomDesign from "../components/compositions/NewCustomDesign";
 
 export default function Collections() {
   return (
@@ -12,7 +13,7 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
-        Hey
+        <NewCustomDesign />
       </div>
     </>
   );

@@ -3,7 +3,6 @@ import { jsx } from "@emotion/core";
 import { MONTHS } from "../primitives/MonthSelect";
 import Heading from "../primitives/Heading";
 import { isAvailable, isAlwaysAvailable } from "../../util/collections";
-import { colors } from "../../util/theme";
 import { ReactNode } from "react";
 
 interface Props<T> {
