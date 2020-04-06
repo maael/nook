@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import Heading from "../../components/primitives/Heading";
 import DataFieldSelect from "../../components/primitives/DataFieldSelect";
 import useLocalstorage, {
   LocalStorageKeys
@@ -80,6 +81,9 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+        <Heading>
+          Showing {filtered.length} of {recipeData.length}
+        </Heading>
         {filtered.map((recipe, i) => (
           <RecipeItem
             key={`${recipe.name}-${i}`}

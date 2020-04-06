@@ -44,7 +44,7 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       }}
       onClick={onClick}
     >
-      <img src={recipe.wikiImageUrl} />
+      <img css={{ minHeight: 50 }} src={recipe.wikiImageUrl} />
       <div>{recipe.name}</div>
       <div>
         {recipe.sellPrice} <GiSwapBag />

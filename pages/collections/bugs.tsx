@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import Heading from "../../components/primitives/Heading";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import FilterableItems from "../../components/compositions/FilterableItems";
@@ -123,6 +124,9 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+        <Heading>
+          Showing {filtered.length} of {bugsData.length}
+        </Heading>
         <FilterableItems
           month={month}
           filtered={filtered}

@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import Heading from "../../components/primitives/Heading";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
@@ -46,6 +47,9 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+        <Heading>
+          Showing {filtered.length} of {fossilData.length}
+        </Heading>
         {filtered.map(f => (
           <FossilItem
             key={f.name}

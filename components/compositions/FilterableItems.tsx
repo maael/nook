@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import { MONTHS } from "../primitives/MonthSelect";
+import Heading from "../primitives/Heading";
 import { isAvailable, isAlwaysAvailable } from "../../util/collections";
 import { colors } from "../../util/theme";
 import { ReactNode } from "react";
@@ -11,14 +12,6 @@ interface Props<T> {
   filtered: T[];
   generateItem: (data: T) => ReactNode;
 }
-
-const styles = {
-  header: {
-    marginTop: 10,
-    marginBottom: 5,
-    color: colors.blueDark
-  }
-} as const;
 
 function getMonths(d: any, hemisphere: string) {
   return hemisphere === "Northern Hemisphere"
@@ -34,7 +27,7 @@ export default function FilterableItems<T extends any>({
 }: Props<T>) {
   return month ? (
     <>
-      <div css={styles.header}>Available in {MONTHS[month]}</div>
+      <Heading>Available in {MONTHS[month]}</Heading>
       {filtered
         .filter(
           d =>
@@ -42,7 +35,7 @@ export default function FilterableItems<T extends any>({
             isAvailable(getMonths(d, hemisphere), month)
         )
         .map(generateItem)}
-      <div css={styles.header}>Always available</div>
+      <Heading>Always available</Heading>
       {filtered
         .filter(d => isAlwaysAvailable(getMonths(d, hemisphere)))
         .map(generateItem)}

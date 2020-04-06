@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
+import Heading from "../../components/primitives/Heading";
 import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
@@ -141,9 +142,9 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
-        <div>
-          {filtered.length} of {fishData.length}
-        </div>
+        <Heading>
+          Showing {filtered.length} of {fishData.length}
+        </Heading>
         <FilterableItems
           month={month}
           filtered={filtered}
