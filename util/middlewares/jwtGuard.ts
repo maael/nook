@@ -1,7 +1,10 @@
 import { NextApiResponseWithCookie, NextApiRequestWithJWT } from "../cookies";
 
 const jwtGuard = (
-  handler: (req: any, res: NextApiResponseWithCookie) => void | Promise<void>
+  handler: (
+    req: NextApiRequestWithJWT,
+    res: NextApiResponseWithCookie
+  ) => void | Promise<void>
 ) => async (req: NextApiRequestWithJWT, res: any) => {
   try {
     const userJWT = await req.getJWT();

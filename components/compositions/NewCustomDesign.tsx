@@ -86,8 +86,19 @@ export default function NewCustomDesign() {
         </div>
         <button
           css={{ flex: 1 }}
-          onClick={() => {
+          onClick={async () => {
             console.info(file, title, code, type);
+            const fd = new FormData();
+            fd.append("img", file!);
+            fd.append("title", title);
+            fd.append("code", code);
+            fd.append("type", type);
+            fd.append("tags", JSON.stringify([]));
+            const res = await fetch("/api/db/custom-designs", {
+              method: "POST",
+              body: fd
+            });
+            console.info(res.ok);
           }}
         >
           Save

@@ -52,6 +52,8 @@ type CustomDesign @collection(name: "customDesigns") {
   s3Url: String!
   code: String!
   title: String!
+  tags: [String!]!
+  likes: Int!
   createdAt: Time!
   redacted: Boolean!
   redactedReason: String!
