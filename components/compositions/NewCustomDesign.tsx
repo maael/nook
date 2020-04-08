@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core";
 import { createRef, useState, useEffect } from "react";
 import { colors } from "../../util/theme";
+import useCustomDesignImage from "../../components/hooks/useCustomDesignImage";
 
 interface Props {
   onCreate?: (created: any) => void;
@@ -16,6 +17,14 @@ export default function NewCustomDesign({ onCreate }: Props) {
   const [preview, setPreview] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const detected = useCustomDesignImage(file);
+  console.info(">", detected);
+  useEffect(() => {
+    console.info("?");
+    if (!title) setTitle(detected.title);
+    if (!type) setType(detected.type);
+    if (!code) setCode(detected.code);
+  }, [detected.title, detected.type, detected.code]);
   useEffect(() => {
     const reader = new FileReader();
     function listener() {
