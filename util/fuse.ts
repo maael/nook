@@ -14,6 +14,9 @@ export const SETTINGS: IFuseOptions<any> = {
   keys: ["name"]
 };
 
-export default function createFuse<D extends readonly any[]>(data: D) {
-  return new Fuse<D, {}>(data, SETTINGS);
+export default function createFuse<D extends readonly any[]>(
+  data: D,
+  settings?: IFuseOptions<any>
+) {
+  return new Fuse<D, {}>(data, { ...SETTINGS, ...settings });
 }

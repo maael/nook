@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import NewCustomDesign from "../components/compositions/NewCustomDesign";
 import useCustomDesigns from "../components/hooks/useCustomDesigns";
+import { styles } from "../util/theme";
+import createFuse from "../util/fuse";
 
 const CustomDesignGrid = dynamic(
   () => import("../components/compositions/CustomDesignGrid"),
@@ -13,6 +16,18 @@ const CustomDesignGrid = dynamic(
 
 export default function Collections() {
   const [customDesigns, setCustomDesigns] = useCustomDesigns();
+  const [search, setSearch] = useState("");
+  const fuseSearch = useMemo(
+    () => createFuse(customDesigns, { keys: ["title"] }),
+    [customDesigns]
+  );
+  const filtered = useMemo(
+    () =>
+      search
+        ? fuseSearch.search(search).map(({ item }) => item)
+        : customDesigns,
+    [search, customDesigns]
+  );
   return (
     <>
       <div
@@ -26,9 +41,20 @@ export default function Collections() {
         <NewCustomDesign
           onCreate={created => setCustomDesigns(c => [...c, created])}
         />
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          css={styles.input}
+          style={{ marginTop: 10 }}
+          placeholder={
+            customDesigns.length
+              ? `Search ${customDesigns.length} custom designs...`
+              : "Loading..."
+          }
+        />
       </div>
       <CustomDesignGrid
-        customDesigns={customDesigns}
+        customDesigns={filtered}
         onDelete={async deleted => {
           try {
             const res = await fetch(`/api/db/custom-designs/${deleted._id}`, {

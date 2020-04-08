@@ -19,7 +19,10 @@ export default function Collections({
       {({ height, isScrolling, registerChild, onChildScroll, scrollTop }) => (
         <AutoSizer disableHeight>
           {({ width }) => {
-            const columnCount = Math.floor(width / (WIDTH + PADDING)) || 1;
+            const columnCount = Math.min(
+              customDesigns.length || 1,
+              Math.floor(width / (WIDTH + PADDING)) || 1
+            );
             return (
               <Grid
                 cellRenderer={({ columnIndex, key, rowIndex, style }) => {
