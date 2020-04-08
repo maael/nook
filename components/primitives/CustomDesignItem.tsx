@@ -46,7 +46,7 @@ export default function CustomDesignItem({
           height: 220,
           backgroundImage: `url(${s3Url})`,
           backgroundRepeat: "none",
-          backgroundSize: "cover"
+          backgroundSize: "contain"
         }}
       ></div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{title}</div>
