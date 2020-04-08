@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { FaTimes as DeleteIcon } from "react-icons/fa";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";
+import useJWT from "../hooks/useJWT";
 import { colors } from "../../util/theme";
 
 export const WIDTH = 400;
@@ -8,7 +10,8 @@ export const HEIGHT = 317;
 export const PADDING = 20;
 
 export default function CustomDesignItem({
-  customDesign: { s3Url, title, code, user, tags }
+  customDesign: { s3Url, title, code, user, tags },
+  onDelete
 }: {
   customDesign: {
     s3Url: string;
@@ -17,7 +20,9 @@ export default function CustomDesignItem({
     user: any;
     tags: string[];
   };
+  onDelete: () => void;
 }) {
+  const jwt = useJWT();
   return (
     <div
       css={{
@@ -27,13 +32,16 @@ export default function CustomDesignItem({
         backgroundColor: colors.blueDark,
         color: colors.blueLight,
         borderRadius: "1em",
-        overflow: "hidden",
         paddingBottom: 10,
-        textAlign: "center"
+        textAlign: "center",
+        position: "relative"
       }}
     >
       <div
         css={{
+          cursor: "zoom-in",
+          borderTopLeftRadius: "1em",
+          borderTopRightRadius: "1em",
           width: "100%",
           height: 220,
           backgroundImage: `url(${s3Url})`,
@@ -59,6 +67,27 @@ export default function CustomDesignItem({
         />
         {getUserName(user)}
       </a>
+      {jwt && user._id === jwt._id ? (
+        <div
+          css={{
+            position: "absolute",
+            cursor: "pointer",
+            fontSize: 12,
+            backgroundColor: colors.blueLight,
+            color: colors.blueDark,
+            top: 10,
+            right: 10,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 5,
+            borderRadius: "0.3em"
+          }}
+          onClick={onDelete}
+        >
+          Delete <DeleteIcon size={14} />
+        </div>
+      ) : null}
     </div>
   );
 }

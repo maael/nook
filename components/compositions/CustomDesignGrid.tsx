@@ -8,9 +8,11 @@ import CustomDesignItem, {
 } from "../primitives/CustomDesignItem";
 
 export default function Collections({
-  customDesigns
+  customDesigns,
+  onDelete
 }: {
   customDesigns: any[];
+  onDelete: (deleted: any) => void;
 }) {
   return (
     <WindowScroller scrollElement={window}>
@@ -35,12 +37,15 @@ export default function Collections({
                       }}
                     >
                       {customDesign ? (
-                        <CustomDesignItem customDesign={customDesign} />
+                        <CustomDesignItem
+                          customDesign={customDesign}
+                          onDelete={() => onDelete(customDesign)}
+                        />
                       ) : null}
                     </div>
                   );
                 }}
-                style={{ overflowX: "hidden" }}
+                style={{ overflowX: "hidden", outline: "none" }}
                 autoHeight
                 onScroll={onChildScroll}
                 columnCount={columnCount}

@@ -39,5 +39,6 @@ export {
 export {
   create as createCustomDesign,
   getCustomDesignsForUser,
-  getCustomDesigns
+  getCustomDesigns,
+  deleteCustomDesign
 } from "./custom-designs";

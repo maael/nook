@@ -23,3 +23,8 @@ export async function upload(
     .promise();
   return result.Location;
 }
+
+export async function remove(url: string) {
+  const key = url.split(S3_BUCKET_NAME!)[1].slice(1);
+  await s3.deleteObject({ Bucket: S3_BUCKET_NAME!, Key: key }).promise();
+}

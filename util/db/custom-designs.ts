@@ -71,3 +71,15 @@ export async function getCustomDesigns() {
   `;
   return (await client.request(query)).getCustomDesignsByRedacted.data;
 }
+
+export async function deleteCustomDesign(id: string) {
+  const query = `
+    mutation DeleteItem ($id:ID!) {
+      deleteCustomDesign(id:$id){
+        ${fields}
+      }
+    }
+  `;
+
+  return (await client.request(query, { id })).deleteCustomDesign;
+}
