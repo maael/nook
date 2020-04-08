@@ -4,13 +4,14 @@ import { FaTimes as DeleteIcon } from "react-icons/fa";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";
 import useJWT from "../hooks/useJWT";
 import { colors } from "../../util/theme";
+import CustomDesignImageModal from "./CustomDesignImageModal";
 
 export const WIDTH = 400;
 export const HEIGHT = 317;
 export const PADDING = 20;
 
 export default function CustomDesignItem({
-  customDesign: { s3Url, title, code, user, tags },
+  customDesign,
   onDelete
 }: {
   customDesign: {
@@ -23,6 +24,7 @@ export default function CustomDesignItem({
   onDelete: () => void;
 }) {
   const jwt = useJWT();
+  const { s3Url, title, code, user, tags } = customDesign;
   return (
     <div
       css={{
@@ -39,7 +41,6 @@ export default function CustomDesignItem({
     >
       <div
         css={{
-          cursor: "zoom-in",
           borderTopLeftRadius: "1em",
           borderTopRightRadius: "1em",
           width: "100%",
@@ -88,6 +89,19 @@ export default function CustomDesignItem({
           Delete <DeleteIcon size={14} />
         </div>
       ) : null}
+      <CustomDesignImageModal
+        style={{
+          cursor: "zoom-in",
+          position: "absolute",
+          top: 10,
+          left: 10,
+          padding: 2,
+          backgroundColor: colors.blueLight,
+          color: colors.blueDark,
+          borderRadius: "0.3em"
+        }}
+        customDesign={customDesign}
+      />
     </div>
   );
 }
