@@ -16,44 +16,44 @@ export default function Collections({
     <WindowScroller scrollElement={window}>
       {({ height, isScrolling, registerChild, onChildScroll, scrollTop }) => (
         <AutoSizer disableHeight>
-          {({ width }) => (
-            <Grid
-              cellRenderer={({ columnIndex, key, rowIndex, style }) => {
-                const customDesign = customDesigns[columnIndex + rowIndex * 2];
-                return (
-                  <div
-                    key={key}
-                    ref={registerChild}
-                    style={{
-                      ...style,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center"
-                    }}
-                  >
-                    {customDesign ? (
-                      <CustomDesignItem customDesign={customDesign} />
-                    ) : null}
-                  </div>
-                );
-              }}
-              style={{ overflowX: "hidden" }}
-              autoHeight
-              onScroll={onChildScroll}
-              columnCount={Math.floor(width / (WIDTH + PADDING))}
-              columnWidth={Math.ceil(
-                width / Math.floor(width / (WIDTH + PADDING))
-              )}
-              height={height}
-              rowCount={Math.ceil(
-                customDesigns.length / Math.floor(width / (WIDTH + PADDING))
-              )}
-              rowHeight={HEIGHT + PADDING}
-              width={width}
-              scrollTop={scrollTop}
-              isScrolling={isScrolling}
-            />
-          )}
+          {({ width }) => {
+            const columnCount = Math.floor(width / (WIDTH + PADDING)) || 1;
+            return (
+              <Grid
+                cellRenderer={({ columnIndex, key, rowIndex, style }) => {
+                  const customDesign =
+                    customDesigns[columnIndex + rowIndex * columnCount];
+                  return (
+                    <div
+                      key={key}
+                      ref={registerChild}
+                      style={{
+                        ...style,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                      }}
+                    >
+                      {customDesign ? (
+                        <CustomDesignItem customDesign={customDesign} />
+                      ) : null}
+                    </div>
+                  );
+                }}
+                style={{ overflowX: "hidden" }}
+                autoHeight
+                onScroll={onChildScroll}
+                columnCount={columnCount}
+                columnWidth={Math.ceil(width / columnCount)}
+                height={height}
+                rowCount={Math.ceil(customDesigns.length / columnCount)}
+                rowHeight={HEIGHT + PADDING}
+                width={width}
+                scrollTop={scrollTop}
+                isScrolling={isScrolling}
+              />
+            );
+          }}
         </AutoSizer>
       )}
     </WindowScroller>
