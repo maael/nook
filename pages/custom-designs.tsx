@@ -1,13 +1,15 @@
 /** @jsx jsx */
-import { jsx, Global } from "@emotion/core";
-import { AutoSizer, Grid, WindowScroller } from "react-virtualized";
+import { jsx } from "@emotion/core";
+import dynamic from "next/dynamic";
 import NewCustomDesign from "../components/compositions/NewCustomDesign";
-import CustomDesignItem, {
-  HEIGHT,
-  WIDTH,
-  PADDING
-} from "../components/primitives/CustomDesignItem";
 import useCustomDesigns from "../components/hooks/useCustomDesigns";
+
+const CustomDesignGrid = dynamic(
+  () => import("../components/compositions/CustomDesignGrid"),
+  {
+    ssr: false
+  }
+);
 
 export default function Collections() {
   const [customDesigns, setCustomDesigns] = useCustomDesigns();
@@ -25,50 +27,7 @@ export default function Collections() {
           onCreate={created => setCustomDesigns(c => [...c, created])}
         />
       </div>
-      <WindowScroller scrollElement={window}>
-        {({ height, isScrolling, registerChild, onChildScroll, scrollTop }) => (
-          <AutoSizer disableHeight>
-            {({ width }) => (
-              <Grid
-                cellRenderer={({ columnIndex, key, rowIndex, style }) => {
-                  const customDesign =
-                    customDesigns[columnIndex + rowIndex * 2];
-                  return (
-                    <div
-                      key={key}
-                      ref={registerChild}
-                      style={{
-                        ...style,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center"
-                      }}
-                    >
-                      {customDesign ? (
-                        <CustomDesignItem customDesign={customDesign} />
-                      ) : null}
-                    </div>
-                  );
-                }}
-                style={{ overflowX: "hidden" }}
-                autoHeight
-                columnCount={Math.floor(width / (WIDTH + PADDING))}
-                columnWidth={Math.ceil(
-                  width / Math.floor(width / (WIDTH + PADDING))
-                )}
-                height={height}
-                rowCount={Math.ceil(
-                  customDesigns.length / Math.floor(width / (WIDTH + PADDING))
-                )}
-                rowHeight={HEIGHT + PADDING}
-                width={width}
-                scrollTop={scrollTop}
-                isScrolling={isScrolling}
-              />
-            )}
-          </AutoSizer>
-        )}
-      </WindowScroller>
+      <CustomDesignGrid customDesigns={customDesigns} />
     </>
   );
 }
