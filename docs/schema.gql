@@ -52,11 +52,25 @@ type CustomDesign @collection(name: "customDesigns") {
   s3Url: String!
   code: String!
   title: String!
-  tags: [String!]!
+  tags: [String!]
   likes: Int!
   createdAt: Time!
   redacted: Boolean!
-  redactedReason: String!
+  redactedReason: String
+}
+
+type SavedCustomDesign @collection(name: "savedCustomDesigns") {
+  userId: ID!
+  customDesignId: ID!
+  user: User! @relation
+  customDesign: CustomDesign! @relation
+}
+
+type SavedUser @collection(name: "savedUsers") {
+  userId: ID!
+  user: User! @relation
+  savedId: ID!
+  saved: User! @relation
 }
 
 type Query {
@@ -73,6 +87,10 @@ type Query {
   getFossilCollectionByUserAndName(userId: ID, name: String): FossilCollection!
   getRecipeCollectionByUser(userId: ID): [RecipeCollection!]!
   getRecipeCollectionByUserAndName(userId: ID, name: String): RecipeCollection!
-  getCustomDesignByType(type: String, redacted: Boolean): [CustomDesign!]!
-  getCustomDesignByUser(userId: ID, redacted: Boolean): [CustomDesign!]!
+  getCustomDesigns: [CustomDesign!]!
+  getCustomDesignsByRedacted(redacted: Boolean): [CustomDesign!]!
+  getCustomDesignsByType(type: String, redacted: Boolean): [CustomDesign!]!
+  getCustomDesignsByUser(userId: ID, redacted: Boolean): [CustomDesign!]!
+  getSavedCustomDesignsByUser(userId: ID): [CustomDesign!]!
+  getSavedUsersByUser(userId: ID): [CustomDesign!]!
 }

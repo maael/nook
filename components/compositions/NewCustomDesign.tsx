@@ -3,13 +3,19 @@ import { jsx } from "@emotion/core";
 import { createRef, useState, useEffect } from "react";
 import { colors } from "../../util/theme";
 
-export default function NewCustomDesign() {
+interface Props {
+  onCreate?: (created: any) => void;
+}
+
+export default function NewCustomDesign({ onCreate }: Props) {
   const fileInputRef = createRef<HTMLInputElement>();
   const [file, setFile] = useState<File | undefined>();
   const [title, setTitle] = useState("");
   const [code, setCode] = useState("");
   const [type, setType] = useState("");
   const [preview, setPreview] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const reader = new FileReader();
     function listener() {
@@ -84,24 +90,41 @@ export default function NewCustomDesign() {
             placeholder="Type"
           />
         </div>
+        {error ? <div>{error}</div> : null}
         <button
+          disabled={loading || !title || !code || !type || !file}
           css={{ flex: 1 }}
           onClick={async () => {
-            console.info(file, title, code, type);
+            setLoading(true);
+            setError("");
             const fd = new FormData();
             fd.append("img", file!);
             fd.append("title", title);
             fd.append("code", code);
             fd.append("type", type);
             fd.append("tags", JSON.stringify([]));
-            const res = await fetch("/api/db/custom-designs", {
-              method: "POST",
-              body: fd
-            });
-            console.info(res.ok);
+            try {
+              const res = await fetch("/api/db/custom-designs", {
+                method: "POST",
+                body: fd
+              });
+              if (res.ok && onCreate) {
+                onCreate(await res.json());
+                setFile(undefined);
+                setTitle("");
+                setCode("");
+                setType("");
+              } else if (!res.ok) {
+                setError("An error occurred, please try again.");
+              }
+            } catch (e) {
+              setError("An error occurred, please try again.");
+            } finally {
+              setLoading(false);
+            }
           }}
         >
-          Save
+          {loading ? "Saving..." : "Save"}
         </button>
       </div>
     </div>

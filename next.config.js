@@ -16,6 +16,9 @@ module.exports = {
     FAUNA_SECRET: process.env.FAUNA_SECRET,
     MOCK_USER_ID: process.env.MOCK_USER_ID,
     OAUTH_STATE: process.env.OAUTH_STATE,
+    S3_ACCESS_KEY_ID: process.env.S3_ACCESS_KEY_ID,
+    S3_SECRET_ACCESS_KEY: process.env.S3_SECRET_ACCESS_KEY,
+    S3_BUCKET_NAME: process.env.S3_BUCKET_NAME,
     ROOT: __dirname
   }
 };

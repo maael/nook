@@ -9,7 +9,10 @@
       "FAUNA_SECRET": "@nook-fauna-secret",
       "OAUTH_STATE": "@nook-oauth-state",
       "DISCORD_OAUTH_ID": "@nook-discord-oauth-id",
-      "DISCORD_OAUTH_SECRET": "@nook-discord-oauth-secret"
+      "DISCORD_OAUTH_SECRET": "@nook-discord-oauth-secret",
+      "S3_ACCESS_KEY_ID": "@nook-s3-access-key-id",
+      "S3_SECRET_ACCESS_KEY": "@nook-s3-secret-access-key",
+      "S3_BUCKET_NAME": "@nook-s3-bucket-name"
     }
   }
 }

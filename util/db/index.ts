@@ -36,3 +36,8 @@ export {
   getCollectionItems as getDiyItems,
   getCollectionItemByUserAndName as getDiyItemByUserAndName
 } from "./collections/diy";
+export {
+  create as createCustomDesign,
+  getCustomDesignsForUser,
+  getCustomDesigns
+} from "./custom-designs";
