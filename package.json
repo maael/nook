@@ -42,7 +42,9 @@
     "react-icons": "^3.9.0",
     "react-modal": "^3.11.2",
     "react-select": "^3.1.0",
-    "react-spinners": "^0.8.1"
+    "react-spinners": "^0.8.1",
+    "react-virtualized": "^9.21.2",
+    "react-virtualized-auto-sizer": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -56,6 +58,7 @@
     "@types/react": "^16.9.11",
     "@types/react-modal": "^3.10.5",
     "@types/react-select": "^3.0.11",
+    "@types/react-virtualized": "^9.21.8",
     "cheerio": "^1.0.0-rc.3",
     "dotenv-extended": "^2.7.1",
     "got": "^10.7.0",

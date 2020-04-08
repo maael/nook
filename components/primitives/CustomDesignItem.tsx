@@ -3,6 +3,10 @@ import { jsx } from "@emotion/core";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";
 import { colors } from "../../util/theme";
 
+export const WIDTH = 400;
+export const HEIGHT = 317;
+export const PADDING = 20;
+
 export default function CustomDesignItem({
   customDesign: { s3Url, title, code, user, tags }
 }: {
@@ -19,15 +23,24 @@ export default function CustomDesignItem({
       css={{
         display: "inline-block",
         margin: 10,
-        width: 400,
+        width: WIDTH,
         backgroundColor: colors.blueDark,
         color: colors.blueLight,
         borderRadius: "1em",
         overflow: "hidden",
-        paddingBottom: 10
+        paddingBottom: 10,
+        textAlign: "center"
       }}
     >
-      <img css={{ width: "100%" }} src={s3Url} />
+      <div
+        css={{
+          width: "100%",
+          height: 220,
+          backgroundImage: `url(${s3Url})`,
+          backgroundRepeat: "none",
+          backgroundSize: "cover"
+        }}
+      ></div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{title}</div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{code}</div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{tags.join(", ")}</div>

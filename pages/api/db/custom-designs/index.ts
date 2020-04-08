@@ -1,12 +1,19 @@
+import multer from "multer";
 import jwtGuard from "../../../../util/middlewares/jwtGuard";
 import cookies, { NextApiRequestWithJWT } from "../../../../util/cookies";
 import { upload } from "../../../../util/s3";
 import { createCustomDesign, getCustomDesigns } from "../../../../util/db";
 
-import multer from "multer";
+const TWO_MB = 2e6;
 const uploadMiddleware = multer({
   dest: "uploads/",
-  storage: multer.memoryStorage()
+  storage: multer.memoryStorage(),
+  limits: {
+    fields: 4,
+    files: 1,
+    fileSize: TWO_MB,
+    fieldNameSize: 10
+  }
 });
 
 function getFields(
