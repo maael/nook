@@ -97,13 +97,19 @@ export default function Collections() {
           <CheckboxPill
             icon={<FaUser />}
             checked={mine}
-            onChange={() => setMine(s => !s)}
+            onChange={() => {
+              setMine(s => !s);
+              setFavourites(false);
+            }}
             label={"Only Mine"}
           />
           <CheckboxPill
             icon={<FaHeart />}
             checked={favourites}
-            onChange={() => setFavourites(s => !s)}
+            onChange={() => {
+              setFavourites(s => !s);
+              setMine(false);
+            }}
             label={"Only Favourites"}
           />
         </div>
