@@ -12,8 +12,14 @@ export default cookies(async function(req, res) {
     type === "reddit" ? getUserByRedditName : getUserByDiscordFullName;
   if (req.method === "GET") {
     const user = await method(safeId);
-    let profile = {};
-    if (user) {
+    let profile = {
+      bugs: [],
+      fish: [],
+      fossils: [],
+      customDesigns: [],
+      savedCustomDesigns: []
+    };
+    if (user && user._id !== process.env.ANON_NOOK_ID) {
       try {
         profile = await getUserProfile(user._id);
       } catch (e) {
