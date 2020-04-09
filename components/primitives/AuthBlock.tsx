@@ -4,11 +4,10 @@ import Link from "next/link";
 import { FaDiscord, FaRedditAlien } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import TemtemButton from "@maael/temtem-button-component";
-import { colors } from "@maael/temtem-theme";
 import useJWT from "../hooks/useJWT";
 import { JWT_VERSION } from "../../util/constants";
 import * as userUtil from "../../util/user";
-import {colors as nookTheme} from '../../util/theme';
+import { colors as nookTheme, styles } from "../../util/theme";
 
 export default function AuthBlock() {
   const jwt = useJWT();
@@ -35,8 +34,8 @@ export default function AuthBlock() {
           <img
             css={{
               border: `2px solid ${nookTheme.blueLight}`,
-              height: 30,
-              width: 30,
+              height: 25,
+              width: 25,
               borderRadius: "50%",
               margin: "0px 5px"
             }}
@@ -45,46 +44,48 @@ export default function AuthBlock() {
         </a>
       </Link>
       <a href={`/api/logout?v${JWT_VERSION}&cb=${Math.random()}`}>
-        <TemtemButton
-          type={"Neutral" as any}
-          style={{ height: 30, width: 30, padding: 7 }}
-          bgColor={nookTheme.blueLight}
+        <button
+          css={styles.button}
+          style={{
+            height: 25,
+            width: 25,
+            padding: 4,
+            backgroundColor: nookTheme.blueLight
+          }}
         >
           <FiLogOut color={nookTheme.blueDark} size={16} />
-        </TemtemButton>
+        </button>
       </a>
     </div>
   ) : (
     <div css={{ marginLeft: 10, position: "relative", top: -2 }}>
       <a href={`/api/login/reddit?v${JWT_VERSION}&cb=${Math.random()}`}>
-        <TemtemButton
-          type={"Neutral" as any}
-          bgColor="#FF5700"
-          size="small"
-          style={{ padding: 5, paddingLeft: 30, position: "relative" }}
+        <button
+          css={styles.button}
+          style={{ backgroundColor: "#FF5700", color: "#FFFFFF" }}
         >
           <>
             <FaRedditAlien
-              style={{ fontSize: 18, position: "absolute", left: 5, top: 3 }}
+              size={18}
+              style={{ position: "relative", top: 3, marginRight: 4 }}
             />
             Login
           </>
-        </TemtemButton>
+        </button>
       </a>
       <a href={`/api/login/discord?v${JWT_VERSION}&cb=${Math.random()}`}>
-        <TemtemButton
-          type={"Neutral" as any}
-          bgColor="#7289DA"
-          size="small"
-          style={{ padding: 5, paddingLeft: 30, position: "relative" }}
+        <button
+          css={styles.button}
+          style={{ backgroundColor: "#7289DA", color: "#FFFFFF" }}
         >
           <>
             <FaDiscord
-              style={{ fontSize: 18, position: "absolute", left: 5, top: 4 }}
+              size={18}
+              style={{ position: "relative", top: 4, marginRight: 4 }}
             />
             Login
           </>
-        </TemtemButton>
+        </button>
       </a>
     </div>
   );

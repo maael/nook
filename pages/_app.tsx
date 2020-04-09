@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <meta httpEquiv="content-language" content="en-gb" />
-        <meta name="theme-color" content={colors.uiBgGradientStart} />
+        <meta name="theme-color" content={nookTheme.blueLight} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Matthew Elphick" />
         <meta
@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }) {
       <div
         css={{
           backgroundColor: nookTheme.blueDark,
-          padding: 5,
+          padding: 10,
           fontSize: 20,
           display: "flex",
           alignItems: "center",
@@ -84,8 +84,8 @@ export default function App({ Component, pageProps }) {
       </div>
       <HeaderBar
         style={{
-          padding: "0 20px 10px 20px",
-          "@media (min-width: 800px)": { padding: 0 }
+          height: 35,
+          padding: 0
         }}
       >
         <React.Fragment>
