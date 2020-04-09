@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import { createRef, useState, useEffect } from "react";
 import { colors } from "../../util/theme";
 import useCustomDesignImage from "../../components/hooks/useCustomDesignImage";
+import useImagePreview from "../../components/hooks/useImagePreview";
 
 interface Props {
   onCreate?: (created: any) => void;
@@ -14,28 +15,23 @@ export default function NewCustomDesign({ onCreate }: Props) {
   const [title, setTitle] = useState("");
   const [code, setCode] = useState("");
   const [type, setType] = useState("");
-  const [preview, setPreview] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [detecting, setDetecting] = useState(false);
+  const preview = useImagePreview(file);
   const detected = useCustomDesignImage(file);
-  console.info(">", detected);
-  useEffect(() => {
-    console.info("?");
-    if (!title) setTitle(detected.title);
-    if (!type) setType(detected.type);
-    if (!code) setCode(detected.code);
-  }, [detected.title, detected.type, detected.code]);
-  useEffect(() => {
-    const reader = new FileReader();
-    function listener() {
-      setPreview(reader.result ? reader.result.toString() : "");
-    }
-    reader.addEventListener("load", listener, false);
-    if (file) reader.readAsDataURL(file);
-    return () => {
-      reader.removeEventListener("load", listener);
-    };
-  }, [file]);
+  detected.on("start", () => {
+    setDetecting(true);
+  });
+  detected.on("finish", () => {
+    setDetecting(false);
+  });
+  detected.on("data", data => {
+    setTitle(data.title);
+    setType(data.type);
+    setCode(data.code);
+  });
+
   return (
     <div
       css={{
@@ -77,7 +73,11 @@ export default function NewCustomDesign({ onCreate }: Props) {
           )}
         </div>
         <input
-          onChange={e => setFile((e.target.files || [])[0])}
+          onChange={e =>
+            e.target.files &&
+            e.target.files.length &&
+            setFile(e.target.files[0])
+          }
           ref={fileInputRef}
           style={{ display: "none" }}
           type="file"
@@ -99,9 +99,10 @@ export default function NewCustomDesign({ onCreate }: Props) {
             placeholder="Type"
           />
         </div>
+        {detecting ? <div>Detecting...</div> : null}
         {error ? <div>{error}</div> : null}
         <button
-          disabled={loading || !title || !code || !type || !file}
+          disabled={detecting || loading || !title || !code || !type || !file}
           css={{ flex: 1 }}
           onClick={async () => {
             setLoading(true);
