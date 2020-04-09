@@ -54,6 +54,7 @@ export default cookies(
           res.status(500).json({ err: "Missing fields" });
         }
       } catch (e) {
+        console.error(e);
         if (e instanceof multer.MulterError) {
           res.json({ err: e.message });
         } else if (e) {
