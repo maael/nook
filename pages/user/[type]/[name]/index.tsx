@@ -1,98 +1,107 @@
 import { useState } from "react";
 import fetch from "isomorphic-fetch";
-import { FaDiscord, FaRedditAlien } from "react-icons/fa";
-import TemtemText from "@maael/temtem-text-component";
-import TemtemButton from "@maael/temtem-button-component";
+import {
+  FaDiscord,
+  FaRedditAlien,
+  FaNintendoSwitch,
+  FaGlobe
+} from "react-icons/fa";
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
-import { getUserName, getUserIcon } from "../../../../util/user";
+import { getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
-import { colors, styles } from "../../../../util/theme";
+import { colors, styles as generalStyles } from "../../../../util/theme";
+
+const styles = {
+  badge: {
+    margin: "0px 5px 10px",
+    color: "#FFFFFF"
+  }
+};
 
 export default function UserPage({ user = {} as any }: { user: User }) {
   const jwt = useJWT();
   const [editing, setEditing] = useState(false);
   return (
     <div css={{ textAlign: "center", marginTop: 10 }}>
-      <img
-        css={{
-          border: `2px solid ${colors.blueDark}`,
-          height: 50,
-          width: 50,
-          borderRadius: "50%",
-          margin: "0px 5px"
-        }}
-        src={getUserIcon(user)}
-      />
-      <TemtemText style={{ fontSize: 40 }} borderWidth={10}>
-        {getUserName(user)}
-      </TemtemText>
+      <div>
+        <img
+          css={{
+            border: `2px solid ${colors.blueDark}`,
+            height: 50,
+            width: 50,
+            borderRadius: "50%",
+            margin: "0px 5px 5px 5px"
+          }}
+          src={getUserIcon(user)}
+        />
+      </div>
       {user.redditName ? (
         <a href={`https://reddit.com/user/${user.redditName}`}>
-          <TemtemButton
-            size="small"
+          <button
             style={{
-              margin: "0px 5px 10px",
-              position: "relative",
-              paddingLeft: 30
+              ...styles.badge,
+              backgroundColor: "#FF5700"
             }}
-            bgColor="#FF5700"
+            css={generalStyles.button}
           >
-            <>
-              <FaRedditAlien
-                style={{ fontSize: 18, position: "absolute", left: 8, top: 9 }}
-              />
-              {user.redditName}
-            </>
-          </TemtemButton>
+            <FaRedditAlien
+              size={18}
+              style={{ position: "relative", top: 4, marginRight: 4 }}
+            />
+            {user.redditName}
+          </button>
         </a>
       ) : null}
       {user.discordFullName ? (
         <a href={"https://discordapp.com/"}>
-          <TemtemButton
-            size="small"
+          <button
             style={{
-              margin: "0px 5px 10px",
-              position: "relative",
-              paddingLeft: 30
+              ...styles.badge,
+              backgroundColor: "#7289DA"
             }}
-            bgColor="#7289DA"
+            css={generalStyles.button}
           >
-            <>
-              <FaDiscord
-                style={{ fontSize: 18, position: "absolute", left: 8, top: 9 }}
-              />
-              {user.discordFullName}
-            </>
-          </TemtemButton>
+            <FaDiscord
+              size={18}
+              style={{ position: "relative", top: 4, marginRight: 4 }}
+            />
+            {user.discordFullName}
+          </button>
         </a>
       ) : null}
       {user.nintendoName ? (
         <a href={"https://store.steampowered.com/app/745920/Temtem/"}>
-          <TemtemButton
-            size="small"
+          <button
             style={{
-              margin: "0px 5px 10px",
-              position: "relative"
+              ...styles.badge,
+              backgroundColor: "#E4000F"
             }}
-            bgColor={colors.blueDark}
+            css={generalStyles.button}
           >
-            <>"{user.nintendoName}" in game</>
-          </TemtemButton>
+            <FaNintendoSwitch
+              size={18}
+              style={{ position: "relative", top: 4, marginRight: 4 }}
+            />
+            {`"${user.nintendoName}" in game`}
+          </button>
         </a>
       ) : null}
       {user.animalCrossingTag ? (
         <a href={"https://store.steampowered.com/app/745920/Temtem/"}>
-          <TemtemButton
-            size="small"
+          <button
             style={{
-              margin: "0px 5px 10px",
-              position: "relative"
+              ...styles.badge,
+              backgroundColor: "#7FCE2A"
             }}
-            bgColor={"#7FCE2A"}
+            css={generalStyles.button}
           >
-            <>"{user.animalCrossingTag}" Maker ID</>
-          </TemtemButton>
+            <FaGlobe
+              size={18}
+              style={{ position: "relative", top: 4, marginRight: 4 }}
+            />
+            {`"${user.animalCrossingTag}" Maker ID`}
+          </button>
         </a>
       ) : null}
       <div>
@@ -100,7 +109,7 @@ export default function UserPage({ user = {} as any }: { user: User }) {
           editing ? (
             <EditUserDetails user={user} onClose={() => setEditing(false)} />
           ) : (
-            <button css={styles.button} onClick={() => setEditing(true)}>
+            <button css={generalStyles.button} onClick={() => setEditing(true)}>
               Edit
             </button>
           )
