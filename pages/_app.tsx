@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <meta httpEquiv="content-language" content="en-gb" />
-        <meta name="theme-color" content={nookTheme.blueLight} />
+        <meta name="theme-color" content={nookTheme.blueDark} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Matthew Elphick" />
         <meta
