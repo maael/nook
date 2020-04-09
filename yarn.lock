@@ -1524,47 +1524,6 @@
     core-js "^3.4.1"
     regenerator-runtime "^0.13.3"
 
-"@maael/temtem-button-component@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@maael/temtem-button-component/-/temtem-button-component-1.5.0.tgz#35f131bc3dd928536fb32e91ee8606cff0b8eac0"
-  integrity sha512-M7xhyentL+OxFgebuBeiwXtYrN0NZ96eQsSP8xF9mZIKiTh68RxgEa5/UOqHcn8rBMDgE6ghSs+f3c2gC6vQrw==
-  dependencies:
-    "@emotion/core" "^10.0.27"
-    "@maael/temtem-text-component" "^1.3.0"
-    "@maael/temtem-theme" "^1.5.0"
-    "@maael/temtem-types" "^1.0.2"
-    react "^16.12.0"
-
-"@maael/temtem-input-component@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@maael/temtem-input-component/-/temtem-input-component-1.2.0.tgz#f04c49d9c8bdd807e6b397d8384d0c238fb13fcb"
-  integrity sha512-u/uVReR69l34/m0BAIR05sCbC6g9NeuEi3ZI4HjSBUL44Qj0UTixvIWaggq1fcVztR6KuJYunHkcSLS4lo/5Zw==
-  dependencies:
-    "@emotion/core" "^10.0.27"
-    "@maael/temtem-theme" "^1.6.0"
-    react "^16.12.0"
-
-"@maael/temtem-text-component@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@maael/temtem-text-component/-/temtem-text-component-1.3.0.tgz#d434498585f3535565e95adfbd479dc41964a6ef"
-  integrity sha512-roRuwZfnuejMGlpLn1syfXtjfclqp7TN4gRATFmEuXpvq6wxOdPo67eh98flnolCFrfk0wK+aIAUKSpe9lZq1g==
-  dependencies:
-    "@maael/temtem-theme" "^1.6.0"
-    emotion "^10.0.27"
-    react "^16.12.0"
-
-"@maael/temtem-theme@^1.5.0", "@maael/temtem-theme@^1.6.0", "@maael/temtem-theme@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@maael/temtem-theme/-/temtem-theme-1.7.0.tgz#56bbc147ecc28fead1100e5fdae31b1319f46d0a"
-  integrity sha512-AVCAOl8FcoLuBvrxwq83i7ZU6Nj6msLEDxj2P0cnYRFWpofdSQKaPQpykmBUy/1JKOPO9On/Wmw/CZydJJ1llQ==
-  dependencies:
-    "@maael/temtem-types" "^1.0.2"
-
-"@maael/temtem-types@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@maael/temtem-types/-/temtem-types-1.0.2.tgz#31e935e5f30c939893e4a664e0f7f37576a3bdbd"
-  integrity sha512-lY08G6CS9QZ6oKNOeM9w5Hn3AhR4X9ARfuAAS5S3ChmfdTqMWIkr0umEGbnSGQQuafV0CLsOi+FJnC1QHM5Z3A==
-
 "@next/polyfill-nomodule@9.3.3":
   version "9.3.3"
   resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.3.tgz#07b206ead5cd65f6739e69accb71c1f8762ae891"
@@ -3079,16 +3038,6 @@ create-ecdh@^4.0.0:
     bn.js "^4.1.0"
     elliptic "^6.0.0"
 
-create-emotion@^10.0.27:
-  version "10.0.27"
-  resolved "https://registry.yarnpkg.com/create-emotion/-/create-emotion-10.0.27.tgz#cb4fa2db750f6ca6f9a001a33fbf1f6c46789503"
-  integrity sha512-fIK73w82HPPn/RsAij7+Zt8eCE8SptcJ3WoRMfxMtjteYxud8GDTKKld7MYwAX2TVhrw29uR1N/bVGxeStHILg==
-  dependencies:
-    "@emotion/cache" "^10.0.27"
-    "@emotion/serialize" "^0.11.15"
-    "@emotion/sheet" "0.9.4"
-    "@emotion/utils" "0.11.3"
-
 create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/create-hash/-/create-hash-1.2.0.tgz#889078af11a63756bcfb59bd221996be3a9ef196"
@@ -3588,14 +3537,6 @@ emotion-reset@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/emotion-reset/-/emotion-reset-2.0.7.tgz#6ca107a267f78f976e22ed718ffd5e59884003d2"
   integrity sha512-NW+m3YxERf0LNRTTxFqjlBUqfxQs3fd8fHfsUUd6UmxyppLHhSHaT2mzJhjH0jnGwRZCoNYi9XpQhkdZOnCkmA==
-
-emotion@^10.0.27:
-  version "10.0.27"
-  resolved "https://registry.yarnpkg.com/emotion/-/emotion-10.0.27.tgz#f9ca5df98630980a23c819a56262560562e5d75e"
-  integrity sha512-2xdDzdWWzue8R8lu4G76uWX5WhyQuzATon9LmNeCy/2BHVC6dsEpfhN1a0qhELgtDVdjyEA6J8Y/VlI5ZnaH0g==
-  dependencies:
-    babel-plugin-emotion "^10.0.27"
-    create-emotion "^10.0.27"
 
 encodeurl@~1.0.2:
   version "1.0.2"

@@ -3,7 +3,6 @@ import { jsx } from "@emotion/core";
 import Link from "next/link";
 import { FaDiscord, FaRedditAlien } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import TemtemButton from "@maael/temtem-button-component";
 import useJWT from "../hooks/useJWT";
 import { JWT_VERSION } from "../../util/constants";
 import * as userUtil from "../../util/user";

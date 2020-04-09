@@ -6,7 +6,6 @@ import emotionReset from "emotion-reset";
 import { TiHomeOutline } from "react-icons/ti";
 import { IoIosMenu } from "react-icons/io";
 import { FaReddit, FaDiscord } from "react-icons/fa";
-import { colors, fonts } from "@maael/temtem-theme";
 import NavItem from "../components/primitives/NavItem";
 import HeaderBar from "../components/primitives/HeaderBar";
 import AuthBlock from "../components/primitives/AuthBlock";
@@ -59,7 +58,7 @@ export default function App({ Component, pageProps }) {
             background-color: ${nookTheme.blueLight};
             background-image: url(/images/blue-tile-light.png);
             color: #FFFFFF;
-            font-family: ${fonts.default.fontFamily};
+            font-family: 'Nunito',Arial,sans-serif;
             min-height: 100vh;
           }
         `)}

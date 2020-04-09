@@ -1,13 +1,13 @@
 import { FunctionComponent } from "react";
 import { IoMdInformationCircle, IoMdCloseCircle } from "react-icons/io";
-import { colors } from "@maael/temtem-theme";
+import { colors } from "../../util/theme";
 
 const Notification: FunctionComponent = ({ children }) => {
   return (
     <div
       css={{
-        border: `1px solid ${colors.uiBlue}`,
-        backgroundColor: colors.uiOutline,
+        border: `1px solid ${colors.blueLight}`,
+        backgroundColor: colors.blueDark,
         borderRadius: 5,
         margin: "5px auto",
         maxWidth: 800,
@@ -20,9 +20,9 @@ const Notification: FunctionComponent = ({ children }) => {
         boxSizing: "border-box"
       }}
     >
-      <IoMdInformationCircle color={colors.uiBlue} />
+      <IoMdInformationCircle color={colors.blueLight} />
       <div css={{ flex: 1, margin: "0px 5px" }}>{children}</div>
-      <IoMdCloseCircle color={colors.uiBlue} title="Hide" />
+      <IoMdCloseCircle color={colors.blueLight} title="Hide" />
     </div>
   );
 };
