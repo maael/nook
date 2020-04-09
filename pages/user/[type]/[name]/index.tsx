@@ -131,53 +131,39 @@ export default function UserPage({
           )
         ) : null}
       </div>
-      <div css={{ marginTop: 10 }}>
-        <Heading>Collected Bugs</Heading>
-        <div css={{ marginBottom: 10 }}>
-          {bugsData
-            .filter(({ name }) =>
-              user.profile!.bugs.some(
-                ({ name: profileName }) => name === profileName
+      {user.redditId === "661nj81f" ? null : (
+        <div css={{ marginTop: 10 }}>
+          <Heading>Collected Bugs</Heading>
+          <div css={{ marginBottom: 10, margin: "0 auto", maxWidth: "80vw" }}>
+            {bugsData
+              .filter(({ name }) =>
+                user.profile!.bugs.some(
+                  ({ name: profileName }) => name === profileName
+                )
               )
-            )
-            .map(({ wikiImageUrl }) => (
-              <img key={wikiImageUrl} src={wikiImageUrl} />
-            ))}
-        </div>
-        <Heading>Collected Fish</Heading>
-        <div css={{ marginBottom: 10 }}>
-          {fishData
-            .filter(({ name }) =>
-              user.profile!.fish.some(
-                ({ name: profileName }) => name === profileName
+              .map(({ wikiImageUrl }) => (
+                <img key={wikiImageUrl} src={wikiImageUrl} />
+              ))}
+          </div>
+          <Heading>Collected Fish</Heading>
+          <div css={{ marginBottom: 10 }}>
+            {fishData
+              .filter(({ name }) =>
+                user.profile!.fish.some(
+                  ({ name: profileName }) => name === profileName
+                )
               )
-            )
-            .map(({ wikiImageUrl }) => (
-              <img key={wikiImageUrl} src={wikiImageUrl} />
-            ))}
-        </div>
-        <Heading>Custom Designs</Heading>
-        <div css={{ marginBottom: 10 }}>
-          {user.profile!.customDesigns.map(({ s3Url }) => (
-            <img
-              css={{
-                width: 400,
-                margin: 10,
-                borderRadius: "1em",
-                display: "inline-block"
-              }}
-              key={s3Url}
-              src={s3Url}
-            />
-          ))}
-        </div>
-        <Heading>Saved Custom Designs</Heading>
-        <div css={{ marginBottom: 10 }}>
-          {user.profile!.savedCustomDesigns.map(
-            ({ customDesign: { s3Url } }) => (
+              .map(({ wikiImageUrl }) => (
+                <img key={wikiImageUrl} src={wikiImageUrl} />
+              ))}
+          </div>
+          <Heading>Custom Designs</Heading>
+          <div css={{ marginBottom: 10 }}>
+            {user.profile!.customDesigns.map(({ s3Url }) => (
               <img
                 css={{
                   width: 400,
+                  maxWidth: "90vw",
                   margin: 10,
                   borderRadius: "1em",
                   display: "inline-block"
@@ -185,10 +171,28 @@ export default function UserPage({
                 key={s3Url}
                 src={s3Url}
               />
-            )
-          )}
+            ))}
+          </div>
+          <Heading>Saved Custom Designs</Heading>
+          <div css={{ marginBottom: 10 }}>
+            {user.profile!.savedCustomDesigns.map(
+              ({ customDesign: { s3Url } }) => (
+                <img
+                  css={{
+                    width: 400,
+                    maxWidth: "90vw",
+                    margin: 10,
+                    borderRadius: "1em",
+                    display: "inline-block"
+                  }}
+                  key={s3Url}
+                  src={s3Url}
+                />
+              )
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
