@@ -1,24 +1,27 @@
 import { useEffect, useState } from "react";
 import jimp from "jimp";
-import { createWorker } from "tesseract.js";
+import { createWorker, Worker } from "tesseract.js";
 import { EventEmitter } from "events";
 
-function useAsyncMemo<T>(fn: () => Promise<T>): T | undefined {
-  const [m, setM] = useState<T | undefined>();
+function useWorker(): Worker | undefined {
+  const [worker, setWorker] = useState<Worker | undefined>();
   useEffect(() => {
     (async () => {
-      setM(await fn());
+      const w = createWorker();
+      await w.load();
+      await w.loadLanguage("eng");
+      await w.initialize("eng");
+      setWorker(w);
     })();
+    return () => {
+      if (worker) {
+        (async () => {
+          await worker.terminate();
+        })();
+      }
+    };
   }, []);
-  return m;
-}
-
-async function initWorker() {
-  const w = createWorker();
-  await w.load();
-  await w.loadLanguage("eng");
-  await w.initialize("eng");
-  return w;
+  return worker;
 }
 
 function clean(inp: string) {
@@ -26,9 +29,9 @@ function clean(inp: string) {
 }
 
 export default function useCustomDesignImage(file: File | undefined) {
-  const worker = useAsyncMemo(initWorker);
-  const worker2 = useAsyncMemo(initWorker);
-  const worker3 = useAsyncMemo(initWorker);
+  const worker = useWorker();
+  const worker2 = useWorker();
+  const worker3 = useWorker();
 
   const em = new EventEmitter();
 

@@ -61,6 +61,9 @@ export const customSelectStyles: Styles = {
 
 export const styles: Record<string, InterpolationWithTheme<any>> = {
   input: {
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
     alignItems: "center",
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
@@ -88,6 +91,55 @@ export const styles: Record<string, InterpolationWithTheme<any>> = {
       color: colors.blueLight,
       fontSize: 16,
       fontFamily: "Nunito,Arial,sans-serif"
+    }
+  },
+  inputLight: {
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    alignItems: "center",
+    color: colors.blueDark,
+    backgroundColor: colors.blueLight,
+    borderColor: "hsl(0,0%,80%)",
+    borderRadius: 4,
+    borderStyle: "solid",
+    borderWidth: 1,
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    minHeight: 38,
+    outline: "0 !important",
+    position: "relative",
+    transition: "all 100ms",
+    boxSizing: "border-box",
+    border: "none",
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 10,
+    paddingRight: 10,
+    width: "100%",
+    fontSize: 16,
+    fontFamily: "Nunito,Arial,sans-serif",
+    "::placeholder": {
+      color: colors.blueDark,
+      fontSize: 16,
+      fontFamily: "Nunito,Arial,sans-serif"
+    }
+  },
+  button: {
+    backgroundColor: colors.blueMid,
+    borderRadius: 4,
+    color: colors.blueLight,
+    border: "none",
+    flex: 1,
+    fontSize: 16,
+    margin: 2,
+    fontFamily: "Nunito,Arial,sans-serif",
+    cursor: "pointer",
+    "&:disabled": {
+      color: colors.blueDark,
+      cursor: "not-allowed",
+      backgroundColor: "rgba(136, 154, 248, 0.5)"
     }
   },
   pageWrapper: {

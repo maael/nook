@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import { createRef, useState, useEffect } from "react";
-import { colors } from "../../util/theme";
+import { colors, styles } from "../../util/theme";
 import useCustomDesignImage from "../../components/hooks/useCustomDesignImage";
 import useImagePreview from "../../components/hooks/useImagePreview";
 
@@ -82,28 +82,43 @@ export default function NewCustomDesign({ onCreate }: Props) {
           style={{ display: "none" }}
           type="file"
         />
-        <div>
+        <div css={{ display: "flex", flexDirection: "row" }}>
           <input
+            css={styles.inputLight}
+            style={{ margin: 2 }}
             value={title}
             onChange={e => setTitle(e.target.value)}
-            placeholder="Title"
+            placeholder="Title..."
           />
           <input
+            css={styles.inputLight}
+            style={{ margin: 2 }}
             value={code}
             onChange={e => setCode(e.target.value)}
-            placeholder="Code"
+            placeholder="Code..."
           />
+        </div>
+        <div css={{ display: "flex", flexDirection: "row" }}>
           <input
+            css={styles.inputLight}
+            style={{ margin: 2 }}
             value={type}
             onChange={e => setType(e.target.value)}
-            placeholder="Type"
+            placeholder="Type..."
+          />
+          <input
+            css={styles.inputLight}
+            style={{ margin: 2 }}
+            value={type}
+            onChange={e => setType(e.target.value)}
+            placeholder="Tags..."
           />
         </div>
         {detecting ? <div>Detecting...</div> : null}
         {error ? <div>{error}</div> : null}
         <button
           disabled={detecting || loading || !title || !code || !type || !file}
-          css={{ flex: 1 }}
+          css={styles.button}
           onClick={async () => {
             setLoading(true);
             setError("");
