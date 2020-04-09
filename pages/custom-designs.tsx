@@ -17,6 +17,7 @@ const CustomDesignGrid = dynamic(
 export default function Collections() {
   const [customDesigns, setCustomDesigns] = useCustomDesigns();
   const [search, setSearch] = useState("");
+  const [adding, setAdding] = useState(false);
   const fuseSearch = useMemo(
     () => createFuse(customDesigns, { keys: ["title"] }),
     [customDesigns]
@@ -46,10 +47,17 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
-        <NewCustomDesign
-          onCreate={created => setCustomDesigns(c => [...c, created])}
-          existingTags={existingTags}
-        />
+        {adding ? (
+          <NewCustomDesign
+            onCreate={created => setCustomDesigns(c => [...c, created])}
+            existingTags={existingTags}
+            onClose={() => setAdding(false)}
+          />
+        ) : (
+          <button css={styles.button} onClick={() => setAdding(true)}>
+            Create New
+          </button>
+        )}
         <input
           value={search}
           onChange={e => setSearch(e.target.value)}

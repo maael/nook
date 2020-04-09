@@ -10,10 +10,15 @@ import CreatableSelect from "../../components/primitives/SimpleCreatableSelect";
 
 interface Props {
   onCreate?: (created: any) => void;
+  onClose?: () => void;
   existingTags?: string[];
 }
 
-export default function NewCustomDesign({ onCreate, existingTags }: Props) {
+export default function NewCustomDesign({
+  onCreate,
+  existingTags,
+  onClose
+}: Props) {
   const fileInputRef = createRef<HTMLInputElement>();
   const [file, setFile] = useState<File | undefined>();
   const [title, setTitle] = useState("");
@@ -159,6 +164,22 @@ export default function NewCustomDesign({ onCreate, existingTags }: Props) {
         >
           {loading ? "Saving..." : "Save"}
         </button>
+        {onClose ? (
+          <button
+            css={styles.button}
+            onClick={() => {
+              setFile(undefined);
+              setTitle("");
+              setCode("");
+              setType("");
+              setError("");
+              setLoading(false);
+              onClose();
+            }}
+          >
+            Close
+          </button>
+        ) : null}
       </div>
     </div>
   );
