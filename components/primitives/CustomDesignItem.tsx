@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import { FaTimes as DeleteIcon } from "react-icons/fa";
+import { FaRegHeart as SaveIcon } from "react-icons/fa";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";
 import useJWT from "../hooks/useJWT";
 import { colors } from "../../util/theme";
@@ -12,9 +13,11 @@ export const PADDING = 20;
 
 export default function CustomDesignItem({
   customDesign,
-  onDelete
+  onDelete,
+  onSaveToggle
 }: {
   customDesign: {
+    _id: string;
     s3Url: string;
     code: string;
     title: string;
@@ -22,9 +25,10 @@ export default function CustomDesignItem({
     tags: string[];
   };
   onDelete: () => void;
+  onSaveToggle: (id: string) => void;
 }) {
   const jwt = useJWT();
-  const { s3Url, title, code, user, tags } = customDesign;
+  const { _id, s3Url, title, code, user, tags } = customDesign;
   return (
     <div
       css={{
@@ -87,6 +91,26 @@ export default function CustomDesignItem({
           onClick={onDelete}
         >
           Delete <DeleteIcon size={14} />
+        </div>
+      ) : jwt ? (
+        <div
+          css={{
+            position: "absolute",
+            cursor: "pointer",
+            fontSize: 12,
+            backgroundColor: colors.blueLight,
+            color: colors.blueDark,
+            top: 10,
+            right: 10,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 5,
+            borderRadius: "0.3em"
+          }}
+          onClick={() => onSaveToggle(_id)}
+        >
+          Save <SaveIcon size={14} />
         </div>
       ) : null}
       <CustomDesignImageModal

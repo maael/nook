@@ -43,6 +43,7 @@ export default function Collections({
                         <CustomDesignItem
                           customDesign={customDesign}
                           onDelete={() => onDelete(customDesign)}
+                          onSaveToggle={id => console.info("saving", id)}
                         />
                       ) : null}
                     </div>
