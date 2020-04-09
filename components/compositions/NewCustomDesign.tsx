@@ -152,6 +152,7 @@ export default function NewCustomDesign({
                 setTitle("");
                 setCode("");
                 setType("");
+                setTags([]);
               } else if (!res.ok) {
                 setError("An error occurred, please try again.");
               }
@@ -175,6 +176,7 @@ export default function NewCustomDesign({
               setError("");
               setLoading(false);
               onClose();
+              setTags([]);
             }}
           >
             Close
