@@ -47,3 +47,4 @@ export {
   getSavedCustomDesignsForUser,
   deleteSavedCustomDesign
 } from "./saved-custom-designs";
+export { getUserProfile } from "./profile";

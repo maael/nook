@@ -1,7 +1,8 @@
 import cookies from "../../../../../util/cookies";
 import {
   getUserByRedditName,
-  getUserByDiscordFullName
+  getUserByDiscordFullName,
+  getUserProfile
 } from "../../../../../util/db";
 
 export default cookies(async function(req, res) {
@@ -11,7 +12,15 @@ export default cookies(async function(req, res) {
     type === "reddit" ? getUserByRedditName : getUserByDiscordFullName;
   if (req.method === "GET") {
     const user = await method(safeId);
-    res.json(user || {});
+    let profile = {};
+    if (user) {
+      try {
+        profile = await getUserProfile(user._id);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    res.json({ ...user, profile } || {});
     return;
   } else {
     res.json({ error: "not-implemented" });

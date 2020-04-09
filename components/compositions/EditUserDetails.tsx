@@ -9,6 +9,15 @@ interface Props {
   onClose: () => void;
 }
 
+const overriddenInput = {
+  ...(styles.input as any),
+  "::placeholder": {
+    color: "#FFFFFF",
+    fontSize: 16,
+    fontFamily: "Nunito,Arial,sans-serif"
+  }
+};
+
 export default function EditUserDetails({ user, onClose }: Props) {
   const [nintendoName, setNintendoName] = useState(user.nintendoName || "");
   const [discordFullName, setDiscordFullName] = useState(
@@ -29,30 +38,30 @@ export default function EditUserDetails({ user, onClose }: Props) {
       css={{ maxWidth: 500, margin: "5px auto 15px auto", padding: "0px 10px" }}
     >
       <input
-        disabled={userType === UserType.REDDIT}
-        css={styles.input}
+        disabled={userType === UserType.DISCORD}
+        css={overriddenInput}
         style={{ backgroundColor: "#7289DA", color: "#FFFFFF" }}
         placeholder="Discord Username..."
         value={discordFullName}
         onChange={({ target }) => setDiscordFullName((target as any).value)}
       />
       <input
-        disabled={userType === UserType.DISCORD}
-        css={styles.input}
+        disabled={userType === UserType.REDDIT}
+        css={overriddenInput}
         style={{ backgroundColor: "#FF5700", color: "#FFFFFF" }}
         placeholder="Reddit Username..."
         value={redditName}
         onChange={({ target }) => setRedditName((target as any).value)}
       />
       <input
-        css={styles.input}
+        css={overriddenInput}
         style={{ backgroundColor: "#E4000F", color: "#FFFFFF" }}
         placeholder="Nintendo Username..."
         value={nintendoName}
         onChange={({ target }) => setNintendoName((target as any).value)}
       />
       <input
-        css={styles.input}
+        css={overriddenInput}
         style={{ backgroundColor: "#7FCE2A", color: "#FFFFFF" }}
         placeholder="Maker Tag..."
         value={animalCrossingTag}
@@ -71,6 +80,7 @@ export default function EditUserDetails({ user, onClose }: Props) {
               animalCrossingTag: animalCrossingTag || null
             })
           });
+          window.location.reload();
           onClose();
         }}
         disabled={!!savingUpdate}

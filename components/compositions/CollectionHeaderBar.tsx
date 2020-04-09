@@ -5,7 +5,12 @@ import NavItem from "../primitives/NavItem";
 export default function CollectionHeaderBar() {
   return (
     <HeaderBar
-      style={{ alignItems: "flex-end !important", padding: 5, fontSize: 18 }}
+      style={{
+        alignItems: "flex-end !important",
+        padding: "2px 5px 5px 5px",
+        fontSize: 16,
+        height: "auto"
+      }}
     >
       <React.Fragment>
         <NavItem url="/collections/fish" exact>

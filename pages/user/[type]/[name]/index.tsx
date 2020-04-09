@@ -8,9 +8,13 @@ import {
 } from "react-icons/fa";
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
+import Heading from "../../../../components/primitives/Heading";
 import { getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
 import { colors, styles as generalStyles } from "../../../../util/theme";
+
+const bugsData = require("../../../../data/bugs.json");
+const fishData = require("../../../../data/fish.json");
 
 const styles = {
   badge: {
@@ -19,7 +23,19 @@ const styles = {
   }
 };
 
-export default function UserPage({ user = {} as any }: { user: User }) {
+export default function UserPage({
+  user = {} as any
+}: {
+  user: User & {
+    profile?: {
+      bugs: any[];
+      fish: any[];
+      fossils: any[];
+      customDesigns: any[];
+      savedCustomDesigns: any[];
+    };
+  };
+}) {
   const jwt = useJWT();
   const [editing, setEditing] = useState(false);
   return (
@@ -114,6 +130,64 @@ export default function UserPage({ user = {} as any }: { user: User }) {
             </button>
           )
         ) : null}
+      </div>
+      <div css={{ marginTop: 10 }}>
+        <Heading>Collected Bugs</Heading>
+        <div css={{ marginBottom: 10 }}>
+          {bugsData
+            .filter(({ name }) =>
+              user.profile!.bugs.some(
+                ({ name: profileName }) => name === profileName
+              )
+            )
+            .map(({ wikiImageUrl }) => (
+              <img key={wikiImageUrl} src={wikiImageUrl} />
+            ))}
+        </div>
+        <Heading>Collected Fish</Heading>
+        <div css={{ marginBottom: 10 }}>
+          {fishData
+            .filter(({ name }) =>
+              user.profile!.fish.some(
+                ({ name: profileName }) => name === profileName
+              )
+            )
+            .map(({ wikiImageUrl }) => (
+              <img key={wikiImageUrl} src={wikiImageUrl} />
+            ))}
+        </div>
+        <Heading>Custom Designs</Heading>
+        <div css={{ marginBottom: 10 }}>
+          {user.profile!.customDesigns.map(({ s3Url }) => (
+            <img
+              css={{
+                width: 400,
+                margin: 10,
+                borderRadius: "1em",
+                display: "inline-block"
+              }}
+              key={s3Url}
+              src={s3Url}
+            />
+          ))}
+        </div>
+        <Heading>Saved Custom Designs</Heading>
+        <div css={{ marginBottom: 10 }}>
+          {user.profile!.savedCustomDesigns.map(
+            ({ customDesign: { s3Url } }) => (
+              <img
+                css={{
+                  width: 400,
+                  margin: 10,
+                  borderRadius: "1em",
+                  display: "inline-block"
+                }}
+                key={s3Url}
+                src={s3Url}
+              />
+            )
+          )}
+        </div>
       </div>
     </div>
   );
