@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
-import TemtemText from "@maael/temtem-text-component";
-import Loading from "../components/primitives/Loading";
 import useFetch from "../components/hooks/useFetch";
-import { colors } from "@maael/temtem-theme";
 import * as userUtil from "../util/user";
-import { styles as generalStyles } from "../util/theme";
+import { styles as generalStyles, colors } from "../util/theme";
 
 export default function UsersSearch() {
   const [search, setSearch] = useState("");
@@ -37,7 +34,6 @@ export default function UsersSearch() {
           maxWidth: 600
         }}
       >
-        <Loading loading={loadingUsers} />
         {users
           .filter(u =>
             userUtil
@@ -52,16 +48,20 @@ export default function UsersSearch() {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                margin: "5px 10px"
+                margin: 5,
+                backgroundColor: colors.blueDark,
+                padding: "4px 5px",
+                borderRadius: "0.5em",
+                color: colors.blueLight
               }}
             >
               <img
                 css={{
-                  border: `2px solid ${colors.uiBlueFaded}`,
+                  border: `2px solid ${colors.blueLight}`,
                   height: 30,
                   width: 30,
                   borderRadius: "50%",
-                  margin: "0px 5px"
+                  marginRight: 5
                 }}
                 src={userUtil.getUserIcon(user)}
               />
@@ -70,9 +70,7 @@ export default function UsersSearch() {
                 as={userUtil.getUserProfileLink(user)}
               >
                 <a css={{ textDecoration: "none", cursor: "pointer" }}>
-                  <TemtemText containerStyle={{ marginRight: 5 }}>
-                    {userUtil.getUserName(user)}
-                  </TemtemText>
+                  {userUtil.getUserName(user)}
                 </a>
               </Link>
             </div>
