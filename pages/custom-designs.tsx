@@ -21,6 +21,14 @@ export default function Collections() {
     () => createFuse(customDesigns, { keys: ["title"] }),
     [customDesigns]
   );
+  const existingTags = useMemo(
+    () => [
+      ...new Set(
+        customDesigns.reduce<string[]>((acc, { tags }) => acc.concat(tags), [])
+      )
+    ],
+    [customDesigns]
+  );
   const filtered = useMemo(
     () =>
       search
@@ -40,6 +48,7 @@ export default function Collections() {
       >
         <NewCustomDesign
           onCreate={created => setCustomDesigns(c => [...c, created])}
+          existingTags={existingTags}
         />
         <input
           value={search}

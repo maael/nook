@@ -30,11 +30,13 @@ export const customSelectStyles: Styles = {
   }),
   menu: existing => ({
     ...existing,
-    backgroundColor: colors.blueDark
+    backgroundColor: colors.blueDark,
+    color: colors.blueLight
   }),
   multiValue: existing => ({
     ...existing,
-    borderRadius: 10
+    borderRadius: 10,
+    backgroundColor: colors.blueLight
   }),
   multiValueLabel: existing => ({
     ...existing,
@@ -48,14 +50,85 @@ export const customSelectStyles: Styles = {
     ...existing,
     backgroundColor: colors.blueLight,
     color: colors.blueDark,
+    borderRadius: 0,
     borderTopRightRadius: "1em",
     borderBottomRightRadius: "1em",
     fontWeight: "bold"
   }),
   singleValue: existing => ({
     ...existing,
+    color: colors.blueLight
+  }),
+  clearIndicator: existing => ({
+    ...existing,
     color: colors.blueLight,
+    cursor: "pointer",
+    padding: 0
+  }),
+  dropdownIndicator: existing => ({
+    ...existing,
+    color: colors.blueLight
+  }),
+  indicatorSeparator: existing => ({
+    ...existing,
+    display: "none"
+  })
+};
+
+export const customSelectStylesLight = {
+  control: existing => ({
+    ...existing,
+    backgroundColor: colors.blueLight,
+    border: "none",
+    margin: 2
+  }),
+  placeholder: existing => ({
+    ...existing,
+    color: colors.blueDark
+  }),
+  menu: existing => ({
+    ...existing,
+    backgroundColor: colors.blueLight,
+    color: colors.blueDark
+  }),
+  multiValue: existing => ({
+    ...existing,
+    borderRadius: 10
+  }),
+  multiValueLabel: existing => ({
+    ...existing,
+    backgroundColor: colors.blueDark,
+    color: colors.blueLight,
+    borderRadius: 0,
+    borderTopLeftRadius: "1em",
+    borderBottomLeftRadius: "1em",
     fontWeight: "bold"
+  }),
+  multiValueRemove: existing => ({
+    ...existing,
+    backgroundColor: colors.blueDark,
+    color: colors.blueLight,
+    borderTopRightRadius: "1em",
+    borderBottomRightRadius: "1em",
+    fontWeight: "bold"
+  }),
+  singleValue: existing => ({
+    ...existing,
+    color: colors.blueDark
+  }),
+  clearIndicator: existing => ({
+    ...existing,
+    color: colors.blueDark,
+    cursor: "pointer",
+    padding: 0
+  }),
+  dropdownIndicator: existing => ({
+    ...existing,
+    color: colors.blueDark
+  }),
+  indicatorSeparator: existing => ({
+    ...existing,
+    display: "none"
   })
 };
 

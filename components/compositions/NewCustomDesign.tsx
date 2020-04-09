@@ -2,19 +2,24 @@
 import { jsx } from "@emotion/core";
 import { createRef, useState, useEffect } from "react";
 import { colors, styles } from "../../util/theme";
+import { CUSTOM_DESIGN_TYPES } from "../../util/constants";
 import useCustomDesignImage from "../../components/hooks/useCustomDesignImage";
 import useImagePreview from "../../components/hooks/useImagePreview";
+import Select from "../../components/primitives/SimpleSelect";
+import CreatableSelect from "../../components/primitives/SimpleCreatableSelect";
 
 interface Props {
   onCreate?: (created: any) => void;
+  existingTags?: string[];
 }
 
-export default function NewCustomDesign({ onCreate }: Props) {
+export default function NewCustomDesign({ onCreate, existingTags }: Props) {
   const fileInputRef = createRef<HTMLInputElement>();
   const [file, setFile] = useState<File | undefined>();
   const [title, setTitle] = useState("");
   const [code, setCode] = useState("");
   const [type, setType] = useState("");
+  const [tags, setTags] = useState<string[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [detecting, setDetecting] = useState(false);
@@ -31,14 +36,15 @@ export default function NewCustomDesign({ onCreate }: Props) {
     setType(data.type);
     setCode(data.code);
   });
-
   return (
     <div
       css={{
         backgroundColor: colors.blueDark,
         padding: 5,
         borderRadius: "0.3em",
-        display: "inline-block"
+        display: "inline-block",
+        width: 600,
+        maxWidth: "90vw"
       }}
     >
       <div css={{ display: "flex", flexDirection: "column" }}>
@@ -99,20 +105,22 @@ export default function NewCustomDesign({ onCreate }: Props) {
           />
         </div>
         <div css={{ display: "flex", flexDirection: "row" }}>
-          <input
-            css={styles.inputLight}
-            style={{ margin: 2 }}
-            value={type}
-            onChange={e => setType(e.target.value)}
-            placeholder="Type..."
-          />
-          <input
-            css={styles.inputLight}
-            style={{ margin: 2 }}
-            value={type}
-            onChange={e => setType(e.target.value)}
-            placeholder="Tags..."
-          />
+          <div css={{ width: "100%" }}>
+            <Select
+              value={type}
+              placeholder="Type..."
+              options={CUSTOM_DESIGN_TYPES}
+              onChange={value => setType(value || "")}
+            />
+          </div>
+          <div css={{ width: "100%" }}>
+            <CreatableSelect
+              value={tags}
+              placeholder="Tags..."
+              options={(existingTags || []).concat(tags)}
+              onChange={setTags}
+            />
+          </div>
         </div>
         {detecting ? <div>Detecting...</div> : null}
         {error ? <div>{error}</div> : null}
@@ -127,7 +135,7 @@ export default function NewCustomDesign({ onCreate }: Props) {
             fd.append("title", title);
             fd.append("code", code);
             fd.append("type", type);
-            fd.append("tags", JSON.stringify([]));
+            fd.append("tags", JSON.stringify(tags));
             try {
               const res = await fetch("/api/db/custom-designs", {
                 method: "POST",
