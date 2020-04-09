@@ -1,11 +1,15 @@
 import { parse } from "path";
 import { S3 } from "aws-sdk";
 
-const { S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY, S3_BUCKET_NAME } = process.env;
+const {
+  NOOK_S3_ACCESS_KEY_ID,
+  NOOK_S3_SECRET_ACCESS_KEY,
+  NOOK_S3_BUCKET_NAME
+} = process.env;
 
 const s3 = new S3({
-  accessKeyId: S3_ACCESS_KEY_ID,
-  secretAccessKey: S3_SECRET_ACCESS_KEY
+  accessKeyId: NOOK_S3_ACCESS_KEY_ID,
+  secretAccessKey: NOOK_S3_SECRET_ACCESS_KEY
 });
 
 export async function upload(
@@ -16,16 +20,16 @@ export async function upload(
   const { ext } = parse(file.originalname);
   console.info(
     "uploading",
-    S3_ACCESS_KEY_ID,
-    S3_SECRET_ACCESS_KEY,
-    S3_BUCKET_NAME,
+    NOOK_S3_ACCESS_KEY_ID,
+    NOOK_S3_SECRET_ACCESS_KEY,
+    NOOK_S3_BUCKET_NAME,
     userId,
     makerCode,
     ext
   );
   const result = await s3
     .upload({
-      Bucket: S3_BUCKET_NAME!,
+      Bucket: NOOK_S3_BUCKET_NAME!,
       Key: `custom-design/${userId}/${makerCode}${ext}`,
       Body: file.buffer
     })
@@ -34,6 +38,6 @@ export async function upload(
 }
 
 export async function remove(url: string) {
-  const key = url.split(S3_BUCKET_NAME!)[1].slice(1);
-  await s3.deleteObject({ Bucket: S3_BUCKET_NAME!, Key: key }).promise();
+  const key = url.split(NOOK_S3_BUCKET_NAME!)[1].slice(1);
+  await s3.deleteObject({ Bucket: NOOK_S3_BUCKET_NAME!, Key: key }).promise();
 }
