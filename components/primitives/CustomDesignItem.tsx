@@ -8,7 +8,7 @@ import { colors } from "../../util/theme";
 import CustomDesignImageModal from "./CustomDesignImageModal";
 
 export const WIDTH = 400;
-export const HEIGHT = 317;
+export const HEIGHT = 330;
 export const PADDING = 20;
 
 export default function CustomDesignItem({
@@ -58,18 +58,43 @@ export default function CustomDesignItem({
       ></div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{title}</div>
       <div css={{ marginBottom: 5, marginTop: 5 }}>{code}</div>
-      <div css={{ marginBottom: 5, marginTop: 5 }}>{tags.join(", ")}</div>
+      <div css={{ marginBottom: 5, marginTop: 5, height: 24 }}>
+        {tags.map(t => (
+          <div
+            key={t}
+            css={{
+              display: "inline-block",
+              padding: 4,
+              fontSize: 12,
+              borderRadius: "0.3em",
+              backgroundColor: colors.blueLight,
+              color: colors.blueDark,
+              margin: 2
+            }}
+          >
+            {t}
+          </div>
+        ))}
+      </div>
       <a
         href={getUserProfileLink(user)}
         css={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          textDecoration: "none"
+          textDecoration: "none",
+          color: colors.blueLight
         }}
       >
         <img
-          css={{ width: 40, marginRight: 5, borderRadius: "50%" }}
+          css={{
+            width: 25,
+            borderWidth: 2,
+            borderStyle: "solid",
+            borderColor: colors.blueLight,
+            marginRight: 5,
+            borderRadius: "50%"
+          }}
           src={getUserIcon(user)}
         />
         {getUserName(user)}
