@@ -98,19 +98,23 @@ export default function CustomDesignItem({
             position: "absolute",
             cursor: "pointer",
             fontSize: 12,
-            backgroundColor: colors.blueLight,
-            color: colors.blueDark,
+            backgroundColor: colors.redLight,
+            color: colors.redDark,
             top: 10,
             right: 10,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             padding: 5,
-            borderRadius: "0.3em"
+            borderRadius: "0.3em",
+            transition: "background-color 0.3s ease",
+            "&:hover": {
+              backgroundColor: colors.redMid
+            }
           }}
           onClick={() => onSaveToggle(_id)}
         >
-          Save <SaveIcon size={14} />
+          <SaveIcon size={14} />
         </div>
       ) : null}
       <CustomDesignImageModal

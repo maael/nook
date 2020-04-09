@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import NewCustomDesign from "../components/compositions/NewCustomDesign";
 import useCustomDesigns from "../components/hooks/useCustomDesigns";
+import useSavedCustomDesigns from "../components/hooks/useSavedCustomDesigns";
 import { styles } from "../util/theme";
 import createFuse from "../util/fuse";
 
@@ -16,6 +17,7 @@ const CustomDesignGrid = dynamic(
 
 export default function Collections() {
   const [customDesigns, setCustomDesigns] = useCustomDesigns();
+  const [savedCustomDesigns, setSavedCustomDesigns] = useSavedCustomDesigns();
   const [search, setSearch] = useState("");
   const [adding, setAdding] = useState(false);
   const fuseSearch = useMemo(

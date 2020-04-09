@@ -2,7 +2,7 @@ import client from "./client";
 import { getIsoString } from "./util";
 import { userFields } from "./user";
 
-const fields = `
+export const fields = `
   _id
   user {
     ${userFields}

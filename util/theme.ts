@@ -13,7 +13,10 @@ export const colors = {
   blueLight: "#c1d3fd",
   blueLight2: "#b8c6fb",
   blueMid: "#889af8",
-  blueDark: "#5783db"
+  blueDark: "#5783db",
+  redLight: "#ff8a80",
+  redMid: "#ff5252",
+  redDark: "#b71c1c"
 } as const;
 
 export const customSelectStyles: Styles = {

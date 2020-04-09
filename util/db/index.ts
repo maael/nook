@@ -42,3 +42,8 @@ export {
   getCustomDesigns,
   deleteCustomDesign
 } from "./custom-designs";
+export {
+  create as createSavedCustomDesign,
+  getSavedCustomDesignsForUser,
+  deleteSavedCustomDesign
+} from "./saved-custom-designs";

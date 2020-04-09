@@ -50,7 +50,7 @@ type CustomDesign @collection(name: "customDesigns") {
   user: User! @relation
   type: String!
   s3Url: String!
-  code: String!
+  code: String! @unique(index: "unique_code")
   title: String!
   tags: [String!]
   likes: Int!
@@ -91,6 +91,6 @@ type Query {
   getCustomDesignsByRedacted(redacted: Boolean): [CustomDesign!]!
   getCustomDesignsByType(type: String, redacted: Boolean): [CustomDesign!]!
   getCustomDesignsByUser(userId: ID, redacted: Boolean): [CustomDesign!]!
-  getSavedCustomDesignsByUser(userId: ID): [CustomDesign!]!
-  getSavedUsersByUser(userId: ID): [CustomDesign!]!
+  getSavedCustomDesignsByUser(userId: ID): [SavedCustomDesign!]!
+  getSavedUsersByUser(userId: ID): [SavedUser!]!
 }
