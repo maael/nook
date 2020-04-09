@@ -1,20 +1,22 @@
+import { useState } from "react";
 import fetch from "isomorphic-fetch";
 import { FaDiscord, FaRedditAlien } from "react-icons/fa";
 import TemtemText from "@maael/temtem-text-component";
 import TemtemButton from "@maael/temtem-button-component";
-import { colors } from "@maael/temtem-theme";
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
 import { getUserName, getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
+import { colors, styles } from "../../../../util/theme";
 
 export default function UserPage({ user = {} as any }: { user: User }) {
   const jwt = useJWT();
+  const [editing, setEditing] = useState(false);
   return (
     <div css={{ textAlign: "center", marginTop: 10 }}>
       <img
         css={{
-          border: `2px solid ${colors.uiBlueFaded}`,
+          border: `2px solid ${colors.blueDark}`,
           height: 50,
           width: 50,
           borderRadius: "50%",
@@ -73,7 +75,7 @@ export default function UserPage({ user = {} as any }: { user: User }) {
               margin: "0px 5px 10px",
               position: "relative"
             }}
-            bgColor={colors.uiBlue}
+            bgColor={colors.blueDark}
           >
             <>"{user.nintendoName}" in game</>
           </TemtemButton>
@@ -93,7 +95,17 @@ export default function UserPage({ user = {} as any }: { user: User }) {
           </TemtemButton>
         </a>
       ) : null}
-      {jwt && jwt._id === user._id ? <EditUserDetails user={user} /> : null}
+      <div>
+        {jwt && jwt._id === user._id ? (
+          editing ? (
+            <EditUserDetails user={user} onClose={() => setEditing(false)} />
+          ) : (
+            <button css={styles.button} onClick={() => setEditing(true)}>
+              Edit
+            </button>
+          )
+        ) : null}
+      </div>
     </div>
   );
 }

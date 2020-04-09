@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import Input from "@maael/temtem-input-component";
-import Button from "@maael/temtem-button-component";
 import useCallableFetch from "../hooks/useCallableFetch";
 import { User } from "../../types/db";
 import { getUserType, UserType } from "../../util/user";
+import { styles } from "../../util/theme";
 
 interface Props {
   user: User;
+  onClose: () => void;
 }
 
-export default function EditUserDetails({ user }: Props) {
+export default function EditUserDetails({ user, onClose }: Props) {
   const [nintendoName, setNintendoName] = useState(user.nintendoName || "");
   const [discordFullName, setDiscordFullName] = useState(
     user.discordFullName || ""
   );
   const [redditName, setRedditName] = useState(user.redditName || "");
-  const [animalCrossingTag, setAnimalCrossingTag] = useState(user.animalCrossingTag || '');
+  const [animalCrossingTag, setAnimalCrossingTag] = useState(
+    user.animalCrossingTag || ""
+  );
   const [updateUser, _data, savingUpdate] = useCallableFetch(
     "/db/user",
     { method: "PUT" },
@@ -66,13 +69,14 @@ export default function EditUserDetails({ user }: Props) {
       />
       <Input
         containerStyle={{ margin: "5px 0px" }}
-        prefixStyle={{ width: 150, backgroundColor: '#7FCE2A' }}
+        prefixStyle={{ width: 150, backgroundColor: "#7FCE2A" }}
         prefix="Maker ID"
         placeholder="Maker ID..."
         value={animalCrossingTag}
         onChange={({ target }) => setAnimalCrossingTag((target as any).value)}
       />
-      <Button
+      <button
+        css={styles.button}
         onClick={async () => {
           await updateUser({
             body: JSON.stringify({
@@ -84,11 +88,20 @@ export default function EditUserDetails({ user }: Props) {
               animalCrossingTag: animalCrossingTag || null
             })
           });
+          onClose();
         }}
         disabled={!!savingUpdate}
       >
         {savingUpdate ? "Saving" : "Save"}
-      </Button>
+      </button>
+      <button
+        onClick={() => {
+          onClose();
+        }}
+        css={styles.button}
+      >
+        Close
+      </button>
     </div>
   );
 }
