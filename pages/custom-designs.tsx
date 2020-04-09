@@ -19,7 +19,10 @@ export default function Collections() {
   const [search, setSearch] = useState("");
   const [adding, setAdding] = useState(false);
   const fuseSearch = useMemo(
-    () => createFuse(customDesigns, { keys: ["title"] }),
+    () =>
+      createFuse(customDesigns, {
+        keys: ["title", "tags", "user.discordName", "user.redditName", "type"]
+      }),
     [customDesigns]
   );
   const existingTags = useMemo(
