@@ -14,6 +14,15 @@ export async function upload(
   file: Express.Multer.File
 ) {
   const { ext } = parse(file.originalname);
+  console.info(
+    "uploading",
+    S3_ACCESS_KEY_ID,
+    S3_SECRET_ACCESS_KEY,
+    S3_BUCKET_NAME,
+    userId,
+    makerCode,
+    ext
+  );
   const result = await s3
     .upload({
       Bucket: S3_BUCKET_NAME!,

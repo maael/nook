@@ -56,9 +56,9 @@ export default cookies(
       } catch (e) {
         console.error(e);
         if (e instanceof multer.MulterError) {
-          res.json({ err: e.message });
+          res.status(400).json({ err: e.message });
         } else if (e) {
-          res.json({ err: e.message });
+          res.status(500).json({ err: e.message });
         }
       }
     } else {
