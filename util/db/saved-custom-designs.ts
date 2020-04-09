@@ -38,12 +38,24 @@ export async function create(
   return (await client.request(query, { data })).createSavedCustomDesign;
 }
 
-export async function getSavedCustomDesignsForUser(userId: string) {
+export async function getSavedCustomDesignsForUser(
+  userId: string,
+  idsOnly: boolean = false
+) {
   const query = `
     query GetSavedCustomDesignsByUser($userId: ID!) {
       getSavedCustomDesignsByUser(userId:$userId) {
         data {
-          ${fields}
+          ${
+            idsOnly
+              ? `
+            _id
+            customDesign {
+              _id
+            }
+          `
+              : fields
+          }
         }
       }
     }

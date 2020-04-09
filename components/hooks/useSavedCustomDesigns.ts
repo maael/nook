@@ -10,7 +10,7 @@ export default function useSavedCustomDesigns(): [
   useEffect(() => {
     (async () => {
       if (!jwt || !jwt._id) return;
-      const res = await fetch("/api/db/saved/custom-designs");
+      const res = await fetch("/api/db/saved/custom-designs?idsOnly");
       if (res.ok) {
         setSavedCustomDesigns(await res.json());
       }
