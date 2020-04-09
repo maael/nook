@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import { FaTimes as DeleteIcon } from "react-icons/fa";
-import { FaRegHeart as SaveIcon } from "react-icons/fa";
+import { FaRegHeart as SaveIcon, FaHeart as SavedIcon } from "react-icons/fa";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";
 import useJWT from "../hooks/useJWT";
 import { colors } from "../../util/theme";
@@ -14,7 +14,8 @@ export const PADDING = 20;
 export default function CustomDesignItem({
   customDesign,
   onDelete,
-  onSaveToggle
+  onSaveToggle,
+  saved
 }: {
   customDesign: {
     _id: string;
@@ -25,7 +26,8 @@ export default function CustomDesignItem({
     tags: string[];
   };
   onDelete: () => void;
-  onSaveToggle: (id: string) => void;
+  onSaveToggle: (id: string, saved: boolean) => void;
+  saved: boolean;
 }) {
   const jwt = useJWT();
   const { _id, s3Url, title, code, user, tags } = customDesign;
@@ -112,9 +114,9 @@ export default function CustomDesignItem({
               backgroundColor: colors.redMid
             }
           }}
-          onClick={() => onSaveToggle(_id)}
+          onClick={() => onSaveToggle(_id, saved)}
         >
-          <SaveIcon size={14} />
+          {saved ? <SavedIcon size={14} /> : <SaveIcon size={14} />}
         </div>
       ) : null}
       <CustomDesignImageModal

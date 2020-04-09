@@ -19,6 +19,7 @@ module.exports = {
     NOOK_S3_ACCESS_KEY_ID: process.env.NOOK_S3_ACCESS_KEY_ID,
     NOOK_S3_SECRET_ACCESS_KEY: process.env.NOOK_S3_SECRET_ACCESS_KEY,
     NOOK_S3_BUCKET_NAME: process.env.NOOK_S3_BUCKET_NAME,
+    ANON_NOOK_ID: process.env.ANON_NOOK_ID,
     ROOT: __dirname
   }
 };

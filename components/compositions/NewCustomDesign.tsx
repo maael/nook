@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { createRef, useState, useEffect } from "react";
+import { createRef, useState } from "react";
 import { colors, styles } from "../../util/theme";
 import { CUSTOM_DESIGN_TYPES } from "../../util/constants";
+import useJWT from "../../components/hooks/useJWT";
 import useCustomDesignImage from "../../components/hooks/useCustomDesignImage";
 import useImagePreview from "../../components/hooks/useImagePreview";
 import Select from "../../components/primitives/SimpleSelect";
@@ -19,6 +20,7 @@ export default function NewCustomDesign({
   existingTags,
   onClose
 }: Props) {
+  const jwt = useJWT();
   const fileInputRef = createRef<HTMLInputElement>();
   const [file, setFile] = useState<File | undefined>();
   const [title, setTitle] = useState("");
@@ -129,6 +131,12 @@ export default function NewCustomDesign({
         </div>
         {detecting ? <div>Detecting...</div> : null}
         {error ? <div>{error}</div> : null}
+        {jwt && jwt._id ? null : (
+          <div>
+            Warning: If you create a custom design when you aren't logged in,
+            you can't delete it, or link it to any account you make.
+          </div>
+        )}
         <button
           disabled={detecting || loading || !title || !code || !type || !file}
           css={styles.button}

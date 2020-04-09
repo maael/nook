@@ -12,7 +12,8 @@
       "DISCORD_OAUTH_SECRET": "@nook-discord-oauth-secret",
       "NOOK_S3_ACCESS_KEY_ID": "@nook-s3-access-key-id",
       "NOOK_S3_SECRET_ACCESS_KEY": "@nook-s3-secret-access-key",
-      "NOOK_S3_BUCKET_NAME": "@nook-s3-bucket-name"
+      "NOOK_S3_BUCKET_NAME": "@nook-s3-bucket-name",
+      "ANON_NOOK_ID": "@nook-anon-nook-id"
     }
   }
 }

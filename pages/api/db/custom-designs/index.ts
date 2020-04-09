@@ -32,40 +32,38 @@ function getFields(
   });
 }
 
-export default cookies(
-  jwtGuard(async function(req, res) {
-    const jwt = await req.getJWT();
-    if (req.method === "GET") {
-      res.json(await getCustomDesigns());
-    } else if (req.method === "POST") {
-      try {
-        const { fields, file } = await getFields(req);
-        // TODO: Check with Tesseract
-        const tags = JSON.parse(fields.tags || "[]");
-        if (fields.code && fields.title && fields.type && tags && file) {
-          const s3Url = await upload(jwt!._id, fields.code as string, file);
-          const created = await createCustomDesign(jwt!._id, {
-            ...(fields as any),
-            tags,
-            s3Url
-          });
-          res.json(created);
-        } else {
-          res.status(500).json({ err: "Missing fields" });
-        }
-      } catch (e) {
-        console.error(e);
-        if (e instanceof multer.MulterError) {
-          res.status(400).json({ err: e.message });
-        } else if (e) {
-          res.status(500).json({ err: e.message });
-        }
+export default cookies(async function(req, res) {
+  const jwt = await req.getJWT();
+  if (req.method === "GET") {
+    res.json(await getCustomDesigns());
+  } else if (req.method === "POST") {
+    try {
+      const { fields, file } = await getFields(req);
+      const id = jwt && jwt._id ? jwt._id : process.env.ANON_NOOK_ID!;
+      const tags = JSON.parse(fields.tags || "[]");
+      if (fields.code && fields.title && fields.type && tags && file) {
+        const s3Url = await upload(id, fields.code as string, file);
+        const created = await createCustomDesign(id, {
+          ...(fields as any),
+          tags,
+          s3Url
+        });
+        res.json(created);
+      } else {
+        res.status(500).json({ err: "Missing fields" });
       }
-    } else {
-      res.json({ error: "not-implemented" });
+    } catch (e) {
+      console.error(e);
+      if (e instanceof multer.MulterError) {
+        res.status(400).json({ err: e.message });
+      } else if (e) {
+        res.status(500).json({ err: e.message });
+      }
     }
-  })
-);
+  } else {
+    res.json({ error: "not-implemented" });
+  }
+});
 
 export const config = {
   api: {

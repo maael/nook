@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { useMemo } from "react";
 import { AutoSizer, Grid, WindowScroller } from "react-virtualized";
 import CustomDesignItem, {
   HEIGHT,
@@ -9,11 +10,19 @@ import CustomDesignItem, {
 
 export default function Collections({
   customDesigns,
-  onDelete
+  savedCustomDesigns,
+  onDelete,
+  onSaveToggle
 }: {
   customDesigns: any[];
+  savedCustomDesigns: any[];
   onDelete: (deleted: any) => void;
+  onSaveToggle: (savedId: string, saved: boolean) => void;
 }) {
+  const savedIds = useMemo(
+    () => savedCustomDesigns.map(({ customDesign }) => customDesign._id),
+    [savedCustomDesigns]
+  );
   return (
     <WindowScroller scrollElement={window}>
       {({ height, isScrolling, registerChild, onChildScroll, scrollTop }) => (
@@ -43,7 +52,8 @@ export default function Collections({
                         <CustomDesignItem
                           customDesign={customDesign}
                           onDelete={() => onDelete(customDesign)}
-                          onSaveToggle={id => console.info("saving", id)}
+                          onSaveToggle={onSaveToggle}
+                          saved={savedIds.includes(customDesign._id)}
                         />
                       ) : null}
                     </div>
