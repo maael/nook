@@ -58,6 +58,50 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
         style={{
           padding: "20px 10px 10px 10px",
           display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
+        url="/collections/bugs"
+      >
+        Bugs
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
+        url="/collections/fish"
+      >
+        Fish
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
+        url="/collections/fossils"
+      >
+        Fossils
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
+        url="/collections/diy"
+      >
+        DIY Recipes
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
           width: "100%"
         }}
         url="/custom-designs"
