@@ -84,7 +84,7 @@ export default function App({ Component, pageProps }) {
       <HeaderBar
         style={{
           height: 35,
-          padding: 0
+          padding: "0px 15px"
         }}
       >
         <React.Fragment>

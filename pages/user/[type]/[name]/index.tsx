@@ -9,19 +9,13 @@ import {
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
 import Heading from "../../../../components/primitives/Heading";
+import AccountBadge from "../../../../components/primitives/AccountBadge";
 import { getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
 import { colors, styles as generalStyles } from "../../../../util/theme";
 
 const bugsData = require("../../../../data/bugs.json");
 const fishData = require("../../../../data/fish.json");
-
-const styles = {
-  badge: {
-    margin: "0px 5px 10px",
-    color: "#FFFFFF"
-  }
-};
 
 export default function UserPage({
   user = {} as any
@@ -52,74 +46,32 @@ export default function UserPage({
           src={getUserIcon(user)}
         />
       </div>
-      {user.redditName ? (
-        <a href={`https://reddit.com/user/${user.redditName}`}>
-          <button
-            style={{
-              ...styles.badge,
-              backgroundColor: "#FF5700"
-            }}
-            css={generalStyles.button}
-          >
-            <FaRedditAlien
-              size={18}
-              style={{ position: "relative", top: 4, marginRight: 4 }}
-            />
-            {user.redditName}
-          </button>
-        </a>
-      ) : null}
-      {user.discordFullName ? (
-        <a href={"https://discordapp.com/"}>
-          <button
-            style={{
-              ...styles.badge,
-              backgroundColor: "#7289DA"
-            }}
-            css={generalStyles.button}
-          >
-            <FaDiscord
-              size={18}
-              style={{ position: "relative", top: 4, marginRight: 4 }}
-            />
-            {user.discordFullName}
-          </button>
-        </a>
-      ) : null}
-      {user.nintendoName ? (
-        <a href={"https://store.steampowered.com/app/745920/Temtem/"}>
-          <button
-            style={{
-              ...styles.badge,
-              backgroundColor: "#E4000F"
-            }}
-            css={generalStyles.button}
-          >
-            <FaNintendoSwitch
-              size={18}
-              style={{ position: "relative", top: 4, marginRight: 4 }}
-            />
-            {`"${user.nintendoName}" in game`}
-          </button>
-        </a>
-      ) : null}
-      {user.animalCrossingTag ? (
-        <a href={"https://store.steampowered.com/app/745920/Temtem/"}>
-          <button
-            style={{
-              ...styles.badge,
-              backgroundColor: "#7FCE2A"
-            }}
-            css={generalStyles.button}
-          >
-            <FaGlobe
-              size={18}
-              style={{ position: "relative", top: 4, marginRight: 4 }}
-            />
-            {`"${user.animalCrossingTag}" Maker ID`}
-          </button>
-        </a>
-      ) : null}
+      <AccountBadge
+        username={user.redditName}
+        color="#FF5700"
+        link={`https://reddit.com/user/${user.redditName}`}
+        Icon={FaRedditAlien}
+      />
+      <AccountBadge
+        username={user.discordFullName}
+        color="#7289DA"
+        link="https://discordapp.com/"
+        Icon={FaDiscord}
+      />
+      <AccountBadge
+        username={user.nintendoName ? `"${user.nintendoName}" in game` : ""}
+        color="#E4000F"
+        link="https://discordapp.com/"
+        Icon={FaNintendoSwitch}
+      />
+      <AccountBadge
+        username={
+          user.animalCrossingTag ? `"${user.animalCrossingTag}" Maker ID` : ""
+        }
+        color="#7FCE2A"
+        link="https://discordapp.com/"
+        Icon={FaGlobe}
+      />
       <div>
         {jwt && jwt._id === user._id ? (
           editing ? (

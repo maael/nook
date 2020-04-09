@@ -58,32 +58,40 @@ export default function AuthBlock() {
     </div>
   ) : (
     <div css={{ marginLeft: 10, position: "relative", top: -2 }}>
-      <a href={`/api/login/reddit?v${JWT_VERSION}&cb=${Math.random()}`}>
+      <a
+        href={`/api/login/reddit?v${JWT_VERSION}&cb=${Math.random()}`}
+        css={{ textDecoration: "none", display: "inline-block" }}
+      >
         <button
           css={styles.button}
-          style={{ backgroundColor: "#FF5700", color: "#FFFFFF" }}
+          style={{
+            backgroundColor: "#FF5700",
+            color: "#FFFFFF",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
         >
-          <>
-            <FaRedditAlien
-              size={18}
-              style={{ position: "relative", top: 3, marginRight: 4 }}
-            />
-            Login
-          </>
+          <FaRedditAlien size={18} style={{ marginRight: 4 }} />
+          Login
         </button>
       </a>
-      <a href={`/api/login/discord?v${JWT_VERSION}&cb=${Math.random()}`}>
+      <a
+        href={`/api/login/discord?v${JWT_VERSION}&cb=${Math.random()}`}
+        css={{ textDecoration: "none", display: "inline-block" }}
+      >
         <button
           css={styles.button}
-          style={{ backgroundColor: "#7289DA", color: "#FFFFFF" }}
+          style={{
+            backgroundColor: "#7289DA",
+            color: "#FFFFFF",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
         >
-          <>
-            <FaDiscord
-              size={18}
-              style={{ position: "relative", top: 4, marginRight: 4 }}
-            />
-            Login
-          </>
+          <FaDiscord size={18} style={{ marginRight: 4 }} />
+          Login
         </button>
       </a>
     </div>
