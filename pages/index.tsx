@@ -40,7 +40,7 @@ export default function Home() {
             Track your bug, fish, fossil, and recipe collections
           </a>
           <a css={styles.link} href="/custom-designs">
-            Search and favourtie custom designs
+            Search and favourite custom designs
           </a>
         </div>
         <div css={{ margin: "10px 0px 5px 0px" }}>
