@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, createRef } from "react";
 import { FaToolbox, FaHome, FaTshirt, FaQuestionCircle } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import {
@@ -48,6 +48,7 @@ interface Props {
 }
 
 export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
+  const imgRef = createRef<HTMLImageElement>();
   return (
     <div
       css={{
@@ -67,7 +68,14 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       }}
       onClick={onClick}
     >
-      <img css={{ minHeight: 50 }} src={getImageUrl("recipe", recipe.name)} />
+      <img
+        css={{ minHeight: 50 }}
+        src={getImageUrl("recipe", recipe.name)}
+        ref={imgRef}
+        onError={() => {
+          if (imgRef.current) imgRef.current.src = "/images/missing.png";
+        }}
+      />
       <div css={[styles.row, styles.name]}>{recipe.name}</div>
       <div css={styles.row}>
         <GiSwapBag style={styles.icon} /> {recipe.sellPrice}
