@@ -5,7 +5,9 @@ export default function ErrorPage() {
     <div style={{ textAlign: "center", marginTop: 20 }}>
       Hmmm? Well this isn't right.
       <Link href="/">
-        <button style={{ marginTop: 20 }}>Go back</button>
+        <a>
+          <button style={{ marginTop: 20 }}>Go back</button>
+        </a>
       </Link>
     </div>
   );

@@ -5,6 +5,7 @@ import { GiFossil, GiTropicalFish, GiSpottedBug } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
 import Heading from "../../components/primitives/Heading";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import { colors } from "../../util/theme";
 
 const styles = {
   link: {
@@ -26,6 +27,21 @@ export default function Collections() {
           maxWidth: 1000
         }}
       >
+        <div>
+          <div
+            css={{
+              backgroundColor: colors.offWhite,
+              color: colors.brownDark,
+              display: "inline-block",
+              maxWidth: 400,
+              margin: "10px auto",
+              padding: 20,
+              borderRadius: "1em"
+            }}
+          >
+            Track your progress on collections here!
+          </div>
+        </div>
         <Link href="/collections/fish">
           <a css={styles.link}>
             <Heading>
