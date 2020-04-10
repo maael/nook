@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { createRef, useState } from "react";
+import { createRef, useState, useEffect } from "react";
 import { colors, styles } from "../../util/theme";
 import { CUSTOM_DESIGN_TYPES } from "../../util/constants";
 import useJWT from "../../components/hooks/useJWT";
@@ -23,6 +23,7 @@ export default function NewCustomDesign({
   const jwt = useJWT();
   const fileInputRef = createRef<HTMLInputElement>();
   const [file, setFile] = useState<File | undefined>();
+  const [validated, setValidated] = useState(false);
   const [title, setTitle] = useState("");
   const [code, setCode] = useState("");
   const [type, setType] = useState("");
@@ -32,6 +33,9 @@ export default function NewCustomDesign({
   const [detecting, setDetecting] = useState(false);
   const preview = useImagePreview(file);
   const detected = useCustomDesignImage(file);
+  useEffect(() => {
+    setValidated(false);
+  }, [file]);
   detected.on("start", () => {
     setDetecting(true);
   });
@@ -42,6 +46,9 @@ export default function NewCustomDesign({
     setTitle(data.title);
     setType(data.type);
     setCode(data.code);
+    if ([data.title, data.type, data.code].filter(Boolean).length > 1) {
+      setValidated(true);
+    }
   });
   return (
     <div
@@ -82,7 +89,7 @@ export default function NewCustomDesign({
               "Uploading"
             )
           ) : (
-            "Upload Image"
+            "Upload Image for it to be validated"
           )}
         </div>
         <input
@@ -138,7 +145,15 @@ export default function NewCustomDesign({
           </div>
         )}
         <button
-          disabled={detecting || loading || !title || !code || !type || !file}
+          disabled={
+            !validated ||
+            detecting ||
+            loading ||
+            !title ||
+            !code ||
+            !type ||
+            !file
+          }
           css={styles.button}
           onClick={async () => {
             setLoading(true);
