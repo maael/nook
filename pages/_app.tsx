@@ -28,13 +28,13 @@ export default function App({ Component, pageProps }) {
         <meta name="author" content="Matthew Elphick" />
         <meta
           name="description"
-          content="A website to track your collections in Animal Crossing: New Horizons!"
+          content="A website to track your collections and share custom designs in Animal Crossing: New Horizons!"
         />
         <meta property="og:site_name" content="Nook Services" />
         <meta property="og:title" content="Nook Services" />
         <meta
           property="og:description"
-          content="A website to track your collections in Animal Crossing: New Horizons!"
+          content="A website to track your collections and share custom designs in Animal Crossing: New Horizons!"
         />
         <meta
           property="og:image"
