@@ -13,6 +13,7 @@ import AccountBadge from "../../../../components/primitives/AccountBadge";
 import { getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
 import { colors, styles as generalStyles } from "../../../../util/theme";
+import { getImageUrl } from "../../../../util/getImageUrl";
 
 const bugsData = require("../../../../data/bugs.json");
 const fishData = require("../../../../data/fish.json");
@@ -93,8 +94,8 @@ export default function UserPage({
                   ({ name: profileName }) => name === profileName
                 )
               )
-              .map(({ wikiImageUrl }) => (
-                <img key={wikiImageUrl} src={wikiImageUrl} />
+              .map(({ name }) => (
+                <img key={name} src={getImageUrl("bug", name)} />
               ))}
           </div>
           <Heading>Collected Fish</Heading>
@@ -105,8 +106,8 @@ export default function UserPage({
                   ({ name: profileName }) => name === profileName
                 )
               )
-              .map(({ wikiImageUrl }) => (
-                <img key={wikiImageUrl} src={wikiImageUrl} />
+              .map(({ name }) => (
+                <img key={name} src={getImageUrl("fish", name)} />
               ))}
           </div>
           <Heading>Custom Designs</Heading>

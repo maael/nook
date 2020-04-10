@@ -11,6 +11,7 @@ import {
   isCurrentlyAvailable
 } from "../../util/collections";
 import { colors } from "../../util/theme";
+import { getImageUrl } from "../../util/getImageUrl";
 
 const styles = {
   fishItem: {
@@ -90,7 +91,7 @@ export default function FishItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={f.wikiImageUrl} />
+      <img src={getImageUrl("fish", f.name)} />
       <div css={[styles.row, styles.center, styles.name]}>{f.name}</div>
       <div css={styles.row}>
         <div>

@@ -8,6 +8,7 @@ import {
   GiWoodenFence
 } from "react-icons/gi";
 import { colors } from "../../util/theme";
+import { getImageUrl } from "../../util/getImageUrl";
 
 const typeIconMap: Record<string, ReactNode> = {
   tool: <FaToolbox title="Tools" />,
@@ -66,7 +67,7 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
       }}
       onClick={onClick}
     >
-      <img css={{ minHeight: 50 }} src={recipe.wikiImageUrl} />
+      <img css={{ minHeight: 50 }} src={getImageUrl("recipe", recipe.name)} />
       <div css={[styles.row, styles.name]}>{recipe.name}</div>
       <div css={styles.row}>
         <GiSwapBag style={styles.icon} /> {recipe.sellPrice}

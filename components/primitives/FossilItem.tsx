@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core";
 import { GiSwapBag } from "react-icons/gi";
 import { colors } from "../../util/theme";
+import { getImageUrl } from "../../util/getImageUrl";
 
 const styles = {
   fossilItem: {
@@ -41,7 +42,7 @@ export default function FossilItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={f.wikiImageUrl} />
+      <img src={getImageUrl("fossil", f.name)} />
       <div css={styles.title}>{f.name}</div>
       <div>
         <GiSwapBag /> {f.sellPrice}

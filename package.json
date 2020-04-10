@@ -12,7 +12,8 @@
     "prettier:check": "prettier --list-different './{pages,util}/**/*.{js,jsx,ts,tsx}'",
     "build": "next build",
     "test": "echo 'Todo'",
-    "data": "ts-node --project scripts/tsconfig.json ./scripts/data"
+    "data": "ts-node --project scripts/tsconfig.json ./scripts/data",
+    "assets": "ts-node --project scripts/tsconfig.json ./scripts/assets"
   },
   "husky": {
     "hooks": {

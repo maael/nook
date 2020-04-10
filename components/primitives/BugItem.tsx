@@ -8,6 +8,7 @@ import {
   isCurrentlyAvailable
 } from "../../util/collections";
 import { colors } from "../../util/theme";
+import { getImageUrl } from "../../util/getImageUrl";
 
 const styles = {
   bugItem: {
@@ -88,7 +89,7 @@ export default function BugItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={b.wikiImageUrl} />
+      <img src={getImageUrl("bug", b.name)} />
       <div css={[styles.row, styles.center, styles.name]}>{b.name}</div>
       <div css={styles.row}>
         <div>
