@@ -13,7 +13,8 @@ export default function Events() {
               backgroundColor: colors.offWhite,
               color: colors.brownDark,
               display: "inline-block",
-              maxWidth: 400,
+              width: 400,
+              maxWidth: "80vw",
               margin: "10px auto",
               padding: 20,
               borderRadius: "1em"

@@ -27,6 +27,7 @@ export default function Home() {
           backgroundColor: colors.offWhite,
           color: colors.brownDark,
           width: 400,
+          maxWidth: "80vw",
           margin: "10px auto",
           padding: 20,
           borderRadius: "1em"
