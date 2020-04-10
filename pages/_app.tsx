@@ -96,6 +96,7 @@ export default function App({ Component, pageProps }) {
               <NavItem url="/collections">Collections</NavItem>
               <NavItem url="/custom-designs">Custom Designs</NavItem>
               <NavItem url="/events">Events</NavItem>
+              <NavItem url="/checklist">Checklist</NavItem>
               <NavItem url="/users">Users</NavItem>
             </>
           </HideOnMobile>

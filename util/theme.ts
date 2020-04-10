@@ -16,7 +16,9 @@ export const colors = {
   blueDark: "#5783db",
   redLight: "#ff8a80",
   redMid: "#ff5252",
-  redDark: "#b71c1c"
+  redDark: "#b71c1c",
+  rockGrey: "#81878b",
+  bagBrown: "#9d5700"
 } as const;
 
 export const customSelectStyles: Styles = {

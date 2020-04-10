@@ -15,7 +15,8 @@ enum LocalStorageKeys {
   SELECTED_DIY_LOCATION = "nook:selected-diy-location",
   SELECTED_DIY_TYPE = "nook:selected-diy-type",
   FOSSIL_SEARCH = "nook:fossil-search",
-  FOSSIL_COLLECTION = "nook:fossil-collection"
+  FOSSIL_COLLECTION = "nook:fossil-collection",
+  DAILY_CHECKLIST = "nook:daily-checklist"
 }
 
 export default LocalStorageKeys;
