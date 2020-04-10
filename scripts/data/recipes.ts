@@ -44,7 +44,7 @@ function mapRecipeRowToData(rows: TableCell[][], type: string) {
       })),
       size: getSize(cells[3].alt),
       obtainedFrom: cells[4].multiLineText,
-      sellPrice: cells[5].number || 0,
+      sellPrice: cells[5] ? cells[5].number || 0 : 0,
       type
     };
   });

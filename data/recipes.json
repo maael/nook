@@ -575,6 +575,26 @@
     "type": "tool"
   },
   {
+    "name": "Pansy Wand",
+    "materials": [
+      {
+        "quantity": 1,
+        "material": "Yellow pansies"
+      },
+      {
+        "quantity": 3,
+        "material": "Star fragment"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 0,
+    "type": "tool"
+  },
+  {
     "name": "Rose wand",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Tools_(New_Horizons)",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/69/NH-Rose_wand.png/revision/latest/scale-to-width-down/50?cb=20200330011539",
@@ -782,6 +802,7 @@
   },
   {
     "name": "Aries rocking chair",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Aries_rocking_chair",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0c/NH-Aries_rocking_chair.png/revision/latest/scale-to-width-down/50?cb=20200327040204",
     "materials": [
       {
@@ -806,7 +827,7 @@
       "height": 1
     },
     "obtainedFrom": ["Celeste"],
-    "sellPrice": 0,
+    "sellPrice": 12125,
     "type": "houseware"
   },
   {
@@ -1051,7 +1072,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": ["Island resident", "Tom Nook"],
     "sellPrice": 2100,
     "type": "houseware"
   },
@@ -1102,7 +1123,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Tom Nook"],
     "sellPrice": 400,
     "type": "houseware"
   },
@@ -1142,7 +1163,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Tom Nook"],
     "sellPrice": 840,
     "type": "houseware"
   },
@@ -1443,6 +1464,22 @@
     "type": "houseware"
   },
   {
+    "name": "Bunny Day wall clock",
+    "materials": [
+      {
+        "quantity": 3,
+        "material": "Sky egg"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Bunny Day series"],
+    "sellPrice": 1200,
+    "type": "houseware"
+  },
+  {
     "name": "Bunny Day wardrobe",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/55/NH-Bunny_Day_wardrobe.png/revision/latest/scale-to-width-down/50?cb=20200402124712",
     "materials": [
@@ -1537,7 +1574,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 240,
     "type": "houseware"
   },
   {
@@ -1554,7 +1591,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 60,
     "type": "houseware"
   },
   {
@@ -1608,12 +1645,13 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "fruit"],
+    "obtainedFrom": ["Tom Nook", "fruit", "Message in a bottle"],
     "sellPrice": 3500,
     "type": "houseware"
   },
   {
     "name": "Cherry-blossom branches",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/NH-Cherry-blossom_branches.png/revision/latest/scale-to-width-down/50?cb=20200329082855",
     "materials": [
       {
         "quantity": 8,
@@ -1633,7 +1671,7 @@
       "height": 1
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "sellPrice": 4240,
     "type": "houseware"
   },
   {
@@ -1671,7 +1709,7 @@
       "height": 1
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "sellPrice": 2700,
     "type": "houseware"
   },
   {
@@ -1866,7 +1904,48 @@
   {
     "name": "Flat garden rock",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/dd/NH-Flat_garden_rock.png/revision/latest/scale-to-width-down/50?cb=20200329062351",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 20,
+        "material": "Stone"
+      }
+    ],
+    "size": {
+      "width": 2,
+      "height": 1
+    },
+    "obtainedFrom": ["Message in a bottle"],
+    "sellPrice": 3000,
+    "type": "houseware"
+  },
+  {
+    "name": "Flower stand",
+    "materials": [
+      {
+        "quantity": 1,
+        "material": "Red roses"
+      },
+      {
+        "quantity": 2,
+        "material": "Pink roses"
+      },
+      {
+        "quantity": 2,
+        "material": "Orange roses"
+      },
+      {
+        "quantity": 2,
+        "material": "White lilies"
+      },
+      {
+        "quantity": 1,
+        "material": "Yellow lilies"
+      },
+      {
+        "quantity": 4,
+        "material": "18pxpurple windflowers"
+      }
+    ],
     "size": {
       "width": 0,
       "height": 0
@@ -2088,7 +2167,7 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 0,
     "type": "houseware"
   },
@@ -2155,6 +2234,7 @@
   },
   {
     "name": "Golden toilet",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Golden_toilet",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2d/NH-Golden_toilet.png/revision/latest/scale-to-width-down/50?cb=20200329093220",
     "materials": [],
     "size": {
@@ -2518,7 +2598,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 3720,
     "type": "houseware"
   },
   {
@@ -2563,7 +2643,7 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Island resident"],
     "sellPrice": 0,
     "type": "houseware"
   },
@@ -2638,7 +2718,7 @@
       "height": 1
     },
     "obtainedFrom": ["Wildest Dreams DIY"],
-    "sellPrice": 0,
+    "sellPrice": 7560,
     "type": "houseware"
   },
   {
@@ -2755,11 +2835,11 @@
       }
     ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 2,
+      "height": 2
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 300,
     "type": "houseware"
   },
   {
@@ -2881,6 +2961,7 @@
   },
   {
     "name": "Log dining table",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Log_dining_table",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c1/NH-Log_dining_table.png/revision/latest/scale-to-width-down/50?cb=20200326102542",
     "materials": [
       {
@@ -2989,7 +3070,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Island resident", "Message in a bottle"],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -3131,7 +3212,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 2550,
     "type": "houseware"
   },
@@ -3283,7 +3364,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle",
+      "Tom Nook after receiving first three housing kits"
+    ],
     "sellPrice": 2220,
     "type": "houseware"
   },
@@ -3431,7 +3515,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 760,
     "type": "houseware"
   },
@@ -3520,6 +3604,22 @@
     "type": "houseware"
   },
   {
+    "name": "Pile of zen cushions",
+    "materials": [
+      {
+        "quantity": 3,
+        "material": "Zen cushion"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Island resident"],
+    "sellPrice": 0,
+    "type": "houseware"
+  },
+  {
     "name": "Pisces lamp",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3d/NH-Pisces_lamp.png/revision/latest/scale-to-width-down/50?cb=20200328084024",
     "materials": [
@@ -3586,8 +3686,8 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Island resident"],
+    "sellPrice": 720,
     "type": "houseware"
   },
   {
@@ -3608,8 +3708,8 @@
     "type": "houseware"
   },
   {
-    "name": "Racoon figurine",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/57/NH-Racoon_figurine.png/revision/latest/scale-to-width-down/50?cb=20200329100118",
+    "name": "Raccoon figurine",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bc/NH-Raccoon_figurine.png/revision/latest/scale-to-width-down/50?cb=20200407120821",
     "materials": [
       {
         "quantity": 3,
@@ -3672,12 +3772,21 @@
   {
     "name": "Rocket",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Furniture-rocket.png/revision/latest/scale-to-width-down/50?cb=20200329102914",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 10,
+        "material": "Star fragment"
+      },
+      {
+        "quantity": 20,
+        "material": "Iron nugget"
+      }
+    ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 2,
+      "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Celeste"],
     "sellPrice": 0,
     "type": "houseware"
   },
@@ -3933,7 +4042,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 600,
     "type": "houseware"
   },
   {
@@ -4086,7 +4195,16 @@
   {
     "name": "Space shuttle",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/88/NH-Space_shuttle.png/revision/latest/scale-to-width-down/50?cb=20200329102520",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 5,
+        "material": "Star fragment"
+      },
+      {
+        "quantity": 10,
+        "material": "Iron nugget"
+      }
+    ],
     "size": {
       "width": 0,
       "height": 0
@@ -4168,6 +4286,22 @@
     "type": "houseware"
   },
   {
+    "name": "Stone lion-dog",
+    "materials": [
+      {
+        "quantity": 24,
+        "material": "Stone"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 0,
+    "type": "houseware"
+  },
+  {
     "name": "Stone stool",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/aa/NH-Stone_stool.png/revision/latest/scale-to-width-down/50?cb=20200325182322",
     "materials": [
@@ -4235,7 +4369,7 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": ["Test Your DIY Skills"],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -4316,27 +4450,6 @@
     },
     "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 1440,
-    "type": "houseware"
-  },
-  {
-    "name": "Terrarium",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9d/NH-Terrarium.png/revision/latest/scale-to-width-down/50?cb=20200327063910",
-    "materials": [
-      {
-        "quantity": 12,
-        "material": "Clump of weeds"
-      },
-      {
-        "quantity": 2,
-        "material": "Iron nugget"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
     "type": "houseware"
   },
   {
@@ -4521,10 +4634,23 @@
   {
     "name": "Trophy case",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bd/NH-Trophy_case.png/revision/latest/scale-to-width-down/50?cb=20200329100302",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 24,
+        "material": "Hardwood"
+      },
+      {
+        "quantity": 3,
+        "material": "Gold nugget"
+      },
+      {
+        "quantity": 6,
+        "material": "Iron nugget"
+      }
+    ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 2,
+      "height": 1
     },
     "obtainedFrom": [],
     "sellPrice": 33690,
@@ -4548,17 +4674,6 @@
     },
     "obtainedFrom": ["Island resident"],
     "sellPrice": 760,
-    "type": "houseware"
-  },
-  {
-    "name": "Utility Pole",
-    "materials": [],
-    "size": {
-      "width": 0,
-      "height": 0
-    },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
-    "sellPrice": 0,
     "type": "houseware"
   },
   {
@@ -4629,28 +4744,7 @@
       "height": 1
     },
     "obtainedFrom": ["Wildest Dreams DIY", "Message in a bottle"],
-    "sellPrice": 0,
-    "type": "houseware"
-  },
-  {
-    "name": "Windflower fan",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6d/NH-Windflower_fan.png/revision/latest/scale-to-width-down/50?cb=20200329100322",
-    "materials": [
-      {
-        "quantity": 3,
-        "material": "Red windflowers"
-      },
-      {
-        "quantity": 2,
-        "material": "Iron nuggets"
-      }
-    ],
-    "size": {
-      "width": 0,
-      "height": 0
-    },
-    "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 960,
     "type": "houseware"
   },
   {
@@ -4854,7 +4948,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident",
+      "Tom Nook after receiving first three housing kits"
+    ],
     "sellPrice": 1110,
     "type": "houseware"
   },
@@ -4871,7 +4968,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle",
+      "Tom Nook after receiving first three housing kits"
+    ],
     "sellPrice": 720,
     "type": "houseware"
   },
@@ -4888,7 +4988,7 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": ["Island resident", "Message in a bottle"],
     "sellPrice": 1920,
     "type": "houseware"
   },
@@ -4922,7 +5022,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Letter from mom"],
+    "obtainedFrom": ["Island resident", "mom", "Message in a bottle"],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -5255,31 +5355,6 @@
     "type": "misc"
   },
   {
-    "name": "Cherry-blossom branches",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/NH-Cherry-blossom_branches.png/revision/latest/scale-to-width-down/50?cb=20200329082855",
-    "materials": [
-      {
-        "quantity": 8,
-        "material": "Cherry-blossom petal"
-      },
-      {
-        "quantity": 4,
-        "material": "Tree branch"
-      },
-      {
-        "quantity": 5,
-        "material": "Clay"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": ["Balloon"],
-    "sellPrice": 4240,
-    "type": "misc"
-  },
-  {
     "name": "Classic pitcher",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Classic_pitcher",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/38/NH-Classic_pitcher.png/revision/latest/scale-to-width-down/50?cb=20200325181619",
@@ -5558,7 +5633,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": ["Island resident", "Message in a bottle"],
     "sellPrice": 3750,
     "type": "misc"
   },
@@ -5840,18 +5915,23 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 725,
     "type": "misc"
   },
   {
     "name": "Stacked magazines",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Stacked_magazines.png/revision/latest/scale-to-width-down/50?cb=20200329121937",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 6,
+        "material": "Magazine"
+      }
+    ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 1,
+      "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Island resident"],
     "sellPrice": 0,
     "type": "misc"
   },
@@ -5922,8 +6002,8 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "sellPrice": 1740,
     "type": "misc"
   },
   {
@@ -6028,6 +6108,27 @@
     },
     "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 600,
+    "type": "misc"
+  },
+  {
+    "name": "Windflower fan",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6d/NH-Windflower_fan.png/revision/latest/scale-to-width-down/50?cb=20200329100322",
+    "materials": [
+      {
+        "quantity": 3,
+        "material": "Red windflowers"
+      },
+      {
+        "quantity": 2,
+        "material": "Iron nugget"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Message in a bottle"],
+    "sellPrice": 1740,
     "type": "misc"
   },
   {
@@ -6333,7 +6434,7 @@
       "height": 1
     },
     "obtainedFrom": ["Tom Nook", "flowers", "player"],
-    "sellPrice": 0,
+    "sellPrice": 720,
     "type": "wallMounted"
   },
   {
@@ -6368,6 +6469,30 @@
     },
     "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 960,
+    "type": "wallMounted"
+  },
+  {
+    "name": "Fancy mum wreath",
+    "materials": [
+      {
+        "quantity": 3,
+        "material": "Pink mums"
+      },
+      {
+        "quantity": 3,
+        "material": "Purple mums"
+      },
+      {
+        "quantity": 3,
+        "material": "Red mums"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Message in a bottle"],
+    "sellPrice": 1200,
     "type": "wallMounted"
   },
   {
@@ -6541,10 +6666,19 @@
   {
     "name": "Iron wall rack",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2b/NH-Iron_wall_rack.png/revision/latest/scale-to-width-down/50?cb=20200401094903",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 3,
+        "material": "Iron nugget"
+      },
+      {
+        "quantity": 1,
+        "material": "Clay"
+      }
+    ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 1,
+      "height": 1
     },
     "obtainedFrom": [],
     "sellPrice": 2450,
@@ -6674,8 +6808,8 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Tom Nook", "flowers", "player"],
+    "sellPrice": 720,
     "type": "wallMounted"
   },
   {
@@ -6959,13 +7093,18 @@
   {
     "name": "Ukulele",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Ukulele.png/revision/latest/scale-to-width-down/50?cb=20200329103235",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 5,
+        "material": "Hardwood"
+      }
+    ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 1,
+      "height": 1
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Island resident"],
+    "sellPrice": 600,
     "type": "wallMounted"
   },
   {
@@ -7048,7 +7187,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7066,6 +7205,18 @@
     },
     "obtainedFrom": ["Message in a bottle"],
     "sellPrice": 4000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Autumn wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a7/NH-Autumn_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050126",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 4700,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7142,6 +7293,7 @@
   },
   {
     "name": "Basement flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5d/NH-Basement_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050131",
     "materials": [
       {
         "quantity": 10,
@@ -7153,12 +7305,12 @@
       "height": 0
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 1500,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Brown herringbone wall",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/69/NH-Brown_herringbone_wall.png/revision/latest/scale-to-width-down/50?cb=20200326062747",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/69/NH-Brown_herringbone_wall.png/revision/latest/scale-to-width-down/50?cb=20200409044424",
     "materials": [
       {
         "quantity": 15,
@@ -7286,6 +7438,7 @@
   },
   {
     "name": "Cabin wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9a/NH-Cabin_wall.png/revision/latest/scale-to-width-down/50?cb=20200325181558",
     "materials": [
       {
         "quantity": 15,
@@ -7314,7 +7467,7 @@
       "height": 0
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7330,12 +7483,13 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Balloon"],
+    "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Cherry-blossom flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/57/NH-Cherry-blossom_flooring_DIY.png/revision/latest/scale-to-width-down/50?cb=20200409051920",
     "materials": [
       {
         "quantity": 10,
@@ -7356,6 +7510,7 @@
   },
   {
     "name": "Cherry-blossom-trees wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/db/NH-Cherry-blossom-trees_wall_DIY.png/revision/latest/scale-to-width-down/50?cb=20200409051928",
     "materials": [
       {
         "quantity": 10,
@@ -7376,7 +7531,7 @@
   },
   {
     "name": "Chocolate herringbone wall",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e4/NH-Dark_herringbone_flooring.jpg/revision/latest?cb=20200325191431",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6f/NH-Chocolate_herringbone_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050153",
     "materials": [
       {
         "quantity": 15,
@@ -7388,11 +7543,12 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Classic-library wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/38/NH-Classic-library_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050159",
     "materials": [
       {
         "quantity": 10,
@@ -7404,13 +7560,30 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 1450,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Colored-leaves flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/99/NH-Colored-leaves_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050206",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 4300,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Dark bamboo rug",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7f/NH-Dark_bamboo_rug.png/revision/latest/scale-to-width-down/50?cb=20200329071218",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 6,
+        "material": "Bamboo piece"
+      }
+    ],
     "size": {
       "width": 0,
       "height": 0
@@ -7421,6 +7594,7 @@
   },
   {
     "name": "Dark wooden-mosaic wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f5/NH-Dark_wooden-mosaic_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050211",
     "materials": [
       {
         "quantity": 15,
@@ -7432,7 +7606,43 @@
       "height": 0
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 1800,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Forest flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f4/NH-Forest_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050217",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 35000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Forest wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/06/NH-Forest_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050222",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 44000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Galaxy flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/ca/NH-Galaxy_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050226",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7487,6 +7697,7 @@
   },
   {
     "name": "Golden flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/15/NH-Golden_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050231",
     "materials": [
       {
         "quantity": 4,
@@ -7498,7 +7709,31 @@
       "height": 0
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "sellPrice": 40000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Golden wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/8a/NH-Golden_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050236",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 40000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Gold-screen wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c1/NH-Gold-screen_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050241",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 20750,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7506,7 +7741,7 @@
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/97/NH-Honeycomb_flooring.png/revision/latest/scale-to-width-down/50?cb=20200329070314",
     "materials": [
       {
-        "quantity": 6,
+        "quantity": 5,
         "material": "Wasp nest"
       }
     ],
@@ -7532,11 +7767,72 @@
       "height": 0
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 3600,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Ice flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/25/NH-Ice_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050247",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 8200,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Ice wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/46/NH-Ice_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050252",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 8200,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Iceberg flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Iceberg_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050256",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 4000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Iceberg wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5a/NH-Iceberg_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050301",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 4000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Jingle wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/ab/NH-Jingle_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050305",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2500,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Jungle flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/52/NH-Jungle_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050310",
     "materials": [
       {
         "quantity": 10,
@@ -7581,24 +7877,7 @@
       "height": 0
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
-    "type": "wallpaperFlooringRug"
-  },
-  {
-    "name": "Library wall",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2c/NH-Library_wall.png/revision/latest/scale-to-width-down/50?cb=20200331025303",
-    "materials": [
-      {
-        "quantity": 10,
-        "material": "Book"
-      }
-    ],
-    "size": {
-      "width": 0,
-      "height": 0
-    },
-    "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 1380,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7619,6 +7898,27 @@
     "type": "wallpaperFlooringRug"
   },
   {
+    "name": "Lunar surface",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0b/NH-Lunar_surface.png/revision/latest/scale-to-width-down/50?cb=20200409050314",
+    "materials": [
+      {
+        "quantity": 5,
+        "material": "Star fragment"
+      },
+      {
+        "quantity": 1,
+        "material": "Large star fragment"
+      }
+    ],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": ["Celeste"],
+    "sellPrice": 7500,
+    "type": "wallpaperFlooringRug"
+  },
+  {
     "name": "Manga-library wall",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/ef/NH-Manga-library_wall.png/revision/latest/scale-to-width-down/50?cb=20200331025249",
     "materials": [
@@ -7632,11 +7932,12 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 1050,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Modern wood wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f9/NH-Modern_wood_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050320",
     "materials": [
       {
         "quantity": 5,
@@ -7661,13 +7962,26 @@
   },
   {
     "name": "Money flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/76/NH-Money_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050324",
     "materials": [],
     "size": {
       "width": 0,
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 25000,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Mush wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/50/NH-Mush_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050330",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 21400,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7684,7 +7998,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7701,7 +8015,7 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7718,7 +8032,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7735,7 +8049,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7752,7 +8066,7 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7769,22 +8083,24 @@
       "height": 0
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Rustic stone wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/ca/NH-Rustic_stone_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050335",
     "materials": [],
     "size": {
       "width": 0,
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1750,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Sakura-wood flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/09/NH-Sakura-wood_flooring_DIY.png/revision/latest/scale-to-width-down/50?cb=20200409051345",
     "materials": [
       {
         "quantity": 5,
@@ -7805,6 +8121,7 @@
   },
   {
     "name": "Sakura-wood wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/6f/NH-Sakura-wood_wall_DIY.png/revision/latest/scale-to-width-down/50?cb=20200409051351",
     "materials": [
       {
         "quantity": 5,
@@ -7861,7 +8178,20 @@
     "type": "wallpaperFlooringRug"
   },
   {
+    "name": "Sci-fi flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e7/NH-Sci-fi_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050432",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 7500,
+    "type": "wallpaperFlooringRug"
+  },
+  {
     "name": "Sci-fi wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/ba/NH-Sci-fi_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050437",
     "materials": [
       {
         "quantity": 5,
@@ -7877,7 +8207,7 @@
       "height": 0
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
   {
@@ -7898,7 +8228,44 @@
     "type": "wallpaperFlooringRug"
   },
   {
+    "name": "Ski-slope flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5c/NH-Ski-slope_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050443",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 3200,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Ski-slope wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3d/NH-Ski-slope_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050447",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 3200,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Snowflake wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/fa/NH-Snowflake_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050454",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 4800,
+    "type": "wallpaperFlooringRug"
+  },
+  {
     "name": "Stacked-wood wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1f/NH-Stacked-wood_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050459",
     "materials": [
       {
         "quantity": 15,
@@ -7910,11 +8277,24 @@
       "height": 0
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1800,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Starry wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/31/NH-Starry_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050504",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Starry-sands flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4d/NH-Starry-sands_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050510",
     "materials": [
       {
         "quantity": 3,
@@ -7930,11 +8310,24 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 7720,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Starry-sky wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/8e/NH-Starry-sky_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050520",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Steel flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e7/NH-Steel_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050726",
     "materials": [
       {
         "quantity": 7,
@@ -7951,6 +8344,7 @@
   },
   {
     "name": "Steel-frame wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/88/NH-Steel-frame_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050530",
     "materials": [
       {
         "quantity": 8,
@@ -7961,12 +8355,13 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "obtainedFrom": ["Message in a bottle"],
+    "sellPrice": 6000,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Stone wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/64/NH-Stone_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050536",
     "materials": [
       {
         "quantity": 10,
@@ -7983,6 +8378,7 @@
   },
   {
     "name": "Tropical Vista",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/26/NH-Tropical_vista.png/revision/latest/scale-to-width-down/50?cb=20200409050543",
     "materials": [
       {
         "quantity": 5,
@@ -7994,15 +8390,16 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 6000,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Underwater flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/57/NH-Underwater_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050549",
     "materials": [
       {
         "quantity": 3,
-        "material": "Summer shells"
+        "material": "Summer shell"
       },
       {
         "quantity": 3,
@@ -8014,15 +8411,16 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 6600,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Underwater wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c0/NH-Underwater_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050604",
     "materials": [
       {
         "quantity": 3,
-        "material": "Summer shells"
+        "material": "Summer shell"
       },
       {
         "quantity": 5,
@@ -8034,11 +8432,12 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 8600,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Water flooring",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/34/NH-Water_flooring.png/revision/latest/scale-to-width-down/50?cb=20200409050555",
     "materials": [
       {
         "quantity": 6,
@@ -8050,11 +8449,24 @@
       "height": 0
     },
     "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "sellPrice": 7200,
+    "type": "wallpaperFlooringRug"
+  },
+  {
+    "name": "Wild-wood wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/64/NH-Wild-wood_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050612",
+    "materials": [],
+    "size": {
+      "width": 0,
+      "height": 0
+    },
+    "obtainedFrom": [],
+    "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Wooden-knot wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e9/NH-Wooden-knot_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050618",
     "materials": [
       {
         "quantity": 15,
@@ -8066,11 +8478,12 @@
       "height": 0
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
   {
     "name": "Wooden-mosiac wall",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/52/NH-Wooden-mosiac_wall.png/revision/latest/scale-to-width-down/50?cb=20200409050623",
     "materials": [
       {
         "quantity": 15,
@@ -8087,7 +8500,7 @@
   },
   {
     "name": "Woodland wall",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d9/NH-Woodland_wall.png/revision/latest/scale-to-width-down/50?cb=20200331025446",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d9/NH-Woodland_wall.png/revision/latest/scale-to-width-down/50?cb=20200409044819",
     "materials": [
       {
         "quantity": 15,
@@ -8154,7 +8567,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1000,
     "type": "equipment"
   },
   {
@@ -8171,7 +8584,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1400,
     "type": "equipment"
   },
   {
@@ -8188,7 +8601,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 3000,
     "type": "equipment"
   },
   {
@@ -8223,6 +8636,18 @@
     },
     "obtainedFrom": ["Balloon"],
     "sellPrice": 2400,
+    "type": "equipment"
+  },
+  {
+    "name": "Blue rose crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/66/NH-Rose_crown_4.png/revision/latest/scale-to-width-down/50?cb=20200329224352",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 12000,
     "type": "equipment"
   },
   {
@@ -8311,7 +8736,7 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": ["Balloon", "Cherry Blossom Festival"],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -8328,8 +8753,8 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
-    "sellPrice": 0,
+    "obtainedFrom": ["Balloon", "Cherry Blossom Festival"],
+    "sellPrice": 2800,
     "type": "equipment"
   },
   {
@@ -8346,7 +8771,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 1600,
     "type": "equipment"
   },
   {
@@ -8363,7 +8788,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1000,
     "type": "equipment"
   },
   {
@@ -8380,7 +8805,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1400,
     "type": "equipment"
   },
   {
@@ -8401,7 +8826,31 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 960,
+    "type": "equipment"
+  },
+  {
+    "name": "Chic rose crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7d/NH-Rose_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329224423",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2880,
+    "type": "equipment"
+  },
+  {
+    "name": "Chic tulip crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/24/NH-Cute_tulip_crown.png/revision/latest/scale-to-width-down/50?cb=20200329223102",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 1440,
     "type": "equipment"
   },
   {
@@ -8422,7 +8871,7 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 960,
     "type": "equipment"
   },
   {
@@ -8447,11 +8896,12 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1280,
     "type": "equipment"
   },
   {
     "name": "Cool windflower crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/cf/NH-windflower_crown_variation2.png/revision/latest/scale-to-width-down/50?cb=20200329223115",
     "materials": [
       {
         "quantity": 3,
@@ -8492,19 +8942,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Cute cosmos crown",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9a/NH-Cosmos_crown_variation2.png/revision/latest/scale-to-width-down/50?cb=20200329223037",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 560,
     "type": "equipment"
   },
   {
@@ -8529,7 +8967,7 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 800,
     "type": "equipment"
   },
   {
@@ -8554,27 +8992,39 @@
     "type": "equipment"
   },
   {
-    "name": "Cute tulip crown",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/24/NH-Cute_tulip_crown.png/revision/latest/scale-to-width-down/50?cb=20200329223102",
+    "name": "Dark cosmos crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c9/NH-Cosmos_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223409",
     "materials": [],
     "size": {
       "width": 1,
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 3360,
     "type": "equipment"
   },
   {
-    "name": "Cute windflower crown",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/cf/NH-windflower_crown_variation2.png/revision/latest/scale-to-width-down/50?cb=20200329223115",
+    "name": "Dark lily crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/68/NH-Lily_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223433",
     "materials": [],
     "size": {
       "width": 1,
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 960,
+    "type": "equipment"
+  },
+  {
+    "name": "Dark tulip crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Tulip_crown3.png/revision/latest/scale-to-width-down/50?cb=20200329223420",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 800,
     "type": "equipment"
   },
   {
@@ -8718,7 +9168,7 @@
     "type": "equipment"
   },
   {
-    "name": "Gold boots",
+    "name": "Gold-armor shoes",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1e/NH-Gold_boots.png/revision/latest/scale-to-width-down/50?cb=20200329223132",
     "materials": [],
     "size": {
@@ -8726,7 +9176,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 40000,
     "type": "equipment"
   },
   {
@@ -8738,7 +9188,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 50000,
     "type": "equipment"
   },
   {
@@ -8750,7 +9200,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 12000,
     "type": "equipment"
   },
   {
@@ -8773,12 +9223,17 @@
   {
     "name": "Green grass skirt",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/NH-Green_grass_skirt.png/revision/latest/scale-to-width-down/50?cb=20200329223208",
-    "materials": [],
+    "materials": [
+      {
+        "quantity": 7,
+        "material": "Clump of weeds"
+      }
+    ],
     "size": {
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": [],
+    "obtainedFrom": ["Island resident"],
     "sellPrice": 140,
     "type": "equipment"
   },
@@ -8804,7 +9259,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 640,
     "type": "equipment"
   },
   {
@@ -8821,7 +9276,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 6000,
     "type": "equipment"
   },
   {
@@ -8838,7 +9293,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 3750,
     "type": "equipment"
   },
   {
@@ -8889,7 +9344,7 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 200,
     "type": "equipment"
   },
   {
@@ -8982,7 +9437,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 480,
     "type": "equipment"
   },
   {
@@ -9007,6 +9462,18 @@
     "type": "equipment"
   },
   {
+    "name": "Lovely cosmos crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9a/NH-Cosmos_crown_variation2.png/revision/latest/scale-to-width-down/50?cb=20200329223037",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 1120,
+    "type": "equipment"
+  },
+  {
     "name": "Maple-leaf pochette",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/97/NH-Maple-leaf_pochette.png/revision/latest/scale-to-width-down/50?cb=20200329223254",
     "materials": [],
@@ -9015,7 +9482,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 2400,
     "type": "equipment"
   },
   {
@@ -9027,7 +9494,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 2800,
     "type": "equipment"
   },
   {
@@ -9052,11 +9519,11 @@
       "height": 1
     },
     "obtainedFrom": ["Island resident"],
-    "sellPrice": 0,
+    "sellPrice": 480,
     "type": "equipment"
   },
   {
-    "name": "Mushroom umbrella",
+    "name": "Mush umbrella",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3e/NH-Mushroom_umbrella.png/revision/latest/scale-to-width-down/50?cb=20200329090952",
     "materials": [],
     "size": {
@@ -9064,7 +9531,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1200,
     "type": "equipment"
   },
   {
@@ -9081,7 +9548,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1600,
     "type": "equipment"
   },
   {
@@ -9098,7 +9565,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1000,
     "type": "equipment"
   },
   {
@@ -9115,7 +9582,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1400,
     "type": "equipment"
   },
   {
@@ -9140,7 +9607,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 480,
     "type": "equipment"
   },
   {
@@ -9208,7 +9675,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1600,
     "type": "equipment"
   },
   {
@@ -9225,7 +9692,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1000,
     "type": "equipment"
   },
   {
@@ -9242,7 +9709,43 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1400,
+    "type": "equipment"
+  },
+  {
+    "name": "Purple hyacinth crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/df/NH-Hyacinth_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223453",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2880,
+    "type": "equipment"
+  },
+  {
+    "name": "Purple pansy crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/02/NH-Pansy_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223513",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2880,
+    "type": "equipment"
+  },
+  {
+    "name": "Purple windflower crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/NH-Windflower_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329224325",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2880,
     "type": "equipment"
   },
   {
@@ -9284,11 +9787,11 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 480,
     "type": "equipment"
   },
   {
-    "name": "Shell pochette",
+    "name": "Shellfish pochette",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/86/NH-Shell_pochette.png/revision/latest/scale-to-width-down/50?cb=20200329223317",
     "materials": [
       {
@@ -9305,7 +9808,19 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 10800,
+    "type": "equipment"
+  },
+  {
+    "name": "Simple mum crown",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/33/NH-Mum_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223502",
+    "materials": [],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 2880,
     "type": "equipment"
   },
   {
@@ -9368,11 +9883,11 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 2400,
     "type": "equipment"
   },
   {
-    "name": "Snowman hat",
+    "name": "Snowperson head",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0b/NH-Snowman_hat.png/revision/latest/scale-to-width-down/50?cb=20200329223333",
     "materials": [],
     "size": {
@@ -9380,11 +9895,11 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 7000,
     "type": "equipment"
   },
   {
-    "name": "Star hat",
+    "name": "Star head",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a3/NH-Star_hat.png/revision/latest/scale-to-width-down/50?cb=20200329223341",
     "materials": [],
     "size": {
@@ -9392,7 +9907,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 2500,
     "type": "equipment"
   },
   {
@@ -9404,7 +9919,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 3000,
     "type": "equipment"
   },
   {
@@ -9514,7 +10029,7 @@
       "height": 1
     },
     "obtainedFrom": ["Message in a bottle"],
-    "sellPrice": 0,
+    "sellPrice": 400,
     "type": "equipment"
   },
   {
@@ -9590,7 +10105,7 @@
       "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 480,
     "type": "equipment"
   },
   {
@@ -9642,190 +10157,6 @@
     "obtainedFrom": [],
     "sellPrice": 800,
     "type": "equipment"
-  },
-  {
-    "name": "Cosmos crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c9/NH-Cosmos_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223409",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Tulip crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7c/NH-Tulip_crown3.png/revision/latest/scale-to-width-down/50?cb=20200329223420",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Lily crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/68/NH-Lily_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223433",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Hyacinth crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/df/NH-Hyacinth_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223453",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Mum crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/33/NH-Mum_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223502",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Pansy crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/02/NH-Pansy_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329223513",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Rose crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/7/7d/NH-Rose_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329224423",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Rose crown 4",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/66/NH-Rose_crown_4.png/revision/latest/scale-to-width-down/50?cb=20200329224352",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Windflower crown 3",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/NH-Windflower_crown_3.png/revision/latest/scale-to-width-down/50?cb=20200329224325",
-    "materials": [],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 0,
-    "type": "equipment"
-  },
-  {
-    "name": "Medicine",
-    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Medicine",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c0/NH-Medicine.png/revision/latest/scale-to-width-down/50?cb=20200325182005",
-    "materials": [
-      {
-        "quantity": 1,
-        "material": "Wasp nest"
-      },
-      {
-        "quantity": 3,
-        "material": "Clump of weeds"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": ["villager", "stung"],
-    "sellPrice": 100,
-    "type": "other"
-  },
-  {
-    "name": "Fish bait",
-    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Fish_bait_(New_Horizons)",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b0/NH-Fish_bait.png/revision/latest/scale-to-width-down/50?cb=20200325174427",
-    "materials": [
-      {
-        "quantity": 1,
-        "material": "Manila clam"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": ["manila clam"],
-    "sellPrice": 200,
-    "type": "other"
-  },
-  {
-    "name": "Ocarina",
-    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ocarina",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5d/NH-Ocarina.png/revision/latest/scale-to-width-down/50?cb=20200325182042",
-    "materials": [
-      {
-        "quantity": 5,
-        "material": "Clay"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 1000,
-    "type": "other"
-  },
-  {
-    "name": "Pan flute",
-    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pan_flute",
-    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/53/NH-Pan_flute.png/revision/latest/scale-to-width-down/50?cb=20200326053933",
-    "materials": [
-      {
-        "quantity": 7,
-        "material": "Young spring bamboo"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": ["Balloon"],
-    "sellPrice": 2800,
-    "type": "other"
   },
   {
     "name": "Bamboo lattice fence x10",
@@ -9887,6 +10218,7 @@
   },
   {
     "name": "Bunny Day fence x10",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Fences_(New_Horizons)",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3a/NH-Bunny_Day_fence.png/revision/latest/scale-to-width-down/50?cb=20200402054307",
     "materials": [
       {
@@ -9915,11 +10247,11 @@
       }
     ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 1,
+      "height": 1
     },
     "obtainedFrom": ["Bunny Day"],
-    "sellPrice": 2400,
+    "sellPrice": 240,
     "type": "other"
   },
   {
@@ -10021,6 +10353,24 @@
     "type": "other"
   },
   {
+    "name": "Fish bait",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Fish_bait_(New_Horizons)",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b0/NH-Fish_bait.png/revision/latest/scale-to-width-down/50?cb=20200325174427",
+    "materials": [
+      {
+        "quantity": 1,
+        "material": "Manila clam"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["manila clam"],
+    "sellPrice": 200,
+    "type": "other"
+  },
+  {
     "name": "Lattice fence x10",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Fences_(New_Horizons)",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e4/NH-Lattice_fence.png/revision/latest/scale-to-width-down/50?cb=20200325181924",
@@ -10036,6 +10386,86 @@
     },
     "obtainedFrom": ["Nook Stop", "Nook Miles"],
     "sellPrice": 96,
+    "type": "other"
+  },
+  {
+    "name": "Medicine",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Medicine",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c0/NH-Medicine.png/revision/latest/scale-to-width-down/50?cb=20200325182005",
+    "materials": [
+      {
+        "quantity": 1,
+        "material": "Wasp nest"
+      },
+      {
+        "quantity": 3,
+        "material": "Clump of weeds"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["villager", "stung"],
+    "sellPrice": 100,
+    "type": "other"
+  },
+  {
+    "name": "Ocarina",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Ocarina",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5d/NH-Ocarina.png/revision/latest/scale-to-width-down/50?cb=20200325182042",
+    "materials": [
+      {
+        "quantity": 5,
+        "material": "Clay"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": [],
+    "sellPrice": 1000,
+    "type": "other"
+  },
+  {
+    "name": "Pan flute",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pan_flute",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/53/NH-Pan_flute.png/revision/latest/scale-to-width-down/50?cb=20200326053933",
+    "materials": [
+      {
+        "quantity": 7,
+        "material": "Young spring bamboo"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Balloon"],
+    "sellPrice": 2800,
+    "type": "other"
+  },
+  {
+    "name": "Pitfall seed",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Pitfall_seed",
+    "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bc/NH-Pitfall-Seed.png/revision/latest/scale-to-width-down/50?cb=20200409034445",
+    "materials": [
+      {
+        "quantity": 4,
+        "material": "Clump of weeds"
+      },
+      {
+        "quantity": 6,
+        "material": "Tree branch"
+      }
+    ],
+    "size": {
+      "width": 1,
+      "height": 1
+    },
+    "obtainedFrom": ["Balloon", "Message in a bottle", "Villager"],
+    "sellPrice": 140,
     "type": "other"
   },
   {
@@ -10174,26 +10604,6 @@
     },
     "obtainedFrom": ["Nook Stop", "Nook Miles"],
     "sellPrice": 330,
-    "type": "other"
-  },
-  {
-    "name": "Pitfall seed",
-    "materials": [
-      {
-        "quantity": 4,
-        "material": "Clump of weeds"
-      },
-      {
-        "quantity": 6,
-        "material": "Tree branch"
-      }
-    ],
-    "size": {
-      "width": 1,
-      "height": 1
-    },
-    "obtainedFrom": [],
-    "sellPrice": 140,
     "type": "other"
   }
 ]
