@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { createRef } from "react";
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar, FaFish } from "react-icons/fa";
@@ -76,6 +77,7 @@ export default function FishItem({
   hemisphere,
   month
 }: Props) {
+  const imgRef = createRef<HTMLImageElement>();
   const months =
     hemisphere === "Northern Hemisphere" ? f.northernMonths : f.southernMonths;
   const newThisMonth =
@@ -91,7 +93,12 @@ export default function FishItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={getImageUrl("fish", f.name)} />
+      <img
+        src={getImageUrl("fish", f.name)}
+        onError={() => {
+          if (imgRef.current) imgRef.current.src = "/images/missing.png";
+        }}
+      />
       <div css={[styles.row, styles.center, styles.name]}>{f.name}</div>
       <div css={styles.row}>
         <div>

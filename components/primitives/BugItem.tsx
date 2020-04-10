@@ -1,3 +1,4 @@
+import { createRef } from "react";
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { FaClock, FaStar } from "react-icons/fa";
@@ -73,6 +74,7 @@ export default function BugItem({
   month,
   hemisphere
 }: Props) {
+  const imgRef = createRef<HTMLImageElement>();
   const months =
     hemisphere === "Northern Hemisphere" ? b.northernMonths : b.southernMonths;
   const newThisMonth =
@@ -89,7 +91,12 @@ export default function BugItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={getImageUrl("bug", b.name)} />
+      <img
+        src={getImageUrl("bug", b.name)}
+        onError={() => {
+          if (imgRef.current) imgRef.current.src = "/images/missing.png";
+        }}
+      />
       <div css={[styles.row, styles.center, styles.name]}>{b.name}</div>
       <div css={styles.row}>
         <div>
