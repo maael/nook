@@ -1,6 +1,7 @@
 import { stringify } from "querystring";
+import { NextApiResponse } from "next";
 
-export default function(_req, res) {
+export default function(res: NextApiResponse) {
   const redirectUri = `https://discordapp.com/oauth2/authorize?${stringify({
     client_id: process.env.DISCORD_OAUTH_ID,
     response_type: "code",

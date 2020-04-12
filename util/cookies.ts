@@ -40,9 +40,12 @@ const cookies = (
     req: NextApiRequestWithJWT,
     res: NextApiResponseWithCookie
   ) => void | Promise<void>
-) => async (req: NextApiRequestWithJWT, res: NextApiResponseWithCookie) => {
-  res.cookie = (name, value, options) => cookie(res, name, value, options);
-  req.getJWT = async () => {
+) => async (req: NextApiRequest, res: NextApiResponse) => {
+  const extendedRes: NextApiResponseWithCookie = res as any;
+  extendedRes.cookie = (name, value, options) =>
+    cookie(res, name, value, options);
+  const extendedReq: NextApiRequestWithJWT = req as any;
+  extendedReq.getJWT = async () => {
     const items = parse(req.headers.cookie || "");
     if (!items[COOKIE_NAME]) return undefined;
     const decoded = await jwt.verify(items[COOKIE_NAME]);
@@ -50,7 +53,7 @@ const cookies = (
     return decoded;
   };
   try {
-    await handler(req, res);
+    await handler(extendedReq, extendedRes);
     return;
   } catch (e) {
     console.error(e);

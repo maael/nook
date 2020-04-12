@@ -1,6 +1,7 @@
 import { stringify } from "querystring";
+import { NextApiResponse } from "next";
 
-export default function(_req, res) {
+export default function(res: NextApiResponse) {
   const redirectUri = `https://www.reddit.com/api/v1/authorize?${stringify({
     client_id: process.env.REDDIT_OAUTH_ID,
     response_type: "code",

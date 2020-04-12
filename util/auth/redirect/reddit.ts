@@ -1,11 +1,11 @@
 import got from "got";
 import url from "url";
 import { stringify } from "querystring";
-import cookies from "../../../../util/cookies";
-import * as jwt from "../../../../util/jwt";
-import { JWT } from "../../../../types";
-import { createUser, getUserByRedditName } from "../../../../util/db";
-import { JWT_VERSION, COOKIE_NAME } from "../../../../util/constants";
+import cookies from "../../cookies";
+import * as jwt from "../../jwt";
+import { JWT } from "../../../types";
+import { createUser, getUserByRedditName } from "../../db";
+import { JWT_VERSION, COOKIE_NAME } from "../../constants";
 
 async function getOrCreateUser(identity: any) {
   const result = await getUserByRedditName(identity.name);

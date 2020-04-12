@@ -1,12 +1,12 @@
 import qs from "querystring";
 import got from "got";
-import * as jwt from "../../../../util/jwt";
-import cookies, { NextApiResponseWithCookie } from "../../../../util/cookies";
-import { getUserByDiscordId, createUser } from "../../../../util/db";
-import { JWT_VERSION, COOKIE_NAME } from "../../../../util/constants";
-import { User } from "../../../../types/db";
-import { JWT } from "../../../../types";
-import { updateUser } from "../../../../util/db/user";
+import * as jwt from "../../jwt";
+import cookies, { NextApiResponseWithCookie } from "../../cookies";
+import { getUserByDiscordId, createUser } from "../../db";
+import { JWT_VERSION, COOKIE_NAME } from "../../constants";
+import { User } from "../../../types/db";
+import { JWT } from "../../../types";
+import { updateUser } from "../../db/user";
 
 export default cookies(async function(req, res) {
   const { code, _state } = req.query;
