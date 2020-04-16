@@ -9,7 +9,9 @@ import {
   GiPerson,
   GiSwapBag
 } from "react-icons/gi";
+import MoneyTreeTracker from "../components/compositions/MoneyTreeTracker";
 import CheckboxPill from "../components/primitives/CheckboxPill";
+import Heading from "../components/primitives/Heading";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../components/hooks/useLocalstorage";
@@ -49,6 +51,7 @@ export default function Daily() {
         marginTop: 10
       }}
     >
+      <Heading>Daily Checklist</Heading>
       <div>
         <div
           css={{
@@ -59,7 +62,7 @@ export default function Daily() {
             alignItems: "center",
             backgroundColor: colors.blueDark,
             color: colors.blueLight,
-            margin: "2px 10px 15px",
+            margin: "2px 10px 10px",
             padding: 5,
             borderRadius: "0.3em",
             cursor: "pointer"
@@ -205,6 +208,7 @@ export default function Daily() {
           />
         </div>
       </div>
+      <MoneyTreeTracker />
     </div>
   );
 }

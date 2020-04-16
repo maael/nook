@@ -2,21 +2,32 @@ import { ReactNode } from "react";
 import { colors } from "../../util/theme";
 
 interface Props {
-  checked: boolean;
-  onChange: () => void;
+  checked: boolean | undefined;
+  onChange: (checked: boolean | undefined) => void;
   label: string;
   icon: ReactNode;
+  uncheckedIcon?: ReactNode;
+  intermediateIcon?: ReactNode;
+  allowIntermediate?: boolean;
 }
 
 export default function CheckboxPill({
   checked,
   onChange,
   label,
-  icon
+  icon,
+  uncheckedIcon = null,
+  intermediateIcon = null,
+  allowIntermediate = false
 }: Props) {
+  const nextValue = allowIntermediate
+    ? checked === false
+      ? undefined
+      : !checked
+    : !checked;
   return (
     <div
-      onClick={onChange}
+      onClick={() => onChange(nextValue)}
       css={{
         outline: "none",
         userSelect: "none",
@@ -42,7 +53,11 @@ export default function CheckboxPill({
           borderRadius: "0.3em"
         }}
       >
-        {checked ? icon : null}
+        {allowIntermediate && checked === undefined
+          ? intermediateIcon
+          : !!checked
+          ? icon
+          : uncheckedIcon}
       </div>
       <div>{label}</div>
     </div>

@@ -226,5 +226,13 @@ export const styles: Record<string, InterpolationWithTheme<any>> = {
     textAlign: "center",
     padding: 10,
     maxWidth: 1200
+  },
+  link: {
+    textDecoration: "none",
+    fontWeight: "bold",
+    color: colors.blueDark,
+    "&:hover": {
+      color: colors.brownDark
+    }
   }
 };

@@ -1,16 +1,21 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { CSSProperties } from "react";
 import { colors } from "../../util/theme";
 
 export default function Heading({
   children,
-  size = 20
+  size = 20,
+  style = {},
+  containerStyle = {}
 }: {
   size?: number;
   children: React.ReactNode;
+  style?: CSSProperties;
+  containerStyle?: CSSProperties;
 }) {
   return (
-    <div>
+    <div style={containerStyle}>
       <div
         style={{
           backgroundColor: colors.blueDark,
@@ -20,7 +25,8 @@ export default function Heading({
           padding: "4px 8px",
           margin: "5px 0px",
           display: "inline-block",
-          borderRadius: "0.3em"
+          borderRadius: "0.3em",
+          ...style
         }}
       >
         {children}
