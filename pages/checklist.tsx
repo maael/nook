@@ -7,7 +7,8 @@ import {
   GiSquareBottle,
   GiTalk,
   GiPerson,
-  GiSwapBag
+  GiSwapBag,
+  GiSofa
 } from "react-icons/gi";
 import MoneyTreeTracker from "../components/compositions/MoneyTreeTracker";
 import CheckboxPill from "../components/primitives/CheckboxPill";
@@ -34,7 +35,8 @@ const INITIAL_CHECKLIST = {
   messageInABotttle: false,
   talkToVillagers: false,
   recyclingBin: false,
-  islandVisitors: false
+  islandVisitors: false,
+  treeFurniture: false
 };
 
 export default function Daily() {
@@ -205,6 +207,18 @@ export default function Daily() {
               setChecklist(c => ({ ...c, islandVisitors: !c.islandVisitors }))
             }
             icon={<GiPerson />}
+          />
+        </div>
+      </div>
+      <div>
+        <div css={styles.pill}>
+          <CheckboxPill
+            label={"Shake trees for furniture"}
+            checked={checklist.treeFurniture}
+            onChange={() =>
+              setChecklist(c => ({ ...c, treeFurniture: !c.treeFurniture }))
+            }
+            icon={<GiSofa />}
           />
         </div>
       </div>
