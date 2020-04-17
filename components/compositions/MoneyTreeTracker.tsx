@@ -3,6 +3,7 @@ import { jsx } from "@emotion/core";
 import { FaCheck, FaQuestion, FaTimes } from "react-icons/fa";
 import dateAdd from "date-fns/add";
 import format from "date-fns/format";
+import dayDiff from "date-fns/differenceInCalendarDays";
 import CheckboxPill from "../primitives/CheckboxPill";
 import Heading from "../primitives/Heading";
 import Panel from "../primitives/Panel";
@@ -67,11 +68,9 @@ export default function MoneyTreeTracker() {
           Add days and mark them as fertile <FaCheck /> or normal <FaTimes />,
           and the current prediction for the next week will be filled out.
           Anything that's unknown <FaQuestion /> is assumed to be normal{" "}
-          <FaTimes />.
-        </p>
-        <p css={{ fontWeight: "bold" }}>
-          This is a work in progress, and the prediction doesn't happen at the
-          moment.
+          <FaTimes />. Once you know your pattern, remove days back down to your
+          pattern! The area below will predict the next week of days from the
+          pattern.
         </p>
       </Panel>
       <div css={styles.row}>
@@ -135,13 +134,21 @@ export default function MoneyTreeTracker() {
             <div key={d.toString()} css={styles.pill}>
               <div>{format(d, "dd/MM")}</div>
               <div css={{ textAlign: "center", marginTop: 2 }}>
-                <FaQuestion />
+                <Prediction pattern={days} day={d} />
               </div>
             </div>
           ))}
       </div>
     </div>
   );
+}
+
+function Prediction({ pattern, day }: { pattern: any[]; day: any }) {
+  if (!pattern.length) return <FaQuestion />;
+  const patternValues = pattern.map(({ value }) => value);
+  const daysSinceStartOfPattern = dayDiff(day, new Date(pattern[0].date));
+  const mod = daysSinceStartOfPattern % pattern.length;
+  return patternValues[mod] ? <FaCheck /> : <FaTimes />;
 }
 
 function DayPill({
