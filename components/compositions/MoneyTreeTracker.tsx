@@ -103,7 +103,7 @@ export default function MoneyTreeTracker() {
         {days.map((d, i) => (
           <DayPill
             key={i}
-            label={format(new Date(d.date), "dd/MM")}
+            label={format(new Date(d.date), "EEE dd/MM")}
             checked={d.value}
             onChange={nextValue =>
               setDays(existing => {
