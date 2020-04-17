@@ -16,6 +16,9 @@ export default function CollectionHeaderBar() {
         <NavItem url="/events/bunny" exact>
           Bunny Day
         </NavItem>
+        <NavItem url="/events/nature" exact>
+          Nature/Earth Day
+        </NavItem>
       </React.Fragment>
     </HeaderBar>
   );
