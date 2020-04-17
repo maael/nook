@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { FaCheck, FaQuestion, FaTimes } from "react-icons/fa";
+import { FaCheck, FaQuestion, FaTimes, FaPlus, FaMinus } from "react-icons/fa";
 import dateAdd from "date-fns/add";
 import format from "date-fns/format";
 import dayDiff from "date-fns/differenceInCalendarDays";
@@ -90,13 +90,17 @@ export default function MoneyTreeTracker() {
             )
           }
         >
-          Add day
+          <div css={{ display: "flex", alignItems: "center" }}>
+            <FaPlus style={{ marginRight: 2 }} /> Add day
+          </div>
         </div>
         <div
           css={{ ...styles.pill, ...styles.interactive }}
           onClick={() => setDays(d => d.slice(0, -1))}
         >
-          Remove day
+          <div css={{ display: "flex", alignItems: "center" }}>
+            <FaMinus style={{ marginRight: 2 }} /> Remove day
+          </div>
         </div>
       </div>
       <div css={{ ...styles.row, width: 800, maxWidth: "90vw", marginTop: 10 }}>
