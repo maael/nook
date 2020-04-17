@@ -36,7 +36,35 @@ export default function Events() {
                   borderRadius: "0.3em"
                 }}
               >
-                🐰 Bunny Day 🐰
+                <div
+                  css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}
+                >
+                  🐰 Bunny Day 🐰
+                </div>
+                <div>April 1st - April 12th</div>
+              </div>
+            </div>
+          </a>
+        </Link>
+        <Link href="/events/nature">
+          <a>
+            <img src="/images/leif.png" css={{ height: 200, marginTop: 20 }} />
+            <div>
+              <div
+                css={{
+                  backgroundColor: colors.blueDark,
+                  color: colors.blueLight,
+                  display: "inline-block",
+                  padding: 10,
+                  borderRadius: "0.3em"
+                }}
+              >
+                <div
+                  css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}
+                >
+                  🌍 Nature/Earth Day 🌍
+                </div>
+                <div>April 22nd</div>
               </div>
             </div>
           </a>
