@@ -123,7 +123,7 @@ export default function MoneyTreeTracker() {
         containerStyle={{ display: "flex", justifyContent: "center" }}
         style={{ marginTop: 20 }}
       >
-        Weekly Prediction
+        Week Prediction
       </Heading>
       <div
         css={{ ...styles.row, width: 800, maxWidth: "90vw", marginBottom: 10 }}
@@ -133,6 +133,7 @@ export default function MoneyTreeTracker() {
           .map(d => (
             <div key={d.toString()} css={styles.pill}>
               <div>{format(d, "dd/MM")}</div>
+              <div css={{ textAlign: "center" }}>{format(d, "EEE")}</div>
               <div css={{ textAlign: "center", marginTop: 2 }}>
                 <Prediction pattern={days} day={d} />
               </div>
