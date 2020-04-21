@@ -4,7 +4,7 @@
 
 - App
   - https://github.com/maael/nook
-  - https://nook.mael.tech
+  - https://nook.services
 
 ## Features
 
