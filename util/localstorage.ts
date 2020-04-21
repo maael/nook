@@ -1,6 +1,7 @@
 enum LocalStorageKeys {
   SELECTED_MONTH = "nook:selected-month",
   SELECTED_HEMISPHERE = "nook:selected-hemisphere",
+  SELECTED_SORT = "nook:selected-sort",
   SELECTED_FISH_LOCATION = "nook:selected-fish-location",
   SELECTED_FISH_SIZE = "nook:selected-fish-size",
   SELECTED_FISH_RARITY = "nook:selected-fish-rarity",

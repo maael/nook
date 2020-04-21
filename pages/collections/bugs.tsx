@@ -11,6 +11,7 @@ import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
 import useSyncedCollection from "../../components/hooks/useSyncedCollection";
+import useSort from "../../components/hooks/useSort";
 import {
   CURRENT_MONTH,
   isAvailable,
@@ -18,6 +19,7 @@ import {
 } from "../../util/collections";
 import { styles as generalStyles } from "../../util/theme";
 import createFuse from "../../util/fuse";
+import { SortOption } from "../../types";
 
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
   ssr: false,
@@ -29,6 +31,10 @@ const DataFieldSelect = dynamic(
   {
     ssr: false
   }
+);
+const SortSelect = dynamic(
+  () => import("../../components/primitives/SortSelect"),
+  { ssr: false }
 );
 
 const bugsData = require("../../data/bugs.json");
@@ -89,11 +95,16 @@ export default function Collections() {
     LocalStorageKeys.BUGS_COLLECTION,
     []
   );
+  const [sort, setSort] = useLocalstorage<SortOption | undefined>(
+    LocalStorageKeys.SELECTED_SORT,
+    undefined
+  );
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : bugsData,
     hemisphere,
     { month, locations, rarity }
   );
+  const sorted = useSort(filtered, sort);
   const handleCollection = useSyncedCollection(
     LocalStorageKeys.BUGS_COLLECTION,
     setCollection
@@ -126,12 +137,13 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+        <SortSelect value={sort} onChange={setSort} />
         <Heading>
-          Showing {filtered.length} of {bugsData.length}
+          Showing {sorted.length} of {bugsData.length}
         </Heading>
         <FilterableItems
           month={month}
-          filtered={filtered}
+          filtered={sorted}
           hemisphere={hemisphere}
           generateItem={data => (
             <BugItem

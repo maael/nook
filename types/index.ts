@@ -19,3 +19,8 @@ export enum UserType {
   DISCORD = "discord",
   REDDIT = "reddit"
 }
+
+export enum SortOption {
+  Critterpedia = "Critterpedia",
+  PriceDescending = "PriceDescending"
+}

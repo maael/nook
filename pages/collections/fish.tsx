@@ -10,6 +10,7 @@ import FilterableItems from "../../components/compositions/FilterableItems";
 import useLocalstorage, {
   LocalStorageKeys
 } from "../../components/hooks/useLocalstorage";
+import useSort from "../../components/hooks/useSort";
 import useSyncedCollection from "../../components/hooks/useSyncedCollection";
 import { styles as generalStyles } from "../../util/theme";
 import {
@@ -19,6 +20,7 @@ import {
   fishSizeMap
 } from "../../util/collections";
 import createFuse from "../../util/fuse";
+import { SortOption } from "../../types";
 
 const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
   ssr: false,
@@ -26,6 +28,10 @@ const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
 });
 const DataFieldSelect = dynamic(
   () => import("../../components/primitives/DataFieldSelect"),
+  { ssr: false }
+);
+const SortSelect = dynamic(
+  () => import("../../components/primitives/SortSelect"),
   { ssr: false }
 );
 
@@ -98,11 +104,16 @@ export default function Collections() {
     LocalStorageKeys.FISH_COLLECTION,
     []
   );
+  const [sort, setSort] = useLocalstorage<SortOption | undefined>(
+    LocalStorageKeys.SELECTED_SORT,
+    undefined
+  );
   const filtered = applyFilter(
     search ? fuse.search(search).map<any>(d => d.item) : fishData,
     hemisphere,
     { month, locations, sizes, rarity }
   );
+  const sorted = useSort(filtered, sort);
   const handleCollection = useSyncedCollection(
     LocalStorageKeys.FISH_COLLECTION,
     setCollection
@@ -144,6 +155,7 @@ export default function Collections() {
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
+        <SortSelect value={sort} onChange={setSort} />
         <Heading>
           Showing {filtered.length} of {fishData.length}
         </Heading>
