@@ -1,8 +1,6 @@
 import cheerio from "cheerio";
 import fetchHTML from "../util/fetchHTML";
 
-const bugs = require("../../data/bugs.json");
-
 enum Rarity {
   Common = "Common",
   Uncommon = "Uncommon",
@@ -14,6 +12,7 @@ enum Rarity {
 }
 
 export default async function embellishBugs() {
+  const bugs = require("../../data/bugs.json");
   const results = await fetchHTML("bugs", bugs, "wikiUrl", false);
   return results.map(({ item, html }) => {
     const $ = cheerio.load(html);

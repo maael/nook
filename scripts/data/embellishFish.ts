@@ -1,8 +1,6 @@
 import cheerio from "cheerio";
 import fetchHTML from "../util/fetchHTML";
 
-const fish = require("../../data/fish.json");
-
 enum Rarity {
   Common = "Common",
   Uncommon = "Uncommon",
@@ -14,6 +12,7 @@ enum Rarity {
 }
 
 export default async function embellishFish() {
+  const fish = require("../../data/fish.json");
   const results = await fetchHTML("fish", fish, "wikiUrl", false);
   return results.map(({ item, html }) => {
     const $ = cheerio.load(html);
