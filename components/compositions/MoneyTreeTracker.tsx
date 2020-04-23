@@ -1,6 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
-import { FaCheck, FaQuestion, FaTimes, FaPlus, FaMinus } from "react-icons/fa";
+import {
+  FaCheck,
+  FaQuestion,
+  FaTimes,
+  FaPlus,
+  FaMinus,
+  FaExclamation
+} from "react-icons/fa";
 import dateAdd from "date-fns/add";
 import format from "date-fns/format";
 import dayDiff from "date-fns/differenceInCalendarDays";
@@ -72,6 +79,17 @@ export default function MoneyTreeTracker() {
           pattern! The area below will predict the next week of days from the
           pattern.
         </p>
+        <b css={{ fontWeight: "bold" }}>
+          <FaExclamation /> Note: This has been disproved, there is no pattern.
+          You can see{" "}
+          <a
+            css={generalStyles.link}
+            href="https://animalcrossing.fandom.com/wiki/Money_tree"
+          >
+            here
+          </a>{" "}
+          for more.
+        </b>
       </Panel>
       <div css={styles.row}>
         <div
