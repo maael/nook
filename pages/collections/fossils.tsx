@@ -37,7 +37,13 @@ export default function Collections() {
     []
   );
   const data = useMemo(
-    () => fossilData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    () =>
+      fossilData.map(d => ({
+        ...d,
+        _name: d.name,
+        name: t(d.name),
+        icon: d.name
+      })),
     []
   );
   const fuse = useMemo(() => createFuse(data), [data]);
@@ -56,17 +62,17 @@ export default function Collections() {
         </Heading>
         {filtered.map(f => (
           <FossilItem
-            key={f.name}
+            key={f._name}
             fossil={f}
             onClick={() => {
               setCollection(c =>
-                c.includes(f.name)
-                  ? c.filter(i => i !== f.name)
-                  : [...c, f.name]
+                c.includes(f._name)
+                  ? c.filter(i => i !== f._name)
+                  : [...c, f._name]
               );
-              handleCollection(collection, f.name);
+              handleCollection(collection, f._name);
             }}
-            inCollection={collection.includes(f.name)}
+            inCollection={collection.includes(f._name)}
           />
         ))}
       </div>

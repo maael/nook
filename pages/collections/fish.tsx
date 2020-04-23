@@ -111,7 +111,13 @@ export default function Collections() {
     undefined
   );
   const data = useMemo(
-    () => fishData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    () =>
+      fishData.map(d => ({
+        ...d,
+        _name: d.name,
+        name: t(d.name),
+        icon: d.name
+      })),
     []
   );
   const fuse = useMemo(() => createFuse(data), [data]);
@@ -167,19 +173,19 @@ export default function Collections() {
           hemisphere={hemisphere}
           generateItem={data => (
             <FishItem
-              key={data.name}
+              key={data._name}
               fish={data}
               hemisphere={hemisphere}
               month={month}
               onClick={() => {
                 setCollection(c =>
-                  c.includes(data.name)
-                    ? c.filter(i => i !== data.name)
-                    : [...c, data.name]
+                  c.includes(data._name)
+                    ? c.filter(i => i !== data._name)
+                    : [...c, data._name]
                 );
-                handleCollection(collection, data.name);
+                handleCollection(collection, data._name);
               }}
-              inCollection={collection.includes(data.name)}
+              inCollection={collection.includes(data._name)}
             />
           )}
         />

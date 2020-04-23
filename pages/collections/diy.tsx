@@ -42,7 +42,13 @@ export default function Collections() {
     []
   );
   const data = useMemo(
-    () => recipeData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    () =>
+      recipeData.map(d => ({
+        ...d,
+        _name: d.name,
+        name: t(d.name),
+        icon: d.name
+      })),
     []
   );
   const fuse = useMemo(() => createFuse(data), [data]);
@@ -86,17 +92,17 @@ export default function Collections() {
         </Heading>
         {filtered.map((recipe, i) => (
           <RecipeItem
-            key={`${recipe.name}-${i}`}
+            key={`${recipe._name}-${i}`}
             recipe={recipe}
             onClick={() => {
               setCollection(c =>
-                c.includes(recipe.name)
-                  ? c.filter(i => i !== recipe.name)
-                  : [...c, recipe.name]
+                c.includes(recipe._name)
+                  ? c.filter(i => i !== recipe._name)
+                  : [...c, recipe._name]
               );
-              handleCollection(collection, recipe.name);
+              handleCollection(collection, recipe._name);
             }}
-            inCollection={collection.includes(recipe.name)}
+            inCollection={collection.includes(recipe._name)}
           />
         ))}
       </div>
