@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
+import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import SearchInput from "../../components/primitives/SearchInput";
 import Heading from "../../components/primitives/Heading";
 import LoadingItem from "../../components/primitives/LoadingItem";
 import useLocalstorage, {
@@ -24,6 +27,7 @@ const FossilItem = dynamic(
 const fuse = createFuse(fossilData);
 
 export default function Collections() {
+  const { t } = useTranslation("fossils");
   const [search, setSearch] = useLocalstorage<string>(
     LocalStorageKeys.FOSSIL_SEARCH,
     ""
@@ -32,9 +36,12 @@ export default function Collections() {
     LocalStorageKeys.FOSSIL_COLLECTION,
     []
   );
-  const filtered = search
-    ? fuse.search(search).map<any>(d => d.item)
-    : fossilData;
+  const data = useMemo(
+    () => fossilData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    []
+  );
+  const fuse = useMemo(() => createFuse(data), [data]);
+  const filtered = search ? fuse.search(search).map<any>(d => d.item) : data;
   const handleCollection = useSyncedCollection(
     LocalStorageKeys.FOSSIL_COLLECTION,
     setCollection
@@ -43,12 +50,7 @@ export default function Collections() {
     <>
       <CollectionHeaderBar />
       <div css={generalStyles.pageWrapper}>
-        <input
-          css={generalStyles.input}
-          placeholder="Search..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
+        <SearchInput value={search} setSearch={setSearch} />
         <Heading>
           Showing {filtered.length} of {fossilData.length}
         </Heading>

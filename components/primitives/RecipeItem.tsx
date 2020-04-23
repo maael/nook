@@ -70,7 +70,7 @@ export default function RecipeItem({ recipe, inCollection, onClick }: Props) {
     >
       <img
         css={{ minHeight: 50 }}
-        src={getImageUrl("recipe", recipe.name)}
+        src={getImageUrl("recipe", recipe.icon)}
         ref={imgRef}
         onError={() => {
           if (imgRef.current) imgRef.current.src = "/images/missing.png";

@@ -8,13 +8,18 @@ export default function useJWT() {
   const [userJWT, setUserJWT] = useState<JWT | null>();
 
   useEffect(() => {
-    const parsed = cookie.parse(document.cookie)[COOKIE_NAME];
-    const decoded = jwt.decode(parsed, { json: true });
-    if (!userJWT && isValidJWT(decoded)) {
-      setUserJWT(decoded);
+    const jwt = getJWT();
+    if (!userJWT && isValidJWT(jwt)) {
+      setUserJWT(jwt);
     }
   });
   return userJWT;
+}
+
+export function getJWT() {
+  const parsed = cookie.parse(document.cookie)[COOKIE_NAME];
+  const decoded = jwt.decode(parsed, { json: true });
+  return isValidJWT(decoded) ? decoded : undefined;
 }
 
 function isValidJWT(inp: any): inp is JWT {

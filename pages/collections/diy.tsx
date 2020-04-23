@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { useMemo } from "react";
 import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import SearchInput from "../../components/primitives/SearchInput";
 import Heading from "../../components/primitives/Heading";
 import LoadingItem from "../../components/primitives/LoadingItem";
 import DataFieldSelect from "../../components/primitives/DataFieldSelect";
@@ -20,9 +23,8 @@ const RecipeItem = dynamic(
 
 const recipeData = require("../../data/recipes.json");
 
-const fuse = createFuse(recipeData);
-
 export default function Collections() {
+  const { t } = useTranslation("recipes");
   const [search, setSearch] = useLocalstorage<string>(
     LocalStorageKeys.DIY_SEARCH,
     ""
@@ -39,10 +41,12 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_DIY_TYPE,
     []
   );
-  const filtered = (search
-    ? fuse.search(search).map<any>(d => d.item)
-    : recipeData
-  )
+  const data = useMemo(
+    () => recipeData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    []
+  );
+  const fuse = useMemo(() => createFuse(data), [data]);
+  const filtered = (search ? fuse.search(search).map<any>(d => d.item) : data)
     .filter(d =>
       obtainedFrom.length
         ? obtainedFrom.some(o => d.obtainedFrom.includes(o))
@@ -76,12 +80,7 @@ export default function Collections() {
           onChange={setTypes}
           labelMap={recipeTypeMap}
         />
-        <input
-          css={generalStyles.input}
-          placeholder="Search..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
+        <SearchInput value={search} setSearch={setSearch} />
         <Heading>
           Showing {filtered.length} of {recipeData.length}
         </Heading>

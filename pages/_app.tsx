@@ -15,6 +15,8 @@ import OverlayMenu from "../components/primitives/OverlayMenu";
 import useFirstSync from "../components/hooks/useFirstSync";
 import { colors as nookTheme } from "../util/theme";
 
+import "../util/i18n";
+
 export default function App({ Component, pageProps }) {
   useFirstSync();
   const [overlay, setOverlay] = useState(false);

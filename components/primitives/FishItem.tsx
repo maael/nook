@@ -94,7 +94,7 @@ export default function FishItem({
       }}
     >
       <img
-        src={getImageUrl("fish", f.name)}
+        src={getImageUrl("fish", f.icon)}
         onError={() => {
           if (imgRef.current) imgRef.current.src = "/images/missing.png";
         }}

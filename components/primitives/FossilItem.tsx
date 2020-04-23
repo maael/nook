@@ -42,7 +42,7 @@ export default function FossilItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={getImageUrl("fossil", f.name)} />
+      <img src={getImageUrl("fossil", f.icon)} />
       <div css={styles.title}>{f.name}</div>
       <div>
         <GiSwapBag /> {f.sellPrice}

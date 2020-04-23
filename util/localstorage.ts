@@ -1,4 +1,5 @@
 enum LocalStorageKeys {
+  SELECTED_LANGUAGE = "nook:selected-language",
   SELECTED_MONTH = "nook:selected-month",
   SELECTED_HEMISPHERE = "nook:selected-hemisphere",
   SELECTED_SORT = "nook:selected-sort",

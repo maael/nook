@@ -92,7 +92,7 @@ export default function BugItem({
       }}
     >
       <img
-        src={getImageUrl("bug", b.name)}
+        src={getImageUrl("bug", b.icon)}
         onError={() => {
           if (imgRef.current) imgRef.current.src = "/images/missing.png";
         }}

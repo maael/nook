@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import dynamic from "next/dynamic";
+import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import Heading from "../../components/primitives/Heading";
+import SearchInput from "../../components/primitives/SearchInput";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import LoadingItem from "../../components/primitives/LoadingItem";
@@ -38,8 +41,6 @@ const SortSelect = dynamic(
 );
 
 const bugsData = require("../../data/bugs.json");
-
-const fuse = createFuse(bugsData);
 interface Filter {
   month?: number;
   locations: string[];
@@ -71,6 +72,7 @@ function applyFilter(data: any[], hemisphere: string, filter: Filter) {
 }
 
 export default function Collections() {
+  const { t } = useTranslation("bugs");
   const [month, setMonth] = useLocalstorage<number | undefined>(
     LocalStorageKeys.SELECTED_MONTH,
     CURRENT_MONTH
@@ -99,8 +101,13 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_SORT,
     undefined
   );
+  const data = useMemo(
+    () => bugsData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    []
+  );
+  const fuse = useMemo(() => createFuse(data), [data]);
   const filtered = applyFilter(
-    search ? fuse.search(search).map<any>(d => d.item) : bugsData,
+    search ? fuse.search(search).map<any>(d => d.item) : data,
     hemisphere,
     { month, locations, rarity }
   );
@@ -131,12 +138,7 @@ export default function Collections() {
           data={bugsData}
           field="rarity"
         />
-        <input
-          css={generalStyles.input}
-          placeholder="Search..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
+        <SearchInput value={search} setSearch={setSearch} />
         <SortSelect value={sort} onChange={setSort} />
         <Heading>
           Showing {sorted.length} of {bugsData.length}

@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
+import { useMemo } from "react";
 import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
+import SearchInput from "../../components/primitives/SearchInput";
 import MonthSelect from "../../components/primitives/MonthSelect";
 import HemisphereSelect from "../../components/primitives/HemisphereSelect";
 import Heading from "../../components/primitives/Heading";
@@ -36,8 +39,6 @@ const SortSelect = dynamic(
 );
 
 const fishData = require("../../data/fish.json");
-
-const fuse = createFuse(fishData);
 
 interface Filter {
   month?: number;
@@ -76,6 +77,7 @@ function applyFilter(data: any[], hemisphere: string, filter: Filter) {
 }
 
 export default function Collections() {
+  const { t } = useTranslation("fish");
   const [month, setMonth] = useLocalstorage<number | undefined>(
     LocalStorageKeys.SELECTED_MONTH,
     CURRENT_MONTH
@@ -108,8 +110,13 @@ export default function Collections() {
     LocalStorageKeys.SELECTED_SORT,
     undefined
   );
+  const data = useMemo(
+    () => fishData.map(d => ({ ...d, name: t(d.name), icon: d.name })),
+    []
+  );
+  const fuse = useMemo(() => createFuse(data), [data]);
   const filtered = applyFilter(
-    search ? fuse.search(search).map<any>(d => d.item) : fishData,
+    search ? fuse.search(search).map<any>(d => d.item) : data,
     hemisphere,
     { month, locations, sizes, rarity }
   );
@@ -149,19 +156,14 @@ export default function Collections() {
           data={fishData}
           field="rarity"
         />
-        <input
-          css={generalStyles.input}
-          placeholder="Search..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
+        <SearchInput value={search} setSearch={setSearch} />
         <SortSelect value={sort} onChange={setSort} />
         <Heading>
           Showing {filtered.length} of {fishData.length}
         </Heading>
         <FilterableItems
           month={month}
-          filtered={filtered}
+          filtered={sorted}
           hemisphere={hemisphere}
           generateItem={data => (
             <FishItem
