@@ -87,7 +87,18 @@ export default function UserPage({
       {user.redditId === "661nj81f" ? null : (
         <div css={{ marginTop: 10 }}>
           <Heading>Collected Bugs</Heading>
-          <div css={{ marginBottom: 10, margin: "0 auto", maxWidth: "80vw" }}>
+          <Heading size={15}>
+            {user.profile!.bugs.length} / {bugsData.length} (
+            {((user.profile!.bugs.length / bugsData.length) * 100).toFixed(0)}%)
+          </Heading>
+          <div
+            css={{
+              marginBottom: 10,
+              margin: "0 auto",
+              width: "80vw",
+              maxWidth: 800
+            }}
+          >
             {bugsData
               .filter(({ name }) =>
                 user.profile!.bugs.some(
@@ -99,7 +110,18 @@ export default function UserPage({
               ))}
           </div>
           <Heading>Collected Fish</Heading>
-          <div css={{ marginBottom: 10 }}>
+          <Heading size={15}>
+            {user.profile!.fish.length} / {fishData.length} (
+            {((user.profile!.fish.length / bugsData.length) * 100).toFixed(0)}%)
+          </Heading>
+          <div
+            css={{
+              marginBottom: 10,
+              margin: "0 auto",
+              width: "80vw",
+              maxWidth: 800
+            }}
+          >
             {fishData
               .filter(({ name }) =>
                 user.profile!.fish.some(

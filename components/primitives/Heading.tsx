@@ -3,6 +3,10 @@ import { jsx } from "@emotion/core";
 import { CSSProperties } from "react";
 import { colors } from "../../util/theme";
 
+/**
+ *
+ * @param size - Default 20
+ */
 export default function Heading({
   children,
   size = 20,
