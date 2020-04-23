@@ -24,7 +24,7 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
         right: 0,
         background: colors.blueDark,
         zIndex: 99,
-        paddingTop: 50
+        paddingTop: 25
       }}
     >
       <div
