@@ -53,7 +53,7 @@ try {
   language = JSON.parse(
     localStorage.getItem(
       getKey(LocalStorageKeys.SELECTED_LANGUAGE, jwt && jwt._id)
-    ) || '"en"'
+    )!
   );
 } catch {
   /*Nothing*/

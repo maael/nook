@@ -41,21 +41,10 @@ const customStyles = {
 export default function LanguageControl({ style }: { style?: CSSProperties }) {
   const { i18n } = useTranslation();
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [initialLoad, setInitialLoad] = useState(false);
   const [currentLang, setCurrentLang] = useLocalStorage(
     LocalStorageKeys.SELECTED_LANGUAGE,
     i18n.language || "en"
   );
-  useEffect(() => {
-    (async () => {
-      if (initialLoad && i18n.language !== currentLang) {
-        await i18n.changeLanguage(currentLang);
-        window.location.reload();
-      } else if (!initialLoad) {
-        setInitialLoad(true);
-      }
-    })();
-  }, [currentLang, initialLoad]);
   return (
     <div style={style}>
       <img
@@ -83,11 +72,13 @@ export default function LanguageControl({ style }: { style?: CSSProperties }) {
                 backgroundColor:
                   lang === currentLang ? colors.blueLight : undefined
               }}
+              onClick={async () => {
+                setCurrentLang(lang);
+                await i18n.changeLanguage(currentLang);
+                window.location.reload();
+              }}
             >
-              <img
-                src={`/images/flags/${flag}.png`}
-                onClick={() => setCurrentLang(lang)}
-              />
+              <img src={`/images/flags/${flag}.png`} />
             </div>
           ))}
         </div>
