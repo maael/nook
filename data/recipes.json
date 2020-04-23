@@ -5860,11 +5860,11 @@
       }
     ],
     "size": {
-      "width": 0,
-      "height": 0
+      "width": 1,
+      "height": 1
     },
     "obtainedFrom": [],
-    "sellPrice": 0,
+    "sellPrice": 1000,
     "type": "misc"
   },
   {

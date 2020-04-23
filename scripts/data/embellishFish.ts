@@ -19,6 +19,14 @@ export default async function embellishFish() {
     const rarity = $('[data-source="rarity"] div')
       .text()
       .trim();
+    const index = parseInt(
+      $('[data-source="index NH"]')
+        .last()
+        .text()
+        .replace("#", "")
+        .trim(),
+      10
+    );
     const actualRarity = Object.values(Rarity)
       .map(v => ({
         i:
@@ -39,7 +47,8 @@ export default async function embellishFish() {
       .pop();
     return {
       ...item,
-      rarity: actualRarity ? actualRarity.v : Rarity.Unknown
+      rarity: actualRarity ? actualRarity.v : Rarity.Unknown,
+      index: isNaN(index) ? -1 : index
     };
   });
 }
