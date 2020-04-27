@@ -102,6 +102,17 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
         style={{
           padding: "20px 10px 10px 10px",
           display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
+        url="/collections/art"
+      >
+        Art
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
           width: "100%"
         }}
         url="/custom-designs"

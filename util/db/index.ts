@@ -36,12 +36,21 @@ export {
   getCollectionItems as getDiyItems,
   getCollectionItemByUserAndName as getDiyItemByUserAndName
 } from "./collections/diy";
+
+export {
+  createCollectionItem as createArtItem,
+  deleteCollectionItem as deleteArtItem,
+  getCollectionItems as getArtItems,
+  getCollectionItemByUserAndName as getArtItemByUserAndName
+} from "./collections/art";
+
 export {
   create as createCustomDesign,
   getCustomDesignsForUser,
   getCustomDesigns,
   deleteCustomDesign
 } from "./custom-designs";
+
 export {
   create as createSavedCustomDesign,
   getSavedCustomDesignsForUser,

@@ -37,7 +37,7 @@ export default function Home() {
         <div css={{ margin: "10px 0px 5px 0px" }}>
           Here at Nook Services, you can do many things, including:
           <a css={styles.link} href="/collections">
-            Track your bug, fish, fossil, and recipe collections
+            Track your bug, fish, fossil, recipe, and art collections
           </a>
           <a css={styles.link} href="/custom-designs">
             Search and favourite custom designs

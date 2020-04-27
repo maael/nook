@@ -11,18 +11,22 @@ import {
   getDiyItems,
   getFishItems,
   getFossilsItems,
+  getArtItems,
   createBugItem,
   createFossilsItem,
   createFishItem,
   createDiyItem,
+  getArtItemByUserAndName,
   deleteBugItem,
   deleteDiyItem,
   deleteFishItem,
   deleteFossilsItem,
+  createArtItem,
   getBugItemByUserAndName,
   getDiyItemByUserAndName,
   getFishItemByUserAndName,
   getFossilsItemByUserAndName,
+  deleteArtItem,
   getUser,
   updateUser
 } from "../../../../util/db";
@@ -31,28 +35,32 @@ const typeGetMap = {
   fish: getFishItems,
   bugs: getBugItems,
   diy: getDiyItems,
-  fossils: getFossilsItems
+  fossils: getFossilsItems,
+  art: getArtItems
 };
 
 const typeGetItemMap = {
   fish: getFishItemByUserAndName,
   bugs: getBugItemByUserAndName,
   diy: getDiyItemByUserAndName,
-  fossils: getFossilsItemByUserAndName
+  fossils: getFossilsItemByUserAndName,
+  art: getArtItemByUserAndName
 };
 
 const typePostMap = {
   fish: createFishItem,
   bugs: createBugItem,
   diy: createDiyItem,
-  fossils: createFossilsItem
+  fossils: createFossilsItem,
+  art: createArtItem
 };
 
 const typeDeleteMap = {
   fish: deleteFishItem,
   bugs: deleteBugItem,
   diy: deleteDiyItem,
-  fossils: deleteFossilsItem
+  fossils: deleteFossilsItem,
+  art: deleteArtItem
 };
 
 export default paramGuard(

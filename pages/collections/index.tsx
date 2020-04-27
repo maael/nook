@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/core";
 import Link from "next/link";
 import { GiFossil, GiTropicalFish, GiSpottedBug } from "react-icons/gi";
-import { FaTools } from "react-icons/fa";
+import { FaTools, FaImage } from "react-icons/fa";
 import Heading from "../../components/primitives/Heading";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import { colors } from "../../util/theme";
@@ -72,6 +72,14 @@ export default function Collections() {
             <Heading>
               <FaTools style={{ marginRight: 5 }} />
               DIY Recipes
+            </Heading>
+          </a>
+        </Link>
+        <Link href="/collections/art">
+          <a css={styles.link}>
+            <Heading>
+              <FaImage style={{ marginRight: 5 }} />
+              Art
             </Heading>
           </a>
         </Link>

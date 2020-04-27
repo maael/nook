@@ -45,6 +45,13 @@ type RecipeCollection @collection(name: "recipeCollection") {
   createdAt: Time!
 }
 
+type ArtCollection @collection(name: "artCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
 type CustomDesign @collection(name: "customDesigns") {
   userId: ID!
   user: User! @relation
@@ -87,6 +94,8 @@ type Query {
   getFossilCollectionByUserAndName(userId: ID, name: String): FossilCollection!
   getRecipeCollectionByUser(userId: ID): [RecipeCollection!]!
   getRecipeCollectionByUserAndName(userId: ID, name: String): RecipeCollection!
+  getArtCollectionByUser(userId: ID): [ArtCollection!]!
+  getArtCollectionByUserAndName(userId: ID, name: String): ArtCollection!
   getCustomDesigns: [CustomDesign!]!
   getCustomDesignsByRedacted(redacted: Boolean): [CustomDesign!]!
   getCustomDesignsByType(type: String, redacted: Boolean): [CustomDesign!]!

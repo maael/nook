@@ -18,6 +18,11 @@ export async function getUserProfile(userId: string) {
         name
       }
     }
+    getArtCollectionByUser(userId:$userId){
+      data{
+        name
+      }
+    }
     getCustomDesignsByUser(userId:$userId, redacted: false){
       data{
           title

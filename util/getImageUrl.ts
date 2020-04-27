@@ -1,8 +1,9 @@
 export function getImageUrl(
-  type: "fish" | "fossil" | "recipe" | "bug",
-  name: string
+  type: "fish" | "fossil" | "recipe" | "bug" | "painting" | "sculpture",
+  name: string,
+  subPath?: string
 ) {
-  return `/images/${type}/${getImageName(name)}`;
+  return `/images/${type}${subPath ? `/${subPath}` : ""}/${getImageName(name)}`;
 }
 
 export function getImageName(name: string) {

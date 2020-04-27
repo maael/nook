@@ -17,7 +17,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 200,
     "type": "tool"
   },
@@ -39,7 +41,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 560,
     "type": "tool"
   },
@@ -65,7 +70,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 625,
     "type": "tool"
   },
@@ -105,7 +113,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Blathers"],
+    "obtainedFrom": [
+      "Blathers"
+    ],
     "sellPrice": 200,
     "type": "tool"
   },
@@ -127,7 +137,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 600,
     "type": "tool"
   },
@@ -149,7 +162,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Gulliver"],
+    "obtainedFrom": [
+      "Gulliver"
+    ],
     "sellPrice": 10675,
     "type": "tool"
   },
@@ -167,7 +182,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 100,
     "type": "tool"
   },
@@ -189,7 +206,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 600,
     "type": "tool"
   },
@@ -229,7 +249,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 100,
     "type": "tool"
   },
@@ -251,7 +273,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 600,
     "type": "tool"
   },
@@ -291,7 +316,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 200,
     "type": "tool"
   },
@@ -313,7 +340,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Pretty-Good Tools"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Pretty-Good Tools"
+    ],
     "sellPrice": 600,
     "type": "tool"
   },
@@ -353,7 +383,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Timmy"],
+    "obtainedFrom": [
+      "Timmy"
+    ],
     "sellPrice": 225,
     "type": "tool"
   },
@@ -393,7 +425,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Blathers"],
+    "obtainedFrom": [
+      "Blathers"
+    ],
     "sellPrice": 600,
     "type": "tool"
   },
@@ -419,7 +453,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1440,
     "type": "tool"
   },
@@ -441,7 +477,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 6500,
     "type": "tool"
   },
@@ -463,7 +501,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 3900,
     "type": "tool"
   },
@@ -507,7 +547,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2700,
     "type": "tool"
   },
@@ -528,7 +570,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Zipper"],
+    "obtainedFrom": [
+      "Zipper"
+    ],
     "sellPrice": 11100,
     "type": "tool"
   },
@@ -682,7 +726,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1580,
     "type": "tool"
   },
@@ -770,7 +816,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 20750,
     "type": "tool"
   },
@@ -810,7 +858,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 1550,
     "type": "tool"
   },
@@ -832,7 +882,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 3750,
     "type": "tool"
   },
@@ -875,7 +927,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3210,
     "type": "houseware"
   },
@@ -952,7 +1006,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22125,
     "type": "houseware"
   },
@@ -982,7 +1038,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 12125,
     "type": "houseware"
   },
@@ -1003,7 +1061,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 4000,
     "type": "houseware"
   },
@@ -1024,7 +1084,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 6250,
     "type": "houseware"
   },
@@ -1042,7 +1104,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1120,
     "type": "houseware"
   },
@@ -1060,7 +1124,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1280,
     "type": "houseware"
   },
@@ -1078,7 +1144,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2400,
     "type": "houseware"
   },
@@ -1096,7 +1164,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1280,
     "type": "houseware"
   },
@@ -1118,7 +1188,10 @@
       "width": 3,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Isabelle"],
+    "obtainedFrom": [
+      "Balloon",
+      "Isabelle"
+    ],
     "sellPrice": 3160,
     "type": "houseware"
   },
@@ -1140,7 +1213,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2020,
     "type": "houseware"
   },
@@ -1158,7 +1233,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 2400,
     "type": "houseware"
   },
@@ -1180,7 +1257,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1230,
     "type": "houseware"
   },
@@ -1198,7 +1277,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 800,
     "type": "houseware"
   },
@@ -1216,7 +1297,9 @@
       "width": 1,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -1234,7 +1317,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 7500,
     "type": "houseware"
   },
@@ -1256,7 +1342,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Tom Nook"],
+    "obtainedFrom": [
+      "Island resident",
+      "Tom Nook"
+    ],
     "sellPrice": 2100,
     "type": "houseware"
   },
@@ -1278,7 +1367,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2400,
     "type": "houseware"
   },
@@ -1329,7 +1420,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 400,
     "type": "houseware"
   },
@@ -1347,7 +1440,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -1369,7 +1464,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 840,
     "type": "houseware"
   },
@@ -1390,7 +1487,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2880,
     "type": "houseware"
   },
@@ -1412,7 +1511,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1230,
     "type": "houseware"
   },
@@ -1438,7 +1539,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 8460,
     "type": "houseware"
   },
@@ -1464,7 +1567,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 3820,
     "type": "houseware"
   },
@@ -1490,7 +1595,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 2800,
     "type": "houseware"
   },
@@ -1527,7 +1635,9 @@
       "width": 3,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 4800,
     "type": "houseware"
   },
@@ -1564,7 +1674,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "houseware"
   },
@@ -1589,7 +1701,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1200,
     "type": "houseware"
   },
@@ -1614,7 +1728,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1200,
     "type": "houseware"
   },
@@ -1631,7 +1747,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1200,
     "type": "houseware"
   },
@@ -1648,7 +1766,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1600,
     "type": "houseware"
   },
@@ -1665,7 +1785,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1600,
     "type": "houseware"
   },
@@ -1682,7 +1804,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1600,
     "type": "houseware"
   },
@@ -1704,7 +1828,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1980,
     "type": "houseware"
   },
@@ -1722,7 +1848,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 30,
     "type": "houseware"
   },
@@ -1752,7 +1880,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 21975,
     "type": "houseware"
   },
@@ -1782,7 +1912,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22650,
     "type": "houseware"
   },
@@ -1799,7 +1931,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 240,
     "type": "houseware"
   },
@@ -1833,7 +1967,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 120,
     "type": "houseware"
   },
@@ -1875,7 +2011,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4240,
     "type": "houseware"
   },
@@ -1892,7 +2030,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2000,
     "type": "houseware"
   },
@@ -1913,7 +2053,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2700,
     "type": "houseware"
   },
@@ -1935,7 +2077,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -1953,7 +2097,9 @@
       "width": 2,
       "height": 0
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 100,
     "type": "houseware"
   },
@@ -2041,7 +2187,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1740,
     "type": "houseware"
   },
@@ -2063,7 +2211,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -2097,7 +2248,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 6630,
     "type": "houseware"
   },
@@ -2118,7 +2271,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2040,
     "type": "houseware"
   },
@@ -2139,7 +2294,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 2700,
     "type": "houseware"
   },
@@ -2168,7 +2326,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3000,
     "type": "houseware"
   },
@@ -2205,7 +2365,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2880,
     "type": "houseware"
   },
@@ -2226,7 +2388,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 15000,
     "type": "houseware"
   },
@@ -2252,7 +2416,10 @@
       "width": 3,
       "height": 3
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 11700,
     "type": "houseware"
   },
@@ -2462,7 +2629,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 4440,
     "type": "houseware"
   },
@@ -2480,7 +2649,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2250,
     "type": "houseware"
   },
@@ -2513,7 +2684,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3180,
     "type": "houseware"
   },
@@ -2543,7 +2716,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22000,
     "type": "houseware"
   },
@@ -2568,7 +2743,9 @@
       "width": 3,
       "height": 3
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 6300,
     "type": "houseware"
   },
@@ -2602,7 +2779,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 50000,
     "type": "houseware"
   },
@@ -2641,7 +2820,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 5100,
     "type": "houseware"
   },
@@ -2662,7 +2843,10 @@
       "width": 1,
       "height": 0
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -2683,7 +2867,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -2729,7 +2915,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 5470,
     "type": "houseware"
   },
@@ -2750,7 +2938,9 @@
       "width": 1,
       "height": 0
     },
-    "obtainedFrom": ["Villager"],
+    "obtainedFrom": [
+      "Villager"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -2880,7 +3070,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 15000,
     "type": "houseware"
   },
@@ -2897,7 +3090,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 6000,
     "type": "houseware"
   },
@@ -2914,7 +3109,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Message in a bottle"
+    ],
     "sellPrice": 2250,
     "type": "houseware"
   },
@@ -2931,7 +3129,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 3750,
     "type": "houseware"
   },
@@ -2965,7 +3165,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 7500,
     "type": "houseware"
   },
@@ -2982,7 +3185,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 10500,
     "type": "houseware"
   },
@@ -3004,7 +3209,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 9900,
     "type": "houseware"
   },
@@ -3048,7 +3255,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1860,
     "type": "houseware"
   },
@@ -3074,7 +3283,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 9780,
     "type": "houseware"
   },
@@ -3100,7 +3311,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 8520,
     "type": "houseware"
   },
@@ -3152,7 +3365,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 7560,
     "type": "houseware"
   },
@@ -3196,7 +3411,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 5940,
     "type": "houseware"
   },
@@ -3213,7 +3430,9 @@
       "width": 2,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3750,
     "type": "houseware"
   },
@@ -3235,7 +3454,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Message in a bottle"
+    ],
     "sellPrice": 3500,
     "type": "houseware"
   },
@@ -3260,7 +3482,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 6270,
     "type": "houseware"
   },
@@ -3302,7 +3526,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1330,
     "type": "houseware"
   },
@@ -3348,7 +3574,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3010,
     "type": "houseware"
   },
@@ -3365,7 +3593,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 3600,
     "type": "houseware"
   },
@@ -3382,7 +3612,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -3403,7 +3635,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1560,
     "type": "houseware"
   },
@@ -3421,7 +3655,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1800,
     "type": "houseware"
   },
@@ -3455,7 +3691,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -3472,7 +3710,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1800,
     "type": "houseware"
   },
@@ -3489,7 +3729,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -3523,7 +3765,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -3544,7 +3789,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 16250,
     "type": "houseware"
   },
@@ -3586,7 +3833,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 2250,
     "type": "houseware"
   },
@@ -3654,7 +3904,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Test Your DIY Skills"],
+    "obtainedFrom": [
+      "Test Your DIY Skills"
+    ],
     "sellPrice": 2580,
     "type": "houseware"
   },
@@ -3675,7 +3927,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 12500,
     "type": "houseware"
   },
@@ -3696,7 +3950,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 2550,
     "type": "houseware"
   },
@@ -3717,7 +3973,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1080,
     "type": "houseware"
   },
@@ -3738,7 +3996,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 440,
     "type": "houseware"
   },
@@ -3869,7 +4129,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -3914,7 +4177,10 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Tom Nook", "Island resident"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Island resident"
+    ],
     "sellPrice": 3330,
     "type": "houseware"
   },
@@ -3935,7 +4201,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1980,
     "type": "houseware"
   },
@@ -3960,7 +4228,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 655,
     "type": "houseware"
   },
@@ -4006,7 +4276,10 @@
       "width": 3,
       "height": 3
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 4350,
     "type": "houseware"
   },
@@ -4024,7 +4297,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Isabelle", "Balloon"],
+    "obtainedFrom": [
+      "Isabelle",
+      "Balloon"
+    ],
     "sellPrice": 4000,
     "type": "houseware"
   },
@@ -4049,7 +4325,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3280,
     "type": "houseware"
   },
@@ -4070,7 +4348,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 760,
     "type": "houseware"
   },
@@ -4092,7 +4372,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 2600,
     "type": "houseware"
   },
@@ -4114,7 +4396,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 2720,
     "type": "houseware"
   },
@@ -4136,7 +4420,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Island resident"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Island resident"
+    ],
     "sellPrice": 2600,
     "type": "houseware"
   },
@@ -4174,7 +4461,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 750,
     "type": "houseware"
   },
@@ -4204,7 +4493,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22050,
     "type": "houseware"
   },
@@ -4229,7 +4520,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 2270,
     "type": "houseware"
   },
@@ -4246,7 +4539,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 720,
     "type": "houseware"
   },
@@ -4263,7 +4558,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1500,
     "type": "houseware"
   },
@@ -4281,7 +4578,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1200,
     "type": "houseware"
   },
@@ -4335,7 +4634,10 @@
       "width": 3,
       "height": 3
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 250000,
     "type": "houseware"
   },
@@ -4356,7 +4658,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 20000,
     "type": "houseware"
   },
@@ -4377,7 +4681,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Test Your DIY Skills"],
+    "obtainedFrom": [
+      "Test Your DIY Skills"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -4394,7 +4700,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -4415,7 +4723,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1400,
     "type": "houseware"
   },
@@ -4436,7 +4746,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 16250,
     "type": "houseware"
   },
@@ -4461,7 +4773,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3510,
     "type": "houseware"
   },
@@ -4499,7 +4813,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 400,
     "type": "houseware"
   },
@@ -4529,7 +4845,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22125,
     "type": "houseware"
   },
@@ -4566,7 +4884,9 @@
       "width": 3,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 12360,
     "type": "houseware"
   },
@@ -4591,7 +4911,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 10200,
     "type": "houseware"
   },
@@ -4612,7 +4935,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 9450,
     "type": "houseware"
   },
@@ -4633,7 +4958,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 8000,
     "type": "houseware"
   },
@@ -4650,7 +4977,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -4671,7 +5000,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2280,
     "type": "houseware"
   },
@@ -4721,7 +5052,10 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 13920,
     "type": "houseware"
   },
@@ -4742,7 +5076,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Mail", "Message in a bottle"],
+    "obtainedFrom": [
+      "Mail",
+      "Message in a bottle"
+    ],
     "sellPrice": 1350,
     "type": "houseware"
   },
@@ -4763,7 +5100,10 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 2850,
     "type": "houseware"
   },
@@ -4780,7 +5120,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -4797,7 +5139,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle", "Villager"],
+    "obtainedFrom": [
+      "Message in a bottle",
+      "Villager"
+    ],
     "sellPrice": 120,
     "type": "houseware"
   },
@@ -4835,7 +5180,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -4852,7 +5200,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 2250,
     "type": "houseware"
   },
@@ -4869,7 +5219,10 @@
       "width": 3,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 13500,
     "type": "houseware"
   },
@@ -4940,7 +5293,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 1800,
     "type": "houseware"
   },
@@ -4961,7 +5317,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 26755,
     "type": "houseware"
   },
@@ -4982,7 +5340,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Test Your DIY Skills"],
+    "obtainedFrom": [
+      "Test Your DIY Skills"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -4999,7 +5359,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 9000,
     "type": "houseware"
   },
@@ -5046,7 +5408,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 12350,
     "type": "houseware"
   },
@@ -5063,7 +5427,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -5109,7 +5475,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 650,
     "type": "houseware"
   },
@@ -5130,7 +5498,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1035,
     "type": "houseware"
   },
@@ -5185,7 +5555,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Island resident"],
+    "obtainedFrom": [
+      "Balloon",
+      "Island resident"
+    ],
     "sellPrice": 1560,
     "type": "houseware"
   },
@@ -5272,7 +5645,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Isabelle"],
+    "obtainedFrom": [
+      "Isabelle"
+    ],
     "sellPrice": 4120,
     "type": "houseware"
   },
@@ -5327,7 +5702,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 22050,
     "type": "houseware"
   },
@@ -5348,7 +5725,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Message in a bottle"
+    ],
     "sellPrice": 2700,
     "type": "houseware"
   },
@@ -5369,7 +5749,10 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 3500,
     "type": "houseware"
   },
@@ -5403,7 +5786,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY", "Message in a bottle"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY",
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -5424,7 +5810,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2400,
     "type": "houseware"
   },
@@ -5445,7 +5833,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 840,
     "type": "houseware"
   },
@@ -5467,7 +5857,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Test Your DIY Skills"],
+    "obtainedFrom": [
+      "Test Your DIY Skills"
+    ],
     "sellPrice": 720,
     "type": "houseware"
   },
@@ -5488,7 +5880,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Test Your DIY Skills"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Test Your DIY Skills"
+    ],
     "sellPrice": 720,
     "type": "houseware"
   },
@@ -5509,7 +5904,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1800,
     "type": "houseware"
   },
@@ -5535,7 +5932,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 2460,
     "type": "houseware"
   },
@@ -5556,7 +5955,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "houseware"
   },
@@ -5578,7 +5980,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1320,
     "type": "houseware"
   },
@@ -5599,7 +6003,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1925,
     "type": "houseware"
   },
@@ -5660,7 +6066,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 1920,
     "type": "houseware"
   },
@@ -5677,7 +6086,9 @@
       "width": 2,
       "height": 2
     },
-    "obtainedFrom": ["harvey"],
+    "obtainedFrom": [
+      "harvey"
+    ],
     "sellPrice": 3600,
     "type": "houseware"
   },
@@ -5694,7 +6105,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "mom", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "mom",
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "houseware"
   },
@@ -5715,7 +6130,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1350,
     "type": "houseware"
   },
@@ -5786,7 +6203,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -5820,7 +6239,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1440,
     "type": "houseware"
   },
@@ -5837,7 +6258,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "houseware"
   },
@@ -5892,7 +6315,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "misc"
   },
@@ -5913,7 +6338,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 880,
     "type": "misc"
   },
@@ -5934,7 +6361,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 720,
     "type": "misc"
   },
@@ -5951,7 +6380,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle", "Island resident"],
+    "obtainedFrom": [
+      "Message in a bottle",
+      "Island resident"
+    ],
     "sellPrice": 640,
     "type": "misc"
   },
@@ -5976,7 +6408,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4900,
     "type": "misc"
   },
@@ -5993,7 +6427,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 480,
     "type": "misc"
   },
@@ -6010,7 +6446,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 1600,
     "type": "misc"
   },
@@ -6039,7 +6477,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 3300,
     "type": "misc"
   },
@@ -6061,7 +6501,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "fruit", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "fruit",
+      "Message in a bottle"
+    ],
     "sellPrice": 3500,
     "type": "misc"
   },
@@ -6079,7 +6523,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 800,
     "type": "misc"
   },
@@ -6097,7 +6543,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 500,
     "type": "misc"
   },
@@ -6136,7 +6584,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 480,
     "type": "misc"
   },
@@ -6153,7 +6603,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 400,
     "type": "misc"
   },
@@ -6258,7 +6710,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 30000,
     "type": "misc"
   },
@@ -6275,7 +6729,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 30000,
     "type": "misc"
   },
@@ -6309,7 +6765,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 10000,
     "type": "misc"
   },
@@ -6326,7 +6784,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 30000,
     "type": "misc"
   },
@@ -6347,7 +6807,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 3000,
     "type": "misc"
   },
@@ -6397,7 +6859,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 3750,
     "type": "misc"
   },
@@ -6423,7 +6888,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 21750,
     "type": "misc"
   },
@@ -6444,7 +6911,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 21675,
     "type": "misc"
   },
@@ -6465,7 +6934,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 690,
     "type": "misc"
   },
@@ -6482,7 +6953,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "misc"
   },
@@ -6579,7 +7052,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 1000,
     "type": "misc"
   },
@@ -6675,7 +7150,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island Resident"],
+    "obtainedFrom": [
+      "Island Resident"
+    ],
     "sellPrice": 4200,
     "type": "misc"
   },
@@ -6696,7 +7173,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island Resident"],
+    "obtainedFrom": [
+      "Island Resident"
+    ],
     "sellPrice": 5700,
     "type": "misc"
   },
@@ -6713,7 +7192,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 725,
     "type": "misc"
   },
@@ -6730,7 +7211,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 630,
     "type": "misc"
   },
@@ -6747,7 +7230,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2400,
     "type": "misc"
   },
@@ -6814,7 +7299,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 1740,
     "type": "misc"
   },
@@ -6902,7 +7390,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 760,
     "type": "misc"
   },
@@ -6919,7 +7409,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 600,
     "type": "misc"
   },
@@ -6936,7 +7428,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "misc"
   },
@@ -6957,7 +7451,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1740,
     "type": "misc"
   },
@@ -6995,7 +7491,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 9600,
     "type": "misc"
   },
@@ -7030,7 +7528,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 360,
     "type": "misc"
   },
@@ -7073,7 +7573,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1980,
     "type": "misc"
   },
@@ -7090,7 +7592,9 @@
       "width": 0,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 160,
     "type": "wallMounted"
   },
@@ -7124,7 +7628,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 360,
     "type": "wallMounted"
   },
@@ -7178,7 +7684,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "wallMounted"
   },
@@ -7195,7 +7703,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day", "Island resident"],
+    "obtainedFrom": [
+      "Bunny Day",
+      "Island resident"
+    ],
     "sellPrice": 1200,
     "type": "wallMounted"
   },
@@ -7232,7 +7743,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "wallMounted"
   },
@@ -7254,7 +7767,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "Message in a bottle"
+    ],
     "sellPrice": 2400,
     "type": "wallMounted"
   },
@@ -7276,7 +7792,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2750,
     "type": "wallMounted"
   },
@@ -7331,7 +7849,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 600,
     "type": "wallMounted"
   },
@@ -7423,7 +7943,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "flowers", "player"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "flowers",
+      "player"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -7440,7 +7964,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3000,
     "type": "wallMounted"
   },
@@ -7512,7 +8038,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "wallMounted"
   },
@@ -7537,7 +8065,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1200,
     "type": "wallMounted"
   },
@@ -7587,7 +8117,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1200,
     "type": "wallMounted"
   },
@@ -7604,7 +8136,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 200,
     "type": "wallMounted"
   },
@@ -7625,7 +8159,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 500,
     "type": "wallMounted"
   },
@@ -7696,7 +8232,10 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 11125,
     "type": "wallMounted"
   },
@@ -7717,7 +8256,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 3240,
     "type": "wallMounted"
   },
@@ -7742,7 +8283,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -7759,7 +8302,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1500,
     "type": "wallMounted"
   },
@@ -7780,7 +8325,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Wildest Dreams DIY"],
+    "obtainedFrom": [
+      "Wildest Dreams DIY"
+    ],
     "sellPrice": 3400,
     "type": "wallMounted"
   },
@@ -7822,7 +8369,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1740,
     "type": "wallMounted"
   },
@@ -7843,7 +8392,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1110,
     "type": "wallMounted"
   },
@@ -7873,7 +8424,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 21975,
     "type": "wallMounted"
   },
@@ -7898,7 +8451,12 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "flowers", "player", "Message in a bottle"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "flowers",
+      "player",
+      "Message in a bottle"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -7944,7 +8502,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "flowers", "player"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "flowers",
+      "player"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -8012,7 +8574,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook"],
+    "obtainedFrom": [
+      "Tom Nook"
+    ],
     "sellPrice": 2240,
     "type": "wallMounted"
   },
@@ -8087,7 +8651,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "flowers", "player"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "flowers",
+      "player"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -8125,7 +8693,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["villager", "stung"],
+    "obtainedFrom": [
+      "villager",
+      "stung"
+    ],
     "sellPrice": 1100,
     "type": "wallMounted"
   },
@@ -8175,7 +8746,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2400,
     "type": "wallMounted"
   },
@@ -8246,7 +8819,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 21750,
     "type": "wallMounted"
   },
@@ -8304,7 +8879,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1200,
     "type": "wallMounted"
   },
@@ -8342,7 +8919,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 2250,
     "type": "wallMounted"
   },
@@ -8359,7 +8938,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 5000,
     "type": "wallMounted"
   },
@@ -8380,7 +8961,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Island resident"],
+    "obtainedFrom": [
+      "Balloon",
+      "Island resident"
+    ],
     "sellPrice": 400,
     "type": "wallMounted"
   },
@@ -8422,7 +9006,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 100,
     "type": "wallMounted"
   },
@@ -8472,7 +9058,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Tom Nook", "flowers", "player"],
+    "obtainedFrom": [
+      "Tom Nook",
+      "flowers",
+      "player"
+    ],
     "sellPrice": 720,
     "type": "wallMounted"
   },
@@ -8497,7 +9087,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1350,
     "type": "wallMounted"
   },
@@ -8514,7 +9106,9 @@
       "width": 2,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 600,
     "type": "wallMounted"
   },
@@ -8550,7 +9144,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
@@ -8592,7 +9188,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 600,
     "type": "wallpaperFlooringRug"
   },
@@ -8647,7 +9245,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4300,
     "type": "wallpaperFlooringRug"
   },
@@ -8664,7 +9264,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1500,
     "type": "wallpaperFlooringRug"
   },
@@ -8681,7 +9283,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
@@ -8718,7 +9322,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 4800,
     "type": "wallpaperFlooringRug"
   },
@@ -8755,7 +9361,9 @@
       "width": 3,
       "height": 3
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "wallpaperFlooringRug"
   },
@@ -8792,7 +9400,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 4800,
     "type": "wallpaperFlooringRug"
   },
@@ -8827,7 +9437,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1200,
     "type": "wallpaperFlooringRug"
   },
@@ -8845,7 +9457,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
@@ -8867,7 +9481,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4400,
     "type": "wallpaperFlooringRug"
   },
@@ -8889,7 +9505,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 4600,
     "type": "wallpaperFlooringRug"
   },
@@ -8906,7 +9524,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
@@ -8923,7 +9543,10 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 1450,
     "type": "wallpaperFlooringRug"
   },
@@ -8978,7 +9601,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
@@ -9065,7 +9690,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
@@ -9090,7 +9717,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["trash"],
+    "obtainedFrom": [
+      "trash"
+    ],
     "sellPrice": 120,
     "type": "wallpaperFlooringRug"
   },
@@ -9115,7 +9744,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["trash"],
+    "obtainedFrom": [
+      "trash"
+    ],
     "sellPrice": 120,
     "type": "wallpaperFlooringRug"
   },
@@ -9132,7 +9763,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 40000,
     "type": "wallpaperFlooringRug"
   },
@@ -9149,7 +9782,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 40000,
     "type": "wallpaperFlooringRug"
   },
@@ -9187,7 +9822,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 3000,
     "type": "wallpaperFlooringRug"
   },
@@ -9204,7 +9841,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 3600,
     "type": "wallpaperFlooringRug"
   },
@@ -9330,7 +9969,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2200,
     "type": "wallpaperFlooringRug"
   },
@@ -9359,7 +10000,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 1380,
     "type": "wallpaperFlooringRug"
   },
@@ -9376,7 +10019,9 @@
       "width": 3,
       "height": 2
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2400,
     "type": "wallpaperFlooringRug"
   },
@@ -9397,7 +10042,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
@@ -9414,7 +10061,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1050,
     "type": "wallpaperFlooringRug"
   },
@@ -9521,7 +10170,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
@@ -9557,7 +10208,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
@@ -9593,7 +10246,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 4000,
     "type": "wallpaperFlooringRug"
   },
@@ -9636,7 +10291,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 3200,
     "type": "wallpaperFlooringRug"
   },
@@ -9658,7 +10315,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 3200,
     "type": "wallpaperFlooringRug"
   },
@@ -9695,7 +10354,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 4120,
     "type": "wallpaperFlooringRug"
   },
@@ -9737,7 +10398,10 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon", "Celeste"],
+    "obtainedFrom": [
+      "Balloon",
+      "Celeste"
+    ],
     "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
@@ -9828,7 +10492,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Celeste"],
+    "obtainedFrom": [
+      "Celeste"
+    ],
     "sellPrice": 7500,
     "type": "wallpaperFlooringRug"
   },
@@ -9849,7 +10515,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 7720,
     "type": "wallpaperFlooringRug"
   },
@@ -9878,7 +10546,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 5250,
     "type": "wallpaperFlooringRug"
   },
@@ -9895,7 +10565,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 6000,
     "type": "wallpaperFlooringRug"
   },
@@ -9912,7 +10584,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1500,
     "type": "wallpaperFlooringRug"
   },
@@ -9929,7 +10603,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 6000,
     "type": "wallpaperFlooringRug"
   },
@@ -9950,7 +10626,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 6600,
     "type": "wallpaperFlooringRug"
   },
@@ -9971,7 +10649,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 8600,
     "type": "wallpaperFlooringRug"
   },
@@ -9988,7 +10668,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 7200,
     "type": "wallpaperFlooringRug"
   },
@@ -10022,7 +10704,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
@@ -10039,7 +10723,9 @@
       "width": 0,
       "height": 0
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 1800,
     "type": "wallpaperFlooringRug"
   },
@@ -10077,7 +10763,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -10179,7 +10867,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -10233,7 +10923,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -10270,7 +10962,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -10287,7 +10981,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Cherry Blossom Festival"],
+    "obtainedFrom": [
+      "Balloon",
+      "Cherry Blossom Festival"
+    ],
     "sellPrice": 2400,
     "type": "equipment"
   },
@@ -10304,7 +11001,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Cherry Blossom Festival"],
+    "obtainedFrom": [
+      "Balloon",
+      "Cherry Blossom Festival"
+    ],
     "sellPrice": 2800,
     "type": "equipment"
   },
@@ -10321,7 +11021,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1600,
     "type": "equipment"
   },
@@ -10376,7 +11078,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "equipment"
   },
@@ -10443,7 +11147,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "equipment"
   },
@@ -10489,7 +11195,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 960,
     "type": "equipment"
   },
@@ -10514,7 +11222,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 560,
     "type": "equipment"
   },
@@ -10539,7 +11249,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 800,
     "type": "equipment"
   },
@@ -10560,7 +11272,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 960,
     "type": "equipment"
   },
@@ -10699,7 +11413,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 7200,
     "type": "equipment"
   },
@@ -10736,7 +11452,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 4800,
     "type": "equipment"
   },
@@ -10753,7 +11471,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 80000,
     "type": "equipment"
   },
@@ -10821,7 +11542,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 140,
     "type": "equipment"
   },
@@ -10838,7 +11561,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 140,
     "type": "equipment"
   },
@@ -10897,7 +11622,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 3750,
     "type": "equipment"
   },
@@ -10914,7 +11641,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 400,
     "type": "equipment"
   },
@@ -10931,7 +11660,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 80,
     "type": "equipment"
   },
@@ -10948,7 +11679,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 200,
     "type": "equipment"
   },
@@ -10965,7 +11698,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 300,
     "type": "equipment"
   },
@@ -11062,7 +11797,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 960,
     "type": "equipment"
   },
@@ -11142,7 +11879,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 480,
     "type": "equipment"
   },
@@ -11235,7 +11974,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "equipment"
   },
@@ -11252,7 +11994,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1600,
     "type": "equipment"
   },
@@ -11269,7 +12013,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1000,
     "type": "equipment"
   },
@@ -11303,7 +12049,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 1600,
     "type": "equipment"
   },
@@ -11371,7 +12119,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident"],
+    "obtainedFrom": [
+      "Island resident"
+    ],
     "sellPrice": 2880,
     "type": "equipment"
   },
@@ -11405,7 +12155,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["boot"],
+    "obtainedFrom": [
+      "boot"
+    ],
     "sellPrice": 40,
     "type": "equipment"
   },
@@ -11451,7 +12203,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 10800,
     "type": "equipment"
   },
@@ -11608,7 +12362,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 200,
     "type": "equipment"
   },
@@ -11676,7 +12433,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 160,
     "type": "equipment"
   },
@@ -11701,7 +12460,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Message in a bottle"],
+    "obtainedFrom": [
+      "Message in a bottle"
+    ],
     "sellPrice": 400,
     "type": "equipment"
   },
@@ -11777,7 +12538,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Island resident", "Message in a bottle"],
+    "obtainedFrom": [
+      "Island resident",
+      "Message in a bottle"
+    ],
     "sellPrice": 480,
     "type": "equipment"
   },
@@ -11846,7 +12610,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 96,
     "type": "other"
   },
@@ -11868,7 +12635,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 198,
     "type": "other"
   },
@@ -11886,7 +12656,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 120,
     "type": "other"
   },
@@ -11924,7 +12697,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Bunny Day"],
+    "obtainedFrom": [
+      "Bunny Day"
+    ],
     "sellPrice": 240,
     "type": "other"
   },
@@ -11942,7 +12717,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 72,
     "type": "other"
   },
@@ -11960,7 +12738,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 72,
     "type": "other"
   },
@@ -11985,7 +12766,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nature Day"],
+    "obtainedFrom": [
+      "Nature Day"
+    ],
     "sellPrice": 55,
     "type": "other"
   },
@@ -12007,7 +12790,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 120,
     "type": "other"
   },
@@ -12029,7 +12815,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 315,
     "type": "other"
   },
@@ -12047,7 +12836,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 450,
     "type": "other"
   },
@@ -12065,7 +12857,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["manila clam"],
+    "obtainedFrom": [
+      "manila clam"
+    ],
     "sellPrice": 200,
     "type": "other"
   },
@@ -12083,7 +12877,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 96,
     "type": "other"
   },
@@ -12105,7 +12902,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["villager", "stung"],
+    "obtainedFrom": [
+      "villager",
+      "stung"
+    ],
     "sellPrice": 100,
     "type": "other"
   },
@@ -12141,7 +12941,9 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon"],
+    "obtainedFrom": [
+      "Balloon"
+    ],
     "sellPrice": 2800,
     "type": "other"
   },
@@ -12163,7 +12965,11 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Balloon", "Message in a bottle", "Villager"],
+    "obtainedFrom": [
+      "Balloon",
+      "Message in a bottle",
+      "Villager"
+    ],
     "sellPrice": 140,
     "type": "other"
   },
@@ -12181,7 +12987,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 300,
     "type": "other"
   },
@@ -12199,7 +13008,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 72,
     "type": "other"
   },
@@ -12217,7 +13029,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 96,
     "type": "other"
   },
@@ -12235,7 +13050,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 60,
     "type": "other"
   },
@@ -12257,7 +13075,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 56,
     "type": "other"
   },
@@ -12275,7 +13096,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 96,
     "type": "other"
   },
@@ -12322,7 +13146,10 @@
       "width": 1,
       "height": 1
     },
-    "obtainedFrom": ["Nook Stop", "Nook Miles"],
+    "obtainedFrom": [
+      "Nook Stop",
+      "Nook Miles"
+    ],
     "sellPrice": 330,
     "type": "other"
   }

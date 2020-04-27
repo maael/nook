@@ -47,6 +47,7 @@ export default async function getSculptures() {
         artist,
         realName,
         clues: [rows[0][0].text],
+        canHaveForgery: true,
         wikiImageUrls: {
           forgery: rows[2][0].href,
           real:

@@ -7,6 +7,7 @@
     "clues": [
       "New Leaf: The forged statue has halfway opened eyes, whereas the genuine has closed eyes."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5e/Statue_Ancient_Forged.png/revision/latest?cb=20160702200921",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/86/Statue_Ancient_Real.png/revision/latest?cb=20160702200920"
@@ -20,6 +21,7 @@
     "clues": [
       "The fake statue has long hair and the genuine statue has short hair."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/3a/Statue_Beautiful_Forged.png/revision/latest?cb=20160703180609",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b4/Statue_Beautiful_Real.png/revision/latest?cb=20160702200919"
@@ -30,7 +32,10 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Gallant_statue",
     "artist": "Michelangelo di Lodovico Buonarroti Simoni",
     "realName": "David",
-    "clues": ["In the forgery, David is holding a book in his right hand."],
+    "clues": [
+      "In the forgery, David is holding a book in his right hand."
+    ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/29/GallantStatue.jpg/revision/latest/scale-to-width-down/262?cb=20130614231351"
     }
@@ -43,6 +48,7 @@
     "clues": [
       "The fake statue has a downward-faced palm and the genuine statue has an upward-facing palm."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b3/Statue_Great_Forged.png/revision/latest?cb=20160702200754",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d3/Statue_Great_Real.png/revision/latest?cb=20160702200753"
@@ -53,7 +59,10 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Informative_statue",
     "artist": "",
     "realName": "Rosetta Stone",
-    "clues": ["The fake is blue, while the genuine one is gray."],
+    "clues": [
+      "The fake is blue, while the genuine one is gray."
+    ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5e/NH-Statue_Informative_Forged.png/revision/latest?cb=20200426194842",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/51/Statue-Informative_statue-IRL.jpg/revision/latest/scale-to-width-down/350?cb=20200426220034"
@@ -67,6 +76,7 @@
     "clues": [
       "The forged statue has one child, while the real statue has two children."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d5/Statue_Motherly_Forged.png/revision/latest?cb=20160702200753",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/95/Statue_Motherly_Real.png/revision/latest?cb=20160703180816"
@@ -80,6 +90,7 @@
     "clues": [
       "The fake statue has a round crown and the genuine statue has a cylinder crown."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d1/Statue_Mystic_Forged.png/revision/latest?cb=20160702200752",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/28/Statue_Mystic_Real.png/revision/latest?cb=20160702200752"
@@ -93,6 +104,7 @@
     "clues": [
       "The forged statue is throwing a UFO, whereas the genuine statue is throwing a discus."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4f/Statue_Robust_Forged.png/revision/latest?cb=20160702200751",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a9/Statue_Robust_Real.png/revision/latest?cb=20160702200751"
@@ -103,7 +115,10 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Rock-head_statue",
     "artist": "Olmecs",
     "realName": "Olmec colossal head 1",
-    "clues": ["In New Horizons, the forgery is smiling."],
+    "clues": [
+      "In New Horizons, the forgery is smiling."
+    ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351"
     }
@@ -116,6 +131,7 @@
     "clues": [
       "The fake statue's left foot is placed ahead of its right, while the real statue's right foot is placed ahead of its left."
     ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/64/ValiantStatue.jpg/revision/latest?cb=20130614233635"
     }
@@ -125,7 +141,10 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Warrior_statue",
     "artist": "",
     "realName": "Terracotta Soldier",
-    "clues": ["In New Horizons, the forgery is holding a shovel."],
+    "clues": [
+      "In New Horizons, the forgery is holding a shovel."
+    ],
+    "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351"
     }

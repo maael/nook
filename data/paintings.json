@@ -19,7 +19,9 @@
     "artist": "Thomas Gainsborough",
     "realName": "The Blue Boy",
     "canHaveForgery": true,
-    "clues": ["The boy in the forged painting has bangs."],
+    "clues": [
+      "The boy in the forged painting has bangs."
+    ],
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d5/NH-Basic_Painting-%28Forgery%29.png/revision/latest?cb=20200425080449",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b6/The_Blue_Boy.jpg/revision/latest/scale-to-width-down/331?cb=20100728023838"
@@ -31,7 +33,9 @@
     "artist": "Jean-François Millet",
     "realName": "The Gleaners",
     "canHaveForgery": false,
-    "clues": ["Difference between artwork"],
+    "clues": [
+      "Difference between artwork"
+    ],
     "wikiImageUrls": {
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/82/Authentic_the_gleaners.jpg/revision/latest?cb=20200424064851"
     }
@@ -56,7 +60,9 @@
     "artist": "Hokusai",
     "realName": "The Great Wave off Kanagawa",
     "canHaveForgery": false,
-    "clues": ["???"],
+    "clues": [
+      "???"
+    ],
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/NH-Dynamic_Painting.png/revision/latest?cb=20200425080942"
@@ -68,7 +74,9 @@
     "artist": "Leonardo da Vinci",
     "realName": "Mona Lisa",
     "canHaveForgery": true,
-    "clues": ["She has fake eyebrows in her forgery in New Horizons."],
+    "clues": [
+      "She has fake eyebrows in her forgery in New Horizons."
+    ],
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/61/Fake_mona_lisa.jpg/revision/latest?cb=20200424065722",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1a/NH-genuine_famous_painting.png/revision/latest?cb=20200423174224"
@@ -122,7 +130,9 @@
     "artist": "Pieter Breugel",
     "realName": "The Hunters in the Snow",
     "canHaveForgery": true,
-    "clues": ["???"],
+    "clues": [
+      "???"
+    ],
     "wikiImageUrls": {
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/86/180px-Scenic2.jpg/revision/latest?cb=20111013041939"
     }
@@ -161,7 +171,9 @@
     "artist": "Vincent van Gogh",
     "realName": "The Starry Night",
     "canHaveForgery": false,
-    "clues": ["???"],
+    "clues": [
+      "???"
+    ],
     "wikiImageUrls": {
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c7/Twinkling-painting.png/revision/latest/scale-to-width-down/350?cb=20200425232542"
     }
