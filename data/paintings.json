@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Amazing painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Amazing_painting",
+    "artist": "Rembrandt Harmeszoon van Rijn",
+    "realName": "The Night Watch",
+    "canHaveForgery": true,
+    "clues": [
+      "The man in black and red is standing on the right in the fake painting, while the genuine painting has him standing on the left."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/aa/Amazingfakepaint.png/revision/latest?cb=20160706001750",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/67/Amazingrealpaint.png/revision/latest?cb=20160706001706"
+    }
+  },
+  {
+    "name": "Basic painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Basic_painting",
+    "artist": "Thomas Gainsborough",
+    "realName": "The Blue Boy",
+    "canHaveForgery": true,
+    "clues": ["The boy in the forged painting has bangs."],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/d/d5/NH-Basic_Painting-%28Forgery%29.png/revision/latest?cb=20200425080449",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b6/The_Blue_Boy.jpg/revision/latest/scale-to-width-down/331?cb=20100728023838"
+    }
+  },
+  {
+    "name": "Common painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Common_painting",
+    "artist": "Jean-François Millet",
+    "realName": "The Gleaners",
+    "canHaveForgery": false,
+    "clues": ["Difference between artwork"],
+    "wikiImageUrls": {
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/82/Authentic_the_gleaners.jpg/revision/latest?cb=20200424064851"
+    }
+  },
+  {
+    "name": "Detailed painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Detailed_painting",
+    "artist": "",
+    "realName": "",
+    "canHaveForgery": true,
+    "clues": [
+      "The plants are purple in the fake painting, while they are blue in the genuine version."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4d/Painting-Detailed_Painting-IRL.jpg/revision/latest?cb=20200426201958"
+    }
+  },
+  {
+    "name": "Dynamic painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Dynamic_painting",
+    "artist": "Hokusai",
+    "realName": "The Great Wave off Kanagawa",
+    "canHaveForgery": false,
+    "clues": ["???"],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/NH-Dynamic_Painting.png/revision/latest?cb=20200425080942"
+    }
+  },
+  {
+    "name": "Famous painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Famous_painting",
+    "artist": "Leonardo da Vinci",
+    "realName": "Mona Lisa",
+    "canHaveForgery": true,
+    "clues": ["She has fake eyebrows in her forgery in New Horizons."],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/61/Fake_mona_lisa.jpg/revision/latest?cb=20200424065722",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/1a/NH-genuine_famous_painting.png/revision/latest?cb=20200423174224"
+    }
+  },
+  {
+    "name": "Moving painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Moving_painting",
+    "artist": "Sandro Botticelli",
+    "realName": "The Birth of Venus",
+    "canHaveForgery": true,
+    "clues": [
+      "The fake painting lacks the trees behind the Hora of Spring (the woman on the right)."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/44/NH-Moving_Painting-%28Forgery%29.png/revision/latest?cb=20200425080721",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c5/Botecelli.jpg/revision/latest/scale-to-width-down/350?cb=20090512174148"
+    }
+  },
+  {
+    "name": "Neutral painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Neutral_painting",
+    "artist": "Caravaggio",
+    "realName": "Basket of Fruit",
+    "canHaveForgery": false,
+    "clues": [
+      "The forged painting has a hole in the top left leaf, while in the genuine painting there is no hole."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/04/Neutral_Painting_%28forgery%29.png/revision/latest?cb=20160124184508",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/47/Int_art_skillful.png/revision/latest?cb=20160702202831"
+    }
+  },
+  {
+    "name": "Scary painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Scary_painting",
+    "artist": "Sharaku",
+    "realName": "Actor Otani Oniji III as the Yakko Edobei",
+    "canHaveForgery": true,
+    "clues": [
+      "The 1st forgery has the man's eyebrows pointing in the incorrect direction, along with a smile instead of an angry expression."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/2c/NH-Scary-Forgery.jpg/revision/latest?cb=20200423092017",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/54/Oniji.jpg/revision/latest/scale-to-width-down/318?cb=20090501191557"
+    }
+  },
+  {
+    "name": "Scenic painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Scenic_painting",
+    "artist": "Pieter Breugel",
+    "realName": "The Hunters in the Snow",
+    "canHaveForgery": true,
+    "clues": ["???"],
+    "wikiImageUrls": {
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/8/86/180px-Scenic2.jpg/revision/latest?cb=20111013041939"
+    }
+  },
+  {
+    "name": "Serene painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Serene_painting",
+    "artist": "Leonardo da Vinci",
+    "realName": "Lady with an Ermine",
+    "canHaveForgery": true,
+    "clues": [
+      "The forged painting features a woman holding a cat, while in the genuine painting, she is holding a ferret."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/bf/Serene_Painting_%28forgery%29.png/revision/latest?cb=20160330030858",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4a/Int_art_feminin.png/revision/latest?cb=20160702201834"
+    }
+  },
+  {
+    "name": "Solemn painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Solemn_painting",
+    "artist": "Diego Velázquez",
+    "realName": "Las Meninas",
+    "canHaveForgery": true,
+    "clues": [
+      "The man in the painting in the background has his hand in the air. The original has his hand resting on a curtain."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/47/NH-Forgery_Solemn_Painting.jpeg/revision/latest?cb=20200423173447",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/a3/NH_Genuine_Solemn_Painting.jpeg/revision/latest?cb=20200423173617"
+    }
+  },
+  {
+    "name": "Twinkling painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Twinkling_painting",
+    "artist": "Vincent van Gogh",
+    "realName": "The Starry Night",
+    "canHaveForgery": false,
+    "clues": ["???"],
+    "wikiImageUrls": {
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c7/Twinkling-painting.png/revision/latest/scale-to-width-down/350?cb=20200425232542"
+    }
+  },
+  {
+    "name": "Wistful painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Wistful_painting",
+    "artist": "Johannes Vermeer",
+    "realName": "Girl with a Pearl Earring",
+    "canHaveForgery": true,
+    "clues": [
+      "In the forgery, her earring is a star instead of a round pearl, and sometimes her eyes are closed."
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/42/Fake_girl_with_a_pearl_earring.jpg/revision/latest?cb=20200424070717",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0d/Genuine_girl_with_pear_earingnh.jpg/revision/latest?cb=20200424211625"
+    }
+  },
+  {
+    "name": "Apples and Oranges",
+    "realName": "Apples and Oranges",
+    "artist": "Paul Cezanne",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "A Bar at the Folies-Bergere",
+    "realName": "A Bar at the Folies-Bergere",
+    "artist": "Edouard Manet",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "Liberty Leading the People",
+    "realName": "Liberty Leading the People",
+    "artist": "Eugene Delacroix",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "A Sunday Afternoon on the Island of La Grande Jatte",
+    "realName": "A Sunday Afternoon on the Island of La Grande Jatte",
+    "artist": "Georges Seurat",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "The Great Wave",
+    "realName": "The Great Wave",
+    "artist": "Hokusai",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "Isle of the Dead",
+    "realName": "Isle of the Dead",
+    "artist": "Arnold Bocklin",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "The Clothed Maja",
+    "realName": "The Clothed Maja",
+    "artist": "Francisco de Goya",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "Sunflowers",
+    "realName": "Sunflowers",
+    "artist": "Vicent van Gogh",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "The Fifer",
+    "realName": "The Fifer",
+    "artist": "Edouard Manet",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "The Sower",
+    "realName": "The Sower",
+    "artist": "Jean-Francois Millet",
+    "canHaveForgery": false,
+    "clues": []
+  },
+  {
+    "name": "Ophelia",
+    "realName": "Ophelia",
+    "artist": "The Fighting Temeraire",
+    "canHaveForgery": false,
+    "clues": []
+  }
+]

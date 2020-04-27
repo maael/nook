@@ -1631,7 +1631,7 @@
       "dec": true
     },
     "rarity": "Common",
-    "index": 43
+    "index": -1
   },
   {
     "name": "Tiger beetle",
@@ -2581,7 +2581,7 @@
       "dec": true
     },
     "rarity": "Uncommon",
-    "index": -1
+    "index": 68
   },
   {
     "name": "Ant",
@@ -2657,7 +2657,7 @@
       "dec": true
     },
     "rarity": "Uncommon",
-    "index": -1
+    "index": 70
   },
   {
     "name": "Wharf roach",
@@ -2695,7 +2695,7 @@
       "dec": true
     },
     "rarity": "Uncommon",
-    "index": -1
+    "index": 71
   },
   {
     "name": "Fly",
@@ -2733,7 +2733,7 @@
       "dec": true
     },
     "rarity": "Common",
-    "index": -1
+    "index": 72
   },
   {
     "name": "Mosquito",
@@ -2816,7 +2816,7 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Snail",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b1/NH-Icon-snail.png/revision/latest/scale-to-width-down/64?cb=20200401005429",
     "price": 250,
-    "location": "On Rocks (Rain)",
+    "location": "On Rocks and bushes (Rain)",
     "time": "All day",
     "northernMonths": {
       "jan": true,

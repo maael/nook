@@ -4,6 +4,8 @@ import embellishBugs from "./embellishBugs";
 import bugs from "./bugs";
 import fossils from "./fossils";
 import recipes from "./recipes";
+import paintings from "./paintings";
+import sculptures from "./sculptures";
 import write from "../util/write";
 
 (async () => {
@@ -11,7 +13,9 @@ import write from "../util/write";
     getAndWrite("fish", fish),
     getAndWrite("bugs", bugs),
     getAndWrite("fossils", fossils),
-    getAndWrite("recipes", recipes)
+    getAndWrite("recipes", recipes),
+    getAndWrite("paintings", paintings),
+    getAndWrite("sculptures", sculptures)
   ]);
   await Promise.all([
     getAndWrite("fish", embellishFish),

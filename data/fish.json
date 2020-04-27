@@ -473,7 +473,7 @@
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/24/NH-Icon-snappingturtle.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 5000,
     "location": "River",
-    "shadowSize": "4",
+    "shadowSize": "5",
     "time": "9 PM - 4 AM",
     "northernMonths": {
       "jan": false,
@@ -707,7 +707,7 @@
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0c/NH-Icon-giantsnakehead.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 5500,
     "location": "Pond",
-    "shadowSize": "4",
+    "shadowSize": "5",
     "time": "9 AM - 4 PM",
     "northernMonths": {
       "jan": false,
@@ -1643,7 +1643,7 @@
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/9/9f/NH-Icon-gar.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 6000,
     "location": "Pond",
-    "shadowSize": "5",
+    "shadowSize": "6",
     "time": "4 PM - 9 AM",
     "northernMonths": {
       "jan": false,
@@ -3085,7 +3085,7 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Coelacanth",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/31/NH-Icon-coelacanth.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 15000,
-    "location": "Sea (while raining)",
+    "location": "Sea",
     "shadowSize": "6",
     "time": "All day",
     "northernMonths": {

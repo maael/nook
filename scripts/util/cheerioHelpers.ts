@@ -24,7 +24,15 @@ export function getTableRows(
   selector: string,
   shouldSkipFirst: boolean = true
 ) {
-  return $(selector)
+  return getTableRowsForEl($, $(selector), shouldSkipFirst);
+}
+
+export function getTableRowsForEl(
+  $: CheerioStatic,
+  $el: Cheerio,
+  shouldSkipFirst: boolean = true
+) {
+  return $el
     .find("tr")
     .toArray()
     .map((el, i) => {
