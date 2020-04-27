@@ -20,7 +20,7 @@ const FossilItem = dynamic(
   () => import("../../components/primitives/FossilItem"),
   {
     ssr: false,
-    loading: LoadingItem
+    loading: () => <LoadingItem />
   }
 );
 

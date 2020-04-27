@@ -26,7 +26,7 @@ import { SortOption } from "../../types";
 
 const BugItem = dynamic(() => import("../../components/primitives/BugItem"), {
   ssr: false,
-  loading: LoadingItem
+  loading: () => <LoadingItem />
 });
 
 const DataFieldSelect = dynamic(

@@ -18,7 +18,7 @@ import createFuse from "../../util/fuse";
 
 const RecipeItem = dynamic(
   () => import("../../components/primitives/RecipeItem"),
-  { ssr: false, loading: LoadingItem }
+  { ssr: false, loading: () => <LoadingItem /> }
 );
 
 const recipeData = require("../../data/recipes.json");

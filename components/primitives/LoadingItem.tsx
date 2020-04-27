@@ -3,7 +3,7 @@ import { jsx } from "@emotion/core";
 import Loader from "react-spinners/BounceLoader";
 import { colors } from "../../util/theme";
 
-export default function LoadingItem() {
+export default function LoadingItem({ size = 125 }: { size?: number }) {
   return (
     <div
       css={{
@@ -14,8 +14,8 @@ export default function LoadingItem() {
         color: colors.blueLight,
         backgroundColor: colors.blueDark,
         borderRadius: "1em",
-        height: 125,
-        width: 125,
+        height: size,
+        width: size,
         cursor: "pointer",
         position: "relative"
       }}

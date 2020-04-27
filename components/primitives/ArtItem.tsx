@@ -58,10 +58,12 @@ export default function ArtItem({ item, type, inCollection, onClick }: Props) {
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <SafeImage
-        src={getImageUrl(type, item._name, "real")}
-        style={{ width: "100%", borderRadius: "0.8em 0.8em 0em 0em" }}
-      />
+      <div style={{ maxHeight: 200, overflow: "hidden", marginBottom: 5 }}>
+        <SafeImage
+          src={getImageUrl(type, item._name, "real")}
+          style={{ width: "100%", borderRadius: "0.8em 0.8em 0em 0em" }}
+        />
+      </div>
       <div css={styles.name}>{item.name || "???"}</div>
       {item.name !== item.realName ? (
         <div css={styles.row}>

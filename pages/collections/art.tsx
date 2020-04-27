@@ -14,7 +14,7 @@ import createFuse from "../../util/fuse";
 
 const ArtItem = dynamic(() => import("../../components/primitives/ArtItem"), {
   ssr: false,
-  loading: LoadingItem
+  loading: () => <LoadingItem size={200} />
 });
 
 const paintingsRawData = require("../../data/paintings.json");

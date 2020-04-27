@@ -27,7 +27,7 @@ import { SortOption } from "../../types";
 
 const FishItem = dynamic(() => import("../../components/primitives/FishItem"), {
   ssr: false,
-  loading: LoadingItem
+  loading: () => <LoadingItem />
 });
 const DataFieldSelect = dynamic(
   () => import("../../components/primitives/DataFieldSelect"),
