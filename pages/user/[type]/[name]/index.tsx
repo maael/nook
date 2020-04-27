@@ -9,6 +9,7 @@ import {
 import useJWT from "../../../../components/hooks/useJWT";
 import EditUserDetails from "../../../../components/compositions/EditUserDetails";
 import Heading from "../../../../components/primitives/Heading";
+import SafeImage from "../../../../components/primitives/SafeImage";
 import AccountBadge from "../../../../components/primitives/AccountBadge";
 import { getUserIcon } from "../../../../util/user";
 import { User } from "../../../../types/db";
@@ -36,9 +37,11 @@ export default function UserPage({
   return (
     <div css={{ textAlign: "center", marginTop: 10 }}>
       <div>
-        <img
+        <SafeImage
+          setWidthOnError={false}
           css={{
             border: `2px solid ${colors.blueDark}`,
+            backgroundColor: "white",
             height: 50,
             width: 50,
             borderRadius: "50%",

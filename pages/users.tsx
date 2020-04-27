@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import useFetch from "../components/hooks/useFetch";
+import SafeImage from "../components/primitives/SafeImage";
 import * as userUtil from "../util/user";
 import { styles as generalStyles, colors } from "../util/theme";
 
@@ -55,7 +56,8 @@ export default function UsersSearch() {
                 color: colors.blueLight
               }}
             >
-              <img
+              <SafeImage
+                setWidthOnError={false}
                 css={{
                   border: `2px solid ${colors.blueLight}`,
                   height: 30,

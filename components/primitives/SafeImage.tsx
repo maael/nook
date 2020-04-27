@@ -1,6 +1,9 @@
 import { createRef, HTMLProps } from "react";
 
-export default function SafeImage(props: HTMLProps<HTMLImageElement>) {
+export default function SafeImage({
+  setWidthOnError = true,
+  ...props
+}: HTMLProps<HTMLImageElement> & { setWidthOnError?: boolean }) {
   const imgRef = createRef<HTMLImageElement>();
   return (
     <img
@@ -9,7 +12,7 @@ export default function SafeImage(props: HTMLProps<HTMLImageElement>) {
       onError={() => {
         if (imgRef.current) {
           imgRef.current.src = "/images/missing.png";
-          imgRef.current.style.width = "75px";
+          if (setWidthOnError) imgRef.current.style.width = "75px";
         }
       }}
     />
