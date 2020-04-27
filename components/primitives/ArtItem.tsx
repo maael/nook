@@ -1,7 +1,8 @@
 import {
   FaInfoCircle,
   FaUserCircle,
-  FaExclamationCircle
+  FaExclamationCircle,
+  FaSearch
 } from "react-icons/fa";
 import SafeImage from "../../components/primitives/SafeImage";
 import { getImageUrl } from "../../util/getImageUrl";
@@ -16,7 +17,7 @@ const styles = {
     color: colors.blueLight,
     backgroundColor: colors.blueDark,
     borderRadius: "1em",
-    width: 150,
+    width: 200,
     cursor: "pointer",
     position: "relative"
   },
@@ -77,12 +78,22 @@ export default function ArtItem({ item, type, inCollection, onClick }: Props) {
         <div>{item.artist || "???"}</div>
       </div>
       {item.canHaveForgery ? (
-        <div css={styles.row}>
-          <div>
-            <FaExclamationCircle style={styles.icon} />
+        <>
+          <div css={styles.row}>
+            <div>
+              <FaExclamationCircle style={styles.icon} />
+            </div>
+            <div>Can be a forgery</div>
           </div>
-          <div>Can be a forgery</div>
-        </div>
+          {item.clues.length ? (
+            <div css={styles.row}>
+              <div>
+                <FaSearch style={styles.icon} />
+              </div>
+              <div>{item.clues.join(", ")}</div>
+            </div>
+          ) : null}
+        </>
       ) : null}
     </div>
   );
