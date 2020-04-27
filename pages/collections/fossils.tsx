@@ -24,8 +24,6 @@ const FossilItem = dynamic(
   }
 );
 
-const fuse = createFuse(fossilData);
-
 export default function Collections() {
   const { t } = useTranslation("fossils");
   const [search, setSearch] = useLocalstorage<string>(
