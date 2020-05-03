@@ -1289,7 +1289,7 @@
       "dec": true
     },
     "rarity": "Scarce",
-    "index": -1
+    "index": 34
   },
   {
     "name": "Damselfly",
@@ -1745,7 +1745,7 @@
       "dec": true
     },
     "rarity": "Uncommon",
-    "index": -1
+    "index": 46
   },
   {
     "name": "Citrus long-horned beetle",
@@ -2816,7 +2816,7 @@
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Snail",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/b/b1/NH-Icon-snail.png/revision/latest/scale-to-width-down/64?cb=20200401005429",
     "price": 250,
-    "location": "On Rocks and bushes (Rain)",
+    "location": "On Rocks and Bushes (Rain)",
     "time": "All day",
     "northernMonths": {
       "jan": true,

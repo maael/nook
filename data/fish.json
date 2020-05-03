@@ -2649,7 +2649,7 @@
       "dec": true
     },
     "rarity": "Scarce",
-    "index": 68
+    "index": -1
   },
   {
     "name": "Mahi-mahi",
@@ -3078,14 +3078,14 @@
       "dec": true
     },
     "rarity": "Scarce",
-    "index": 79
+    "index": -1
   },
   {
     "name": "Coelacanth",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Coelacanth",
     "wikiImageUrl": "https://vignette.wikia.nocookie.net/animalcrossing/images/3/31/NH-Icon-coelacanth.png/revision/latest/scale-to-width-down/64?cb=20200401003129",
     "price": 15000,
-    "location": "Sea",
+    "location": "Sea (Raining)",
     "shadowSize": "6",
     "time": "All day",
     "northernMonths": {

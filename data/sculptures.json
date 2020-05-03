@@ -37,6 +37,7 @@
     ],
     "canHaveForgery": true,
     "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/c8/EWnRE5iUwAEnjHb.jpg/revision/latest?cb=20200427165002",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/2/29/GallantStatue.jpg/revision/latest/scale-to-width-down/262?cb=20130614231351"
     }
   },
@@ -65,7 +66,7 @@
     "canHaveForgery": true,
     "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5e/NH-Statue_Informative_Forged.png/revision/latest?cb=20200426194842",
-      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/51/Statue-Informative_statue-IRL.jpg/revision/latest/scale-to-width-down/350?cb=20200426220034"
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e9/NH-Statue_Informative_Genuine.jpg/revision/latest?cb=20200501104944"
     }
   },
   {
@@ -120,6 +121,20 @@
     ],
     "canHaveForgery": true,
     "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/1/11/RockHeadForgery.jpg/revision/latest?cb=20200427170000",
+      "real": "https://animalcrossing.fandom.com/wiki/Special:Upload?wpDestFile=Na"
+    }
+  },
+  {
+    "name": "Tremendous statue",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Tremendous_statue",
+    "artist": "",
+    "realName": "Houmuwu ding",
+    "clues": [
+      "In New Horizons, the forgery has a lid."
+    ],
+    "canHaveForgery": true,
+    "wikiImageUrls": {
       "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351"
     }
   },
@@ -146,7 +161,8 @@
     ],
     "canHaveForgery": true,
     "wikiImageUrls": {
-      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351"
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5c/Warrior_statue_forged.jpg/revision/latest?cb=20200426234611",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/0/0c/Authentic-warrior-statue.png/revision/latest?cb=20200425234609"
     }
   }
 ]

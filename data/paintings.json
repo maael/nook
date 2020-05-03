@@ -1,15 +1,29 @@
 [
   {
+    "name": "Academic painting",
+    "wikiUrl": "https://animalcrossing.fandom.com/wiki/Academic_painting",
+    "artist": "Leonardo da Vinci",
+    "realName": "Vitruvian Man",
+    "canHaveForgery": true,
+    "clues": [
+      "The forged item has a coffee stain on the upper right hand corner"
+    ],
+    "wikiImageUrls": {
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e1/NH-academic_painting-forgery.png/revision/latest?cb=20200429124718",
+      "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/c/ce/Animal-crossing-new-horizons-guide-redd-academic-painting-texture-real.png/revision/latest?cb=20200423210828"
+    }
+  },
+  {
     "name": "Amazing painting",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Amazing_painting",
     "artist": "Rembrandt Harmeszoon van Rijn",
     "realName": "The Night Watch",
     "canHaveForgery": true,
     "clues": [
-      "The man in black and red is standing on the right in the fake painting, while the genuine painting has him standing on the left."
+      "The man in black and red is not wearing a hat in the fake painting, while he is in the genuine painting."
     ],
     "wikiImageUrls": {
-      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/a/aa/Amazingfakepaint.png/revision/latest?cb=20160706001750",
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4a/AmazingfakepaintingNH.JPG/revision/latest?cb=20200428205942",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/6/67/Amazingrealpaint.png/revision/latest?cb=20160706001706"
     }
   },
@@ -43,14 +57,14 @@
   {
     "name": "Detailed painting",
     "wikiUrl": "https://animalcrossing.fandom.com/wiki/Detailed_painting",
-    "artist": "",
+    "artist": "Itō Jakuchū",
     "realName": "",
     "canHaveForgery": true,
     "clues": [
       "The plants are purple in the fake painting, while they are blue in the genuine version."
     ],
     "wikiImageUrls": {
-      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/f/f6/Nia.png/revision/latest?cb=20151204041351",
+      "forgery": "https://vignette.wikia.nocookie.net/animalcrossing/images/5/5e/NH-detailed_painting-forgery.png/revision/latest?cb=20200429123943",
       "real": "https://vignette.wikia.nocookie.net/animalcrossing/images/4/4d/Painting-Detailed_Painting-IRL.jpg/revision/latest?cb=20200426201958"
     }
   },
