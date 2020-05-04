@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core";
 import { GiSwapBag } from "react-icons/gi";
+import SafeImage from "./SafeImage";
 import { colors } from "../../util/theme";
 import { getImageUrl } from "../../util/getImageUrl";
 
@@ -42,7 +43,7 @@ export default function FossilItem({
         backgroundColor: inCollection ? colors.blueLight : colors.blueDark
       }}
     >
-      <img src={getImageUrl("fossil", f.icon)} />
+      <SafeImage src={getImageUrl("fossil", f.icon)} />
       <div css={styles.title}>{f.name}</div>
       <div>
         <GiSwapBag /> {f.sellPrice}
