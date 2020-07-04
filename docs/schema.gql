@@ -52,6 +52,13 @@ type ArtCollection @collection(name: "artCollection") {
   createdAt: Time!
 }
 
+type DeepSeaCollection @collection(name: "deepseaCollection") {
+  userId: ID!
+  user: User! @relation
+  name: String!
+  createdAt: Time!
+}
+
 type CustomDesign @collection(name: "customDesigns") {
   userId: ID!
   user: User! @relation
@@ -96,6 +103,8 @@ type Query {
   getRecipeCollectionByUserAndName(userId: ID, name: String): RecipeCollection!
   getArtCollectionByUser(userId: ID): [ArtCollection!]!
   getArtCollectionByUserAndName(userId: ID, name: String): ArtCollection!
+  getDeepSeaCollectionByUser(userId: ID): [DeepSeaCollection!]!
+  getDeepSeaCollectionByUserAndName(userId: ID, name: String): DeepSeaCollection!
   getCustomDesigns: [CustomDesign!]!
   getCustomDesignsByRedacted(redacted: Boolean): [CustomDesign!]!
   getCustomDesignsByType(type: String, redacted: Boolean): [CustomDesign!]!

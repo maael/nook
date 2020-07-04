@@ -1,5 +1,12 @@
 export function getImageUrl(
-  type: "fish" | "fossil" | "recipe" | "bug" | "painting" | "sculpture",
+  type:
+    | "fish"
+    | "fossil"
+    | "recipe"
+    | "bug"
+    | "painting"
+    | "sculpture"
+    | "deepsea",
   name: string,
   subPath?: string
 ) {

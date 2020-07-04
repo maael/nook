@@ -18,6 +18,7 @@ import { getImageUrl } from "../../../../util/getImageUrl";
 
 const bugsData = require("../../../../data/bugs.json");
 const fishData = require("../../../../data/fish.json");
+const deepseaData = require("../../../../data/deepsea.json");
 
 export default function UserPage({
   user = {} as any
@@ -26,6 +27,7 @@ export default function UserPage({
     profile?: {
       bugs: any[];
       fish: any[];
+      deepsea: any[];
       fossils: any[];
       customDesigns: any[];
       savedCustomDesigns: any[];
@@ -115,7 +117,7 @@ export default function UserPage({
           <Heading>Collected Fish</Heading>
           <Heading size={15}>
             {user.profile!.fish.length} / {fishData.length} (
-            {((user.profile!.fish.length / bugsData.length) * 100).toFixed(0)}%)
+            {((user.profile!.fish.length / fishData.length) * 100).toFixed(0)}%)
           </Heading>
           <div
             css={{
@@ -133,6 +135,33 @@ export default function UserPage({
               )
               .map(({ name }) => (
                 <img key={name} src={getImageUrl("fish", name)} />
+              ))}
+          </div>
+          <Heading>Collected Deep Sea Creatures</Heading>
+          <Heading size={15}>
+            {user.profile!.deepsea.length} / {deepseaData.length} (
+            {(
+              (user.profile!.deepsea.length / deepseaData.length) *
+              100
+            ).toFixed(0)}
+            %)
+          </Heading>
+          <div
+            css={{
+              marginBottom: 10,
+              margin: "0 auto",
+              width: "80vw",
+              maxWidth: 800
+            }}
+          >
+            {deepseaData
+              .filter(({ name }) =>
+                user.profile!.deepsea.some(
+                  ({ name: profileName }) => name === profileName
+                )
+              )
+              .map(({ name }) => (
+                <img key={name} src={getImageUrl("deepsea", name)} />
               ))}
           </div>
           <Heading>Custom Designs</Heading>

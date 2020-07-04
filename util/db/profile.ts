@@ -23,6 +23,11 @@ export async function getUserProfile(userId: string) {
         name
       }
     }
+    getDeepSeaCollectionByUser(userId:$userId){
+      data{
+        name
+      }
+    }
     getCustomDesignsByUser(userId:$userId, redacted: false){
       data{
           title
@@ -46,6 +51,7 @@ export async function getUserProfile(userId: string) {
     bugs: result.getBugCollectionByUser.data,
     fish: result.getFishCollectionByUser.data,
     fossils: result.getFossilCollectionByUser.data,
+    deepsea: result.getDeepSeaCollectionByUser.data,
     customDesigns: result.getCustomDesignsByUser.data,
     savedCustomDesigns: result.getSavedCustomDesignsByUser.data
   };

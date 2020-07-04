@@ -7,6 +7,7 @@ const recipeData = require("../../data/recipes.json");
 const fossilsData = require("../../data/fossils.json");
 const paintingsData = require("../../data/paintings.json");
 const sculpturesData = require("../../data/sculptures.json");
+const deepseaData = require("../../data/deepsea.json");
 
 async function getDataImages(data: any[], type: string) {
   await Promise.all(
@@ -51,11 +52,12 @@ async function getArtDataImages(data: any[], type: string) {
 
 export default async function getImages() {
   await Promise.all([
-    getDataImages(bugData, "bug"),
-    getDataImages(fishData, "fish"),
-    getDataImages(fossilsData, "fossil"),
-    getDataImages(recipeData, "recipe"),
-    getArtDataImages(paintingsData, "painting"),
-    getArtDataImages(sculpturesData, "sculpture")
+    getDataImages(deepseaData, "deepsea")
+    // getDataImages(bugData, "bug"),
+    // getDataImages(fishData, "fish"),
+    // getDataImages(fossilsData, "fossil"),
+    // getDataImages(recipeData, "recipe"),
+    // getArtDataImages(paintingsData, "painting"),
+    // getArtDataImages(sculpturesData, "sculpture")
   ]);
 }

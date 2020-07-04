@@ -27,6 +27,10 @@ import {
   getFishItemByUserAndName,
   getFossilsItemByUserAndName,
   deleteArtItem,
+  getDeepSeaItems,
+  getDeepSeaItemByUserAndName,
+  createDeepSeaItem,
+  deleteDeepSeaItem,
   getUser,
   updateUser
 } from "../../../../util/db";
@@ -36,7 +40,8 @@ const typeGetMap = {
   bugs: getBugItems,
   diy: getDiyItems,
   fossils: getFossilsItems,
-  art: getArtItems
+  art: getArtItems,
+  deepsea: getDeepSeaItems
 };
 
 const typeGetItemMap = {
@@ -44,7 +49,8 @@ const typeGetItemMap = {
   bugs: getBugItemByUserAndName,
   diy: getDiyItemByUserAndName,
   fossils: getFossilsItemByUserAndName,
-  art: getArtItemByUserAndName
+  art: getArtItemByUserAndName,
+  deepsea: getDeepSeaItemByUserAndName
 };
 
 const typePostMap = {
@@ -52,7 +58,8 @@ const typePostMap = {
   bugs: createBugItem,
   diy: createDiyItem,
   fossils: createFossilsItem,
-  art: createArtItem
+  art: createArtItem,
+  deepsea: createDeepSeaItem
 };
 
 const typeDeleteMap = {
@@ -60,7 +67,8 @@ const typeDeleteMap = {
   bugs: deleteBugItem,
   diy: deleteDiyItem,
   fossils: deleteFossilsItem,
-  art: deleteArtItem
+  art: deleteArtItem,
+  deepsea: deleteDeepSeaItem
 };
 
 export default paramGuard(

@@ -8,7 +8,8 @@ const collectionMap = {
   [LocalStorageKeys.FISH_COLLECTION]: "fish",
   [LocalStorageKeys.DIY_COLLECTION]: "diy",
   [LocalStorageKeys.FOSSIL_COLLECTION]: "fossils",
-  [LocalStorageKeys.ART_COLLECTION]: "art"
+  [LocalStorageKeys.ART_COLLECTION]: "art",
+  [LocalStorageKeys.DEEPSEA_COLLECTION]: "deepsea"
 };
 
 function getCollectionFromKey(key: LocalStorageKeys): string | undefined {

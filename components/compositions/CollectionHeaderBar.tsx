@@ -16,6 +16,9 @@ export default function CollectionHeaderBar() {
         <NavItem url="/collections/fish" exact>
           Fish
         </NavItem>
+        <NavItem url="/collections/deepsea" exact>
+          Deep Sea
+        </NavItem>
         <NavItem url="/collections/bugs" exact>
           Bugs
         </NavItem>

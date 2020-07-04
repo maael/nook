@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/core";
 import Link from "next/link";
 import { GiFossil, GiTropicalFish, GiSpottedBug } from "react-icons/gi";
-import { FaTools, FaImage } from "react-icons/fa";
+import { FaTools, FaImage, FaSwimmer } from "react-icons/fa";
 import Heading from "../../components/primitives/Heading";
 import CollectionHeaderBar from "../../components/compositions/CollectionHeaderBar";
 import { colors } from "../../util/theme";
@@ -48,6 +48,14 @@ export default function Collections() {
             <Heading>
               <GiTropicalFish style={{ marginRight: 5 }} />
               Fish
+            </Heading>
+          </a>
+        </Link>
+        <Link href="/collections/deepsea">
+          <a css={styles.link}>
+            <Heading>
+              <FaSwimmer style={{ marginRight: 5 }} />
+              Deep Sea
             </Heading>
           </a>
         </Link>

@@ -24,6 +24,13 @@ export {
 } from "./collections/fish";
 
 export {
+  createCollectionItem as createDeepSeaItem,
+  deleteCollectionItem as deleteDeepSeaItem,
+  getCollectionItems as getDeepSeaItems,
+  getCollectionItemByUserAndName as getDeepSeaItemByUserAndName
+} from "./collections/deepsea";
+
+export {
   createCollectionItem as createFossilsItem,
   deleteCollectionItem as deleteFossilsItem,
   getCollectionItems as getFossilsItems,

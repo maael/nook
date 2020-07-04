@@ -83,6 +83,17 @@ export default function OverlayMenu({ onClose }: { onClose: () => void }) {
           width: "90vw",
           marginLeft: "10vw"
         }}
+        url="/collections/deepsea"
+      >
+        Deep Sea
+      </NavItem>
+      <NavItem
+        style={{
+          padding: "20px 10px 10px 10px",
+          display: "block",
+          width: "90vw",
+          marginLeft: "10vw"
+        }}
         url="/collections/fossils"
       >
         Fossils

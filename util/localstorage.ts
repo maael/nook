@@ -21,7 +21,10 @@ enum LocalStorageKeys {
   DAILY_CHECKLIST = "nook:daily-checklist",
   MONEY_TREE_TRACKER = "nook:money-tree-tracker",
   ART_SEARCH = "nook:art-search",
-  ART_COLLECTION = "nook:art-collection"
+  ART_COLLECTION = "nook:art-collection",
+  DEEPSEA_COLLECTION = "nook:deepsea-collection",
+  SELECTED_DEEPSEA_RARITY = "nook:selected-deepsea-size",
+  SELECTED_DEEPSEA_SIZE = "nook:selected-deepsea-rarity"
 }
 
 export default LocalStorageKeys;
