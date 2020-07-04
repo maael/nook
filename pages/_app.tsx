@@ -1,11 +1,13 @@
 /** @jsx jsx */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Global, jsx, css } from "@emotion/core";
 import emotionReset from "emotion-reset";
 import { TiHomeOutline } from "react-icons/ti";
 import { IoIosMenu } from "react-icons/io";
 import { FaReddit, FaDiscord } from "react-icons/fa";
+import * as Fathom from "fathom-client";
 import NavItem from "../components/primitives/NavItem";
 import HeaderBar from "../components/primitives/HeaderBar";
 import AuthBlock from "../components/primitives/AuthBlock";
@@ -20,6 +22,25 @@ import "../util/i18n";
 export default function App({ Component, pageProps }) {
   useFirstSync();
   const [overlay, setOverlay] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    // Initialize Fathom when the app loads
+    Fathom.load("MHEQRWTV", {
+      includedDomains: ["https://nook.services"]
+    });
+
+    function onRouteChangeComplete() {
+      Fathom.trackPageview();
+    }
+    // Record a pageview when route changes
+    router.events.on("routeChangeComplete", onRouteChangeComplete);
+
+    // Unassign event listener
+    return () => {
+      router.events.off("routeChangeComplete", onRouteChangeComplete);
+    };
+  }, []);
   return (
     <div css={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Head>
