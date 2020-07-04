@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     // Initialize Fathom when the app loads
     Fathom.load("MHEQRWTV", {
-      includedDomains: ["https://nook.services"]
+      excludedDomains: ["localhost"]
     });
 
     function onRouteChangeComplete() {
