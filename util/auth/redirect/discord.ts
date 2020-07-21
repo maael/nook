@@ -1,4 +1,3 @@
-import qs from "querystring";
 import got from "got";
 import * as jwt from "../../jwt";
 import cookies, { NextApiResponseWithCookie } from "../../cookies";
@@ -70,24 +69,20 @@ async function getTokenFromCode(
   refresh_token: string;
   scope: string;
 }> {
-  const basicAuth = Buffer.from(
-    `${process.env.DISCORD_OAUTH_ID!}:${process.env.DISCORD_OAUTH_SECRET!}`,
-    "utf-8"
-  ).toString("base64");
   return got
-    .post(
-      `https://discordapp.com/api/oauth2/token?${qs.stringify({
+    .post(`https://discordapp.com/api/oauth2/token`, {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      form: {
+        client_id: process.env.DISCORD_OAUTH_ID,
+        client_secret: process.env.DISCORD_OAUTH_SECRET,
         grant_type: "authorization_code",
         code,
         redirect_uri: `${process.env.OAUTH_REDIRECT_ORIGIN}/api/oauth/redirect/discord`,
         scope: "identity"
-      })}`,
-      {
-        headers: {
-          Authorization: `Basic ${basicAuth}`
-        }
       }
-    )
+    })
     .json();
 }
 
