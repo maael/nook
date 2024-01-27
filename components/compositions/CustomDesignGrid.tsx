@@ -40,7 +40,7 @@ export default function Collections({
                   return (
                     <div
                       key={key}
-                      ref={registerChild}
+                      ref={registerChild as any}
                       style={{
                         ...style,
                         display: "flex",
