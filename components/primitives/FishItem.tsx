@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import { createRef } from "react";
 import { GiSwapBag } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";

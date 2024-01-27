@@ -70,10 +70,13 @@ export default function UsersSearch() {
               <Link
                 href="/user/[type]/[name]"
                 as={userUtil.getUserProfileLink(user)}
+                css={{
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  color: "inherit"
+                }}
               >
-                <a css={{ textDecoration: "none", cursor: "pointer" }}>
-                  {userUtil.getUserName(user)}
-                </a>
+                {userUtil.getUserName(user)}
               </Link>
             </div>
           ))}

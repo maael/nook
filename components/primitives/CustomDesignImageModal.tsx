@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import { MdZoomOutMap } from "react-icons/md";
 import { colors } from "../../util/theme";

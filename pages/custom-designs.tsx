@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx } from "@emotion/react";
+import React from "react";
 import { useState, useMemo } from "react";
 import { FaHeart, FaUser } from "react-icons/fa";
 import dynamic from "next/dynamic";

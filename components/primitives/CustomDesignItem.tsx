@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import { FaTimes as DeleteIcon } from "react-icons/fa";
 import { FaRegHeart as SaveIcon, FaHeart as SavedIcon } from "react-icons/fa";
 import { getUserName, getUserIcon, getUserProfileLink } from "../../util/user";

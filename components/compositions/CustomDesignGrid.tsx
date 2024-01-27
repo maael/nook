@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx } from "@emotion/react";
+import React from "react";
 import { useMemo } from "react";
 import { AutoSizer, Grid, WindowScroller } from "react-virtualized";
 import CustomDesignItem, {
@@ -40,7 +40,7 @@ export default function Collections({
                   return (
                     <div
                       key={key}
-                      ref={registerChild}
+                      ref={registerChild as any}
                       style={{
                         ...style,
                         display: "flex",

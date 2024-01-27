@@ -137,7 +137,7 @@ export const customSelectStylesLight = {
   })
 };
 
-export const styles: Record<string, InterpolationWithTheme<any>> = {
+export const styles: Record<string, any> = {
   input: {
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",

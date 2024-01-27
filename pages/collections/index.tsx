@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import Link from "next/link";
 import { GiFossil, GiTropicalFish, GiSpottedBug } from "react-icons/gi";
 import { FaTools, FaImage, FaSwimmer } from "react-icons/fa";
@@ -43,53 +44,41 @@ export default function Collections() {
             Track your progress on collections here!
           </div>
         </div>
-        <Link href="/collections/fish">
-          <a css={styles.link}>
-            <Heading>
-              <GiTropicalFish style={{ marginRight: 5 }} />
-              Fish
-            </Heading>
-          </a>
+        <Link href="/collections/fish" css={styles.link}>
+          <Heading>
+            <GiTropicalFish style={{ marginRight: 5 }} />
+            Fish
+          </Heading>
         </Link>
-        <Link href="/collections/deepsea">
-          <a css={styles.link}>
-            <Heading>
-              <FaSwimmer style={{ marginRight: 5 }} />
-              Deep Sea
-            </Heading>
-          </a>
+        <Link href="/collections/deepsea" css={styles.link}>
+          <Heading>
+            <FaSwimmer style={{ marginRight: 5 }} />
+            Deep Sea
+          </Heading>
         </Link>
-        <Link href="/collections/bugs">
-          <a css={styles.link}>
-            <Heading>
-              <GiSpottedBug style={{ marginRight: 5 }} />
-              Bugs
-            </Heading>
-          </a>
+        <Link href="/collections/bugs" css={styles.link}>
+          <Heading>
+            <GiSpottedBug style={{ marginRight: 5 }} />
+            Bugs
+          </Heading>
         </Link>
-        <Link href="/collections/fossils">
-          <a css={styles.link}>
-            <Heading>
-              <GiFossil style={{ marginRight: 5 }} />
-              Fossils
-            </Heading>
-          </a>
+        <Link href="/collections/fossils" css={styles.link}>
+          <Heading>
+            <GiFossil style={{ marginRight: 5 }} />
+            Fossils
+          </Heading>
         </Link>
-        <Link href="/collections/diy">
-          <a css={styles.link}>
-            <Heading>
-              <FaTools style={{ marginRight: 5 }} />
-              DIY Recipes
-            </Heading>
-          </a>
+        <Link href="/collections/diy" css={styles.link}>
+          <Heading>
+            <FaTools style={{ marginRight: 5 }} />
+            DIY Recipes
+          </Heading>
         </Link>
-        <Link href="/collections/art">
-          <a css={styles.link}>
-            <Heading>
-              <FaImage style={{ marginRight: 5 }} />
-              Art
-            </Heading>
-          </a>
+        <Link href="/collections/art" css={styles.link}>
+          <Heading>
+            <FaImage style={{ marginRight: 5 }} />
+            Art
+          </Heading>
         </Link>
       </div>
     </>

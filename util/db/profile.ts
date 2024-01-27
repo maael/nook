@@ -46,7 +46,7 @@ export async function getUserProfile(userId: string) {
     }
   }
   `;
-  const result = await client.request(query, { userId });
+  const result = (await client.request(query, { userId })) as any;
   return {
     bugs: result.getBugCollectionByUser.data,
     fish: result.getFishCollectionByUser.data,

@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import { createRef, useState, useEffect } from "react";
 import { colors, styles } from "../../util/theme";
 import { CUSTOM_DESIGN_TYPES } from "../../util/constants";

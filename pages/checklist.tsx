@@ -17,6 +17,7 @@ import useLocalstorage, {
   LocalStorageKeys
 } from "../components/hooks/useLocalstorage";
 import { colors } from "../util/theme";
+import React from "react";
 
 const styles = {
   pill: {

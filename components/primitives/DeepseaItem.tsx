@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import { createRef } from "react";
 import { GiSwapBag, GiFishingHook } from "react-icons/gi";
 import { FaClock, FaFish, FaSwimmer } from "react-icons/fa";

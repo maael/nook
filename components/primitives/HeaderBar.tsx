@@ -1,6 +1,7 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
-import {colors as nookTheme} from '../../util/theme';
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
+import { colors as nookTheme } from "../../util/theme";
 
 export default function HeaderBar({
   children,
@@ -19,6 +20,7 @@ export default function HeaderBar({
         height: 25,
         alignItems: "center",
         justifyContent: "center",
+        color: "white",
         ...style,
         "@media (min-width: 800px)": {
           alignItems: "flex-start"

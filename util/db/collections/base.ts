@@ -29,7 +29,7 @@ export function prepareCreate(inputType: string, createMutation: string) {
       }
     };
 
-    return (await client.request(query, { data }))[createMutation];
+    return ((await client.request(query, { data })) as any)[createMutation];
   };
 }
 
@@ -42,7 +42,7 @@ export function prepareDelete(deleteMutation: string) {
         }
       }
     `;
-    return (await client.request(query, { id }))[deleteMutation];
+    return ((await client.request(query, { id })) as any)[deleteMutation];
   };
 }
 
@@ -57,7 +57,7 @@ export function prepareGet(getMutation: string) {
         }
       }
     `;
-    return (await client.request(query, { userId }))[getMutation].data;
+    return ((await client.request(query, { userId })) as any)[getMutation].data;
   };
 }
 
@@ -70,6 +70,6 @@ export function prepareGetByUserAndName(getQuery: string) {
         }
       }
     `;
-    return (await client.request(query, { userId, name }))[getQuery];
+    return ((await client.request(query, { userId, name })) as any)[getQuery];
   };
 }

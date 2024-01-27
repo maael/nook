@@ -14,5 +14,5 @@ export function getImageUrl(
 }
 
 export function getImageName(name: string) {
-  return `${name.replace(/[\.\s]/g, "-")}.png`;
+  return `${(name || "").replace(/[\.\s]/g, "-")}.png`;
 }

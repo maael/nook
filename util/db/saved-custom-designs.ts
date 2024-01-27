@@ -35,7 +35,8 @@ export async function create(
     }
   };
 
-  return (await client.request(query, { data })).createSavedCustomDesign;
+  return ((await client.request(query, { data })) as any)
+    .createSavedCustomDesign;
 }
 
 export async function getSavedCustomDesignsForUser(
@@ -60,8 +61,8 @@ export async function getSavedCustomDesignsForUser(
       }
     }
   `;
-  return (await client.request(query, { userId })).getSavedCustomDesignsByUser
-    .data;
+  return ((await client.request(query, { userId })) as any)
+    .getSavedCustomDesignsByUser.data;
 }
 
 export async function deleteSavedCustomDesign(id: string) {
@@ -73,5 +74,5 @@ export async function deleteSavedCustomDesign(id: string) {
     }
   `;
 
-  return (await client.request(query, { id })).deleteSavedCustomDesign;
+  return ((await client.request(query, { id })) as any).deleteSavedCustomDesign;
 }

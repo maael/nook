@@ -1,4 +1,4 @@
-/** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -42,7 +42,10 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
   return (
-    <div css={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    <div
+      css={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      suppressHydrationWarning
+    >
       <Head>
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
         <meta httpEquiv="content-language" content="en-gb" />

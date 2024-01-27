@@ -16,7 +16,7 @@ export interface Props<Value extends any> {
    */
   allowUnselect?: boolean;
   field: string;
-  labelMap?: Record<Value, string>;
+  labelMap?: Record<any, string>;
 }
 
 function getOptionsFromData<Value extends any>(
@@ -57,7 +57,7 @@ export default function FishSizeSelect<Value extends any>({
       options={options}
       placeholder={placeholder}
       value={options.filter(o =>
-        isMulti ? value.includes(o.value) : o.value === (value as any)
+        isMulti ? (value as any).includes(o.value) : o.value === (value as any)
       )}
       onChange={valueType => {
         if (valueType) {
