@@ -1,8 +1,8 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, PropsWithChildren } from "react";
 import { IoMdInformationCircle, IoMdCloseCircle } from "react-icons/io";
 import { colors } from "../../util/theme";
 
-const Notification: FunctionComponent = ({ children }) => {
+const Notification: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
     <div
       css={{

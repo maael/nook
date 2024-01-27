@@ -9,13 +9,15 @@ export default function HideOnMobile({
 }) {
   return (
     <div
-      css={{
-        ...style,
-        display: "none",
-        "@media (min-width: 800px)": {
-          display: "initial"
-        }
-      }}
+      css={
+        {
+          ...style,
+          display: "none",
+          "@media (min-width: 800px)": {
+            display: "initial"
+          }
+        } as any
+      }
     >
       {children}
     </div>

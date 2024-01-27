@@ -43,7 +43,7 @@ export async function create(userId: string, input: CreateInput): Promise<any> {
     redacted: false
   };
 
-  return (await client.request(query, { data })).createCustomDesign;
+  return ((await client.request(query, { data })) as any).createCustomDesign;
 }
 
 export async function getCustomDesignsForUser(userId: string) {
@@ -56,7 +56,8 @@ export async function getCustomDesignsForUser(userId: string) {
       }
     }
   `;
-  return (await client.request(query, { userId })).getCustomDesignsByUser.data;
+  return ((await client.request(query, { userId })) as any)
+    .getCustomDesignsByUser.data;
 }
 
 export async function getCustomDesigns() {
@@ -69,7 +70,7 @@ export async function getCustomDesigns() {
       }
     }
   `;
-  return (await client.request(query)).getCustomDesignsByRedacted.data;
+  return ((await client.request(query)) as any).getCustomDesignsByRedacted.data;
 }
 
 export async function deleteCustomDesign(id: string) {
@@ -81,5 +82,5 @@ export async function deleteCustomDesign(id: string) {
     }
   `;
 
-  return (await client.request(query, { id })).deleteCustomDesign;
+  return ((await client.request(query, { id })) as any).deleteCustomDesign;
 }

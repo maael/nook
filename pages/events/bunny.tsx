@@ -85,7 +85,7 @@ export default function() {
               padding: 5
             }}
           >
-            {k}: {v}
+            {k}: {v as any}
           </div>
         ))}
       </div>

@@ -9,12 +9,14 @@ export default function HideOnDesktop({
 }) {
   return (
     <div
-      css={{
-        ...style,
-        "@media (min-width: 800px)": {
-          display: "none"
-        }
-      }}
+      css={
+        {
+          ...style,
+          "@media (min-width: 800px)": {
+            display: "none"
+          }
+        } as any
+      }
     >
       {children}
     </div>
