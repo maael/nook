@@ -20,6 +20,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@jimp/plugin-threshold": "^0.10.1",
