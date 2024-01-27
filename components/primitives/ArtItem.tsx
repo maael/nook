@@ -4,6 +4,7 @@ import {
   FaExclamationCircle,
   FaSearch
 } from "react-icons/fa";
+import React from "react";
 import SafeImage from "../../components/primitives/SafeImage";
 import { getImageUrl } from "../../util/getImageUrl";
 import { colors } from "../../util/theme";

@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+/** @jsxImportSource @emotion/react */
+import { jsx } from "@emotion/react";
+import React from "react";
 import EventsHeaderBar from "../../components/compositions/EventsHeaderBar";
 import dynamic from "next/dynamic";
 import useLocalstorage, {

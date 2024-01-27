@@ -1,6 +1,7 @@
 import Link from "next/link";
 import EventsHeaderBar from "../components/compositions/EventsHeaderBar";
 import { colors } from "../util/theme";
+import React from "react";
 
 export default function Events() {
   return (
@@ -24,50 +25,42 @@ export default function Events() {
           </div>
         </div>
         <Link href="/events/bunny">
-          <a>
-            <img src="/images/zippy.png" css={{ height: 200, marginTop: 20 }} />
-            <div>
-              <div
-                css={{
-                  backgroundColor: colors.blueDark,
-                  color: colors.blueLight,
-                  display: "inline-block",
-                  padding: 10,
-                  borderRadius: "0.3em"
-                }}
-              >
-                <div
-                  css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}
-                >
-                  🐰 Bunny Day 🐰
-                </div>
-                <div>April 1st - April 12th</div>
+          <img src="/images/zippy.png" css={{ height: 200, marginTop: 20 }} />
+          <div>
+            <div
+              css={{
+                backgroundColor: colors.blueDark,
+                color: colors.blueLight,
+                display: "inline-block",
+                padding: 10,
+                borderRadius: "0.3em"
+              }}
+            >
+              <div css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}>
+                🐰 Bunny Day 🐰
               </div>
+              <div>April 1st - April 12th</div>
             </div>
-          </a>
+          </div>
         </Link>
         <Link href="/events/nature">
-          <a>
-            <img src="/images/leif.png" css={{ height: 200, marginTop: 20 }} />
-            <div>
-              <div
-                css={{
-                  backgroundColor: colors.blueDark,
-                  color: colors.blueLight,
-                  display: "inline-block",
-                  padding: 10,
-                  borderRadius: "0.3em"
-                }}
-              >
-                <div
-                  css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}
-                >
-                  🌍 Nature/Earth Day 🌍
-                </div>
-                <div>April 22nd</div>
+          <img src="/images/leif.png" css={{ height: 200, marginTop: 20 }} />
+          <div>
+            <div
+              css={{
+                backgroundColor: colors.blueDark,
+                color: colors.blueLight,
+                display: "inline-block",
+                padding: 10,
+                borderRadius: "0.3em"
+              }}
+            >
+              <div css={{ fontSize: 20, fontWeight: "bold", marginBottom: 2 }}>
+                🌍 Nature/Earth Day 🌍
               </div>
+              <div>April 22nd</div>
             </div>
-          </a>
+          </div>
         </Link>
       </div>
     </>

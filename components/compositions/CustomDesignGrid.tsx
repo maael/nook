@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx } from "@emotion/react";
+import React from "react";
 import { useMemo } from "react";
 import { AutoSizer, Grid, WindowScroller } from "react-virtualized";
 import CustomDesignItem, {
